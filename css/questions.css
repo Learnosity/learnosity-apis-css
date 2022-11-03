@@ -2735,6 +2735,13 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
     opacity: .4;
 }
 
+.lrn_toolbar .lrn_btn[aria-disabled=true] {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: .4;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 .lrn_widget .lrn_canvas_drawing {
     height: 100%;
 }
@@ -9888,6 +9895,8 @@ img.lrn-loading-image-hidden {
     top: 0;
     left: 0;
     background-color: #ffffff;
+    box-shadow: .1428571429em .1428571429em .1428571429em rgba(0, 0, 0, .1);
+    transition: transform ease .3s, box-shadow ease .3s;
     z-index: 2000;
 }
 
@@ -9902,36 +9911,82 @@ img.lrn-loading-image-hidden {
 
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler,
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close {
-    top: 1px;
-    bottom: 1px;
+    top: .0714285714em;
+    bottom: .0714285714em;
     position: absolute;
     width: 2.7142857143em;
     line-height: 0;
     text-align: center;
-    border: none;
+    border: .2857142857em solid #333333;
+    border-radius: .4285714286em;
     background: none;
+    padding: 0;
 }
 
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:hover,
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:hover {
     background-color: dimgray;
+    border-color: #333333;
 }
 
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:focus,
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:focus {
-    box-shadow: 0 0 0 2px #f7f7f7 inset;
     outline: none;
 }
 
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:focus:not(:active),
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:focus:not(:active) {
+    border: .1428571429em solid #ffffff;
+    border-radius: .2857142857em;
+    box-shadow: none;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:active,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:active:focus,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:active:hover,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:active,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:active:focus,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:active:hover {
+    background-color: #939393;
+    border: .2857142857em solid #333333;
+    border-radius: .4285714286em;
+    box-shadow: none;
+    outline: none;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:active:before,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:active:focus:before,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler:active:hover:before,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:active:before,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:active:focus:before,
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:active:hover:before {
+    color: #ffffff;
+}
+
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler {
+    cursor: move;
     left: 50%;
     transform: translate(-50%, 0);
-    border-radius: 0;
     padding: 0;
 }
 
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler.lrn-active {
-    background-color: #1877b1;
+    background-color: #ffffff;
+    border: .1428571429em solid #ffffff;
+    border-radius: .2857142857em;
+    outline: .1428571429em solid #333333;
+    outline-offset: -0.2857142857em;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler.lrn-active:before {
+    color: #333333;
+    font-family: "LearnosityIconsRegular";
+    content: "";
+    padding: 0;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler.lrn-active span.lrn-span {
+    display: none;
 }
 
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler .lrn-display-block:first-child {
@@ -9945,34 +10000,75 @@ img.lrn-loading-image-hidden {
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn-drag-handler span.lrn-span {
     width: .3571428571em;
     height: .3571428571em;
-    border-radius: 1px;
+    border-radius: .0714285714em;
     display: inline-block;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     padding: 0;
 }
 
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close {
-    right: 1px;
-    color: #f7f7f7;
+    right: .0714285714em;
+    color: #ffffff;
 }
 
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn_calculator_close:before {
     font-family: "LearnosityIconsRegular";
+    font-size: 1em;
     content: "";
+    position: relative;
+    top: .0714285714em;
 }
 
 .lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging {
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, .1);
+    box-shadow: .4285714286em .4285714286em .8571428571em rgba(0, 0, 0, .1);
 }
 
-.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler {
-    cursor: grabbing;
-    border: none;
+.lrn_feature.lrn_calculator .lrn_calc_content:has(.lrn-drag-handler.lrn-active) {
+    box-shadow: .4285714286em .4285714286em .8571428571em rgba(0, 0, 0, .1);
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler,
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:focus {
+    border: .2857142857em solid #333333;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:not(.lrn-active),
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:focus:not(.lrn-active) {
+    outline: none;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:active,
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:focus:active {
+    background-color: #939393;
+    border-radius: .4285714286em;
+    outline: none;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:active:before,
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:focus:active:before {
+    color: #ffffff;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:active span.lrn-span,
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:focus:active span.lrn-span {
+    background-color: #ffffff;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler.lrn-active,
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:focus.lrn-active {
+    border-color: #ffffff;
+}
+
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler.lrn-active:active,
+.lrn_feature.lrn_calculator .lrn_calc_content.lrn-dragging .lrn-drag-handler:focus.lrn-active:active {
+    border: .2857142857em solid #333333;
 }
 
 .lrn_feature.lrn_calculator .lrn_calc_content .lrn_calc {
     position: relative;
-    border: .15em solid #4d4d4d;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 0 .15em .15em .15em;
     margin-bottom: 0;
     border-radius: 0;
     background: #d9d9d9;
@@ -12346,7 +12442,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_qr.lrn_clozechemistry .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -14854,7 +14950,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_chemistry .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -14922,7 +15018,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_chemistryessay .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -15635,7 +15731,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_imageclozechemistry .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -18397,7 +18493,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_chemistryessayV2 .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -18900,6 +18996,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_numberlineplot .lrn_response_input_wrapper {
     touch-action: none;
     -ms-touch-action: none;
+    background-color: #ffffff;
 }
 
 .lrn_widget.lrn_numberlineplot .lrn_response_input {
@@ -19493,7 +19590,6 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_simpleshading .lrn-shading-wrapper {
     display: inline-block;
     position: relative;
-    padding: 1px 0;
 }
 
 .lrn_widget.lrn_simpleshading .lrn-shading-wrapper.lrn_no_touch .lrn-shading-cell:hover {
