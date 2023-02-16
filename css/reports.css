@@ -8743,37 +8743,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     background-image: url("../../img/ra-i-student.svg");
 }
 
-.checkmark {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border: solid 1px #ffffff;
-    border-radius: 50%;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.checkmark:before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 6px;
-    background-color: #ffffff;
-    left: 5px;
-    top: 1px;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    width: 4px;
-    height: 1px;
-    background-color: #ffffff;
-    left: 2px;
-    top: 6px;
-}
-
-.border,
+.lrn-basic-border,
 .lrn-ra-body-student-name,
 .lrn-ra-body-points-student,
 .lrn-ra-body-answer-col-cell,
@@ -9355,6 +9325,13 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     box-sizing: border-box;
     border-radius: 2px;
     color: #000000;
+}
+
+.lrn-ra-body-answer-col-cell-option_features {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .lrn-ra-body-answer-col-cell.lrn-ra-row-hover {
