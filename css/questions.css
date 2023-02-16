@@ -2658,6 +2658,13 @@ span.CodeMirror-selectedtext {
     opacity: .4;
 }
 
+.lrn_toolbar .lrn_btn[aria-disabled="true"] {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: .4;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 .lrn_widget .lrn_canvas_drawing {
     height: 100%;
 }
@@ -9835,55 +9842,87 @@ img.lrn-loading-image-hidden {
     display: none;
 }
 
+.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag:before,
+.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag:before,
+.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag:before,
+.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag:before,
+.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag:before,
-.lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag:before {
+.lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag:before {
     content: none;
 }
 
+.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
+.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
+.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
+.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
+.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before {
+.lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before {
     content: none;
 }
 
+.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
+.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
+.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
+.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
+.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon {
+.lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag .lrn_icon,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon {
     margin-left: 0;
 }
 
+.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
+.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
+.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
+.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
+.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before {
+.lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before {
     content: "";
     position: relative;
     padding-right: .2em;
@@ -12375,7 +12414,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_qr.lrn_clozechemistry .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -15061,7 +15100,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_chemistry .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -15130,7 +15169,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_chemistryessay .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -15872,7 +15911,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_imageclozechemistry .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -16012,6 +16051,7 @@ img.lrn-loading-image-hidden {
     hyphens: auto;
     -webkit-transform-origin: top left;
     transform-origin: top left;
+    vertical-align: inherit;
 }
 
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response .lrn_response_container .lrn_btn_drag.lrn_incorrect,
@@ -16024,6 +16064,11 @@ img.lrn-loading-image-hidden {
     display: table-cell;
     padding-left: .28571em;
     padding-right: .28571em;
+}
+
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response .lrn_response_container .lrn_btn_drag.lrn_incorrect .lrn_icon,
+.lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response .lrn_response_container .lrn_btn_drag.lrn_correct .lrn_icon {
+    display: table-cell;
 }
 
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response .lrn_response_container .lrn_btn_drag.lrn_incorrect:after,
@@ -17153,7 +17198,10 @@ img.lrn-loading-image-hidden {
     stroke-width: 0;
 }
 
-.lrn_widget.lrn_hotspot .lrn-polygons a:focus polygon,
+.lrn_widget.lrn_hotspot .lrn-polygons a:focus {
+    outline: none;
+}
+
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn-selected polygon,
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn-focused polygon,
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn_valid polygon {
@@ -17174,6 +17222,10 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn_not_attempted polygon {
     fill: rgba(252, 252, 211, .8);
     stroke: #e9e99a;
+}
+
+.lrn_widget.lrn_hotspot .lrn-polygons .lrn_not_attempted:focus polygon {
+    stroke-width: 0;
 }
 
 .lrn_widget.lrn_hotspot .lrn-polygons.lrn-disabled {
@@ -17202,6 +17254,11 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_hotspot .lrn-hotspot-wrapper.lrn_incorrect>label:before {
     content: "";
     color: #dd002f;
+}
+
+.lrn_widget.lrn_hotspot .lrn_correct a:focus,
+.lrn_widget.lrn_hotspot .lrn_incorrect a:focus {
+    outline: auto;
 }
 
 .lrn_widget.lrn_longtext .lrn_btn {
@@ -18008,7 +18065,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_chemistryessayV2 .MathJax span {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
