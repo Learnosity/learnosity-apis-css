@@ -9335,6 +9335,13 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     color: #000000;
 }
 
+.lrn-ra-body-answer-col-cell-option_features {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 .lrn-ra-body-answer-col-cell.lrn-ra-row-hover {
     cursor: pointer;
     border-bottom-color: #888888;

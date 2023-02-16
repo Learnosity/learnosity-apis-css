@@ -161,7 +161,7 @@
 
 .lrn_qe_chemistry .MathJax span,
 .lrn_qe_chemistry .MathJax span em {
-    font-family: "MathJax_Math", Symbola, serif !important;
+    font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
 
@@ -1632,6 +1632,7 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-preview {
     margin-top: .2857142857em;
+    padding-left: .2857142857em;
     min-height: 50px;
 }
 
@@ -2475,7 +2476,9 @@
     width: 1.5em;
 }
 
+.lrn-qe .lrn-qe-ui .cke_widget_lrn_editarialabelwidget .cke_widget_element .lrn_cke_simplefeaturewidget_span,
 .lrn-qe .lrn-qe-ui .cke_widget_lrn_editarialabelwidget .cke_widget_element [aria-hidden],
+.lrn-qe .lrn-qe-ui .cke_widget_lrn_popupcontentwidget .cke_widget_element .lrn_cke_simplefeaturewidget_span,
 .lrn-qe .lrn-qe-ui .cke_widget_lrn_popupcontentwidget .cke_widget_element [aria-hidden] {
     padding: 0 .2857142857em;
 }
