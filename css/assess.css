@@ -3028,13 +3028,13 @@ body .lrn-assess-spinner {
 
 @media all and (min-width: 1025px) and (max-width: 1440px) {
     .lrn-assess.lrn-fullscreen .dialogs {
-        margin-top: -40px;
+        margin-top: -20px;
     }
 }
 
 @media all and (min-width: 1441px) {
     .lrn-assess.lrn-fullscreen .dialogs {
-        margin-top: -40px;
+        margin-top: -20px;
     }
 }
 
@@ -3613,6 +3613,10 @@ button.lrn_btn.try-again.after-complete:before {
 
 .lrn.lrn-assess .lrn-assess-resource-dialog .lrn-assess-item {
     position: relative;
+}
+
+.lrn.lrn-assess .lrn-assess-resource-dialog .lrn_sharedpassage {
+    padding: 3px;
 }
 
 .lrn.lrn-assess .lds-u-is-hidden {

@@ -3096,11 +3096,15 @@ fieldset:disabled .lrn.lrn-author .lrn-modal-footer .lrn-btn:is(.lds-btn),
 .lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate-small .lrn-pagination-btn[data-authorapi-selector=pagination-next] {
     text-align: right;
     padding-right: 10px;
+}
+
+.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate .lrn-pagination-btn[data-authorapi-selector=pagination-next]:not([aria-disabled=true]),
+.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate-small .lrn-pagination-btn[data-authorapi-selector=pagination-next]:not([aria-disabled=true]) {
     transition: padding-right .2s;
 }
 
-.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate .lrn-pagination-btn[data-authorapi-selector=pagination-next]:hover,
-.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate-small .lrn-pagination-btn[data-authorapi-selector=pagination-next]:hover {
+.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate .lrn-pagination-btn[data-authorapi-selector=pagination-next]:not([aria-disabled=true]):hover,
+.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate-small .lrn-pagination-btn[data-authorapi-selector=pagination-next]:not([aria-disabled=true]):hover {
     padding-right: 7px;
     color: #0b5684;
 }
@@ -3109,11 +3113,15 @@ fieldset:disabled .lrn.lrn-author .lrn-modal-footer .lrn-btn:is(.lds-btn),
 .lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate-small .lrn-pagination-btn[data-authorapi-selector=pagination-previous] {
     text-align: left;
     padding-left: 10px;
+}
+
+.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:not([aria-disabled=true]),
+.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate-small .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:not([aria-disabled=true]) {
     transition: padding-left .2s;
 }
 
-.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:hover,
-.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate-small .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:hover {
+.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:not([aria-disabled=true]):hover,
+.lrn.lrn-author .lrn-question-list .lrn-question-list-search-paginate-small .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:not([aria-disabled=true]):hover {
     padding-left: 7px;
     color: #0b5684;
 }
@@ -6775,11 +6783,14 @@ fieldset:disabled .lrn.lrn-author .lrn-modal-footer .lrn-btn:is(.lds-btn),
 .lrn .lrn-author-ui .lrn-btn-default[data-authorapi-selector=back] {
     text-align: left;
     padding-left: 30px;
-    transition: padding-left .2s;
     padding-top: 20px;
 }
 
-.lrn .lrn-author-ui .lrn-btn-default[data-authorapi-selector=back]:hover {
+.lrn .lrn-author-ui .lrn-btn-default[data-authorapi-selector=back]:not([aria-disabled=true]) {
+    transition: padding-left .2s;
+}
+
+.lrn .lrn-author-ui .lrn-btn-default[data-authorapi-selector=back]:not([aria-disabled=true]):hover {
     padding-left: 27px;
     color: #0b5684;
 }
@@ -7384,14 +7395,23 @@ fieldset:disabled .lrn.lrn-author .lrn-modal-footer .lrn-btn:is(.lds-btn),
     text-align: center;
 }
 
+.lrn .lrn-author-ui .lrn-pagination-btn[aria-disabled=true] {
+    color: #939393;
+    cursor: default;
+    user-select: none;
+}
+
 .lrn .lrn-author-ui .lrn-pagination-btn[data-authorapi-selector=pagination-next] {
     justify-content: flex-end;
     text-align: right;
     padding-right: 30px;
+}
+
+.lrn .lrn-author-ui .lrn-pagination-btn[data-authorapi-selector=pagination-next]:not([aria-disabled=true]) {
     transition: padding-right .2s;
 }
 
-.lrn .lrn-author-ui .lrn-pagination-btn[data-authorapi-selector=pagination-next]:hover {
+.lrn .lrn-author-ui .lrn-pagination-btn[data-authorapi-selector=pagination-next]:not([aria-disabled=true]):hover {
     padding-right: 27px;
     color: #0b5684;
 }
@@ -7400,10 +7420,13 @@ fieldset:disabled .lrn.lrn-author .lrn-modal-footer .lrn-btn:is(.lds-btn),
     justify-content: flex-start;
     text-align: left;
     padding-left: 30px;
+}
+
+.lrn .lrn-author-ui .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:not([aria-disabled=true]) {
     transition: padding-left .2s;
 }
 
-.lrn .lrn-author-ui .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:hover {
+.lrn .lrn-author-ui .lrn-pagination-btn[data-authorapi-selector=pagination-previous]:not([aria-disabled=true]):hover {
     padding-left: 27px;
     color: #0b5684;
 }
