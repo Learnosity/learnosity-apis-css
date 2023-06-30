@@ -9778,85 +9778,61 @@ img.lrn-loading-image-hidden {
     display: none;
 }
 
-.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag:before {
     content: none;
 }
 
-.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before {
     content: none;
 }
 
-.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon {
     margin-left: 0;
 }
 
-.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before {
     content: "";
@@ -21516,11 +21492,13 @@ img.lrn-loading-image-hidden {
     color: #4d4d4d;
 }
 
-.lrn_widget .lrn_word_count {
+.lrn_widget .lrn_word_count,
+.lrn_widget .lrn_character_count {
     margin-right: 2px;
 }
 
-.lrn_widget .lrn_wordcount_warning_label {
+.lrn_widget .lrn_wordcount_warning_label,
+.lrn_widget .lrn_charactercount_warning_label {
     color: red;
 }
 
