@@ -2585,7 +2585,7 @@ body .lrn-assess-spinner {
     display: inline;
 }
 
-.lrn.lrn-assess.lrn-xs .lrn_btn .btn-label {
+.lrn.lrn-assess.lrn-xs .lrn_btn:not(.custom_btn) .btn-label {
     display: none;
 }
 

@@ -5752,6 +5752,10 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     font-size: 12px;
 }
 
+.learnosity-report .lrn-table-cell-null {
+    text-align: center;
+}
+
 .learnosity-report .lrn-plot-theme-grayscale .lrn-shading-plot-area {
     fill: #000000;
     stroke: none;
