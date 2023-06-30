@@ -3779,7 +3779,7 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 }
 
 .lrn_widget .lrn_textinput.lrn_not_attempted .lrn_responseIndex {
-    background: #939393;
+    background: dimgray;
     height: auto;
     line-height: 2.3em;
 }
@@ -3800,6 +3800,9 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_responseIndex,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_responseIndex,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_responseIndex,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_responseIndex,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_responseIndex,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_responseIndex,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_responseIndex,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_responseIndex,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_responseIndex {
@@ -3820,6 +3823,9 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_cloze_response,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_cloze_response,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_cloze_response,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_cloze_response,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_cloze_response,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_cloze_response,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response {
@@ -3834,6 +3840,7 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozetext .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
 .lrn_widget.lrn_imageclozetext .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -3843,12 +3850,15 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozetext .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after,
 .lrn_widget.lrn_imageclozetext .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after {
     content: none;
 }
 
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn_incorrect,
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn_correct,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn_incorrect,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn_correct,
 .lrn_widget.lrn_imageclozeformula .lrn_textinput.lrn_incorrect,
 .lrn_widget.lrn_imageclozeformula .lrn_textinput.lrn_correct {
     padding-right: 2.5em;
@@ -5843,12 +5853,15 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 
 .lrn_widget.lrn_clozeformula .lrn-response-validate-wrapper.lrn_correct,
 .lrn_widget.lrn_clozeformula .lrn-response-validate-wrapper.lrn_incorrect,
+.lrn_widget.lrn_clozeformulaV2 .lrn-response-validate-wrapper.lrn_correct,
+.lrn_widget.lrn_clozeformulaV2 .lrn-response-validate-wrapper.lrn_incorrect,
 .lrn_widget.lrn_clozechemistry .lrn-response-validate-wrapper.lrn_correct,
 .lrn_widget.lrn_clozechemistry .lrn-response-validate-wrapper.lrn_incorrect {
     padding-top: .5em;
 }
 
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex,
 .lrn_widget.lrn_clozechemistry .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex {
     height: auto;
     width: 2em;
@@ -5863,6 +5876,9 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_correct,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_correct,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
+.lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
 .lrn_widget.lrn_clozechemistry .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_correct,
 .lrn_widget.lrn_clozechemistry .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_clozechemistry .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted {
@@ -5874,6 +5890,10 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_correct.lrn_disabled,
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_incorrect.lrn_disabled,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_correct,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_correct.lrn_disabled,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_incorrect.lrn_disabled,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_correct,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_correct.lrn_disabled,
@@ -5886,12 +5906,14 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 }
 
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_incorrect {
     border-left: .21428571em solid #dd002f;
     background: #fbe3e3;
 }
 
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_correct,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_correct,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_correct {
     border-left: .21428571em solid #4a700a;
     background: #f0f8ed;
@@ -5899,6 +5921,8 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted.lrn_disabled,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted.lrn_disabled,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted.lrn_disabled {
     border-top-left-radius: 0;
@@ -5907,6 +5931,8 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_responseIndex,
 .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_responseIndex,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_responseIndex,
+.lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_responseIndex,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_responseIndex,
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_responseIndex {
     top: -1px;
@@ -6968,7 +6994,7 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 }
 
 .lrn_widget .lrn-formula-keyboard .lrn-formula-keyboard-close button:focus {
-    outline: 1px solid #1877b1;
+    outline: 1px solid #ffffff;
 }
 
 .lrn_widget .lrn-formula-keyboard .lrn-keyboard-common,
@@ -9164,7 +9190,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn .lrn-polygons-labels li {
-    background: #939393;
+    background: dimgray;
     border-radius: 100%;
     color: #ffffff;
     font-size: 1em;
@@ -9218,6 +9244,19 @@ img.lrn-loading-image-hidden {
 .lrn-float-element {
     position: absolute;
     z-index: 10000;
+}
+
+.lrn-float-element-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.lrn-float-element-background-hidden {
+    display: none;
 }
 
 .lrn.lrn_widget .wysihtml-dropdown {
@@ -9817,85 +9856,61 @@ img.lrn-loading-image-hidden {
     display: none;
 }
 
-.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag:before,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag:before {
     content: none;
 }
 
-.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag.lrn_btn_no_handle .lrn_icon:before {
     content: none;
 }
 
-.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag .lrn_icon,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon {
     margin-left: 0;
 }
 
-.lrn_widget.lrn_association .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_association .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_sortlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_sortlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_orderlist .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_orderlist .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_classification .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_classification .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_clozeassociation .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_clozeassociation .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_dropzone_wrapper .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList .lrn_btn_drag .lrn_icon:before,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityListContainer .lrn_btn_drag .lrn_icon:before {
     content: "";
@@ -12778,11 +12793,13 @@ img.lrn-loading-image-hidden {
     font-size: 1em;
 }
 
-.lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper {
+.lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper,
+.lrn_widget.lrn_qr.lrn_clozeformulaV2 .lrn_response_wrapper {
     margin-top: 2.2em;
 }
 
-.lrn_widget.lrn_qr.lrn_clozechemistry .MathJax span {
+.lrn_widget.lrn_qr.lrn_clozechemistry .MathJax span,
+.lrn_widget.lrn_qr.lrn_clozechemistry .MathJax mjx-c {
     font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
@@ -15150,7 +15167,6 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_chemistryessay .lrn_response_input_wrapper,
 .lrn_widget.lrn_formulainput .lrn_response_input_wrapper {
     border: none;
-    max-width: 800px;
 }
 
 .lrn_widget.lrn_formulaV2 .lrn_response_input,
@@ -15290,7 +15306,8 @@ img.lrn-loading-image-hidden {
     font-size: 1.625em;
 }
 
-.lrn_widget.lrn_chemistry .MathJax span {
+.lrn_widget.lrn_chemistry .MathJax span,
+.lrn_widget.lrn_chemistry .MathJax mjx-c {
     font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
@@ -15358,7 +15375,8 @@ img.lrn-loading-image-hidden {
     outline: none;
 }
 
-.lrn_widget.lrn_chemistryessay .MathJax span {
+.lrn_widget.lrn_chemistryessayV2 .MathJax span,
+.lrn_widget.lrn_chemistryessayV2 .MathJax mjx-c {
     font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
@@ -16071,7 +16089,8 @@ img.lrn-loading-image-hidden {
     font-size: 1.2142857143em;
 }
 
-.lrn_widget.lrn_imageclozechemistry .MathJax span {
+.lrn_widget.lrn_imageclozechemistry .MathJax span,
+.lrn_widget.lrn_imageclozechemistry .MathJax mjx-c {
     font-family: "MathJax_Math-Regular", Symbola, serif !important;
     font-style: normal !important;
 }
@@ -17312,7 +17331,6 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn-selected polygon,
-.lrn_widget.lrn_hotspot .lrn-polygons .lrn-focused polygon,
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn_valid polygon {
     stroke-width: .2857142857em;
 }
@@ -17320,6 +17338,21 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn_correct polygon {
     fill: rgba(235, 246, 231, .6);
     stroke: #4a700a;
+}
+
+.lrn_widget.lrn_hotspot .lrn-polygons .lrn-focused polygon {
+    outline: .2142857143em solid #393939;
+    outline-offset: -0.2142857143em;
+}
+
+.lrn_widget.lrn_hotspot .lrn-polygons.lrn-polygons-support-safari .lrn-focused.lrn-selected polygon {
+    outline-offset: -0.3571428571em;
+}
+
+.lrn_widget.lrn_hotspot .lrn-polygons.lrn-polygons-support-chrome .lrn-focused.lrn-selected polygon,
+.lrn_widget.lrn_hotspot .lrn-polygons.lrn-polygons-support-edge .lrn-focused.lrn-selected polygon,
+.lrn_widget.lrn_hotspot .lrn-polygons.lrn-polygons-support-firefox .lrn-focused.lrn-selected polygon {
+    outline-offset: -0.7857142857em;
 }
 
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn_incorrect polygon {
@@ -21940,11 +21973,13 @@ img.lrn-loading-image-hidden {
     color: #4d4d4d;
 }
 
-.lrn_widget .lrn_word_count {
+.lrn_widget .lrn_word_count,
+.lrn_widget .lrn_character_count {
     margin-right: 2px;
 }
 
-.lrn_widget .lrn_wordcount_warning_label {
+.lrn_widget .lrn_wordcount_warning_label,
+.lrn_widget .lrn_charactercount_warning_label {
     color: red;
 }
 
@@ -22746,6 +22781,8 @@ img.lrn-loading-image-hidden {
 .lrn.lrn_widget.lrn_qr.lrn_imageclozeformula .lrn_response_wrapper .lrn_response_input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper .lrn-clozeformula-input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper .lrn_response_input.lrn_not_attempted .mq-math-mode .mq-empty,
+.lrn.lrn_widget.lrn_qr.lrn_clozeformulaV2 .lrn_response_wrapper .lrn-clozeformula-input.lrn_not_attempted .mq-math-mode .mq-empty,
+.lrn.lrn_widget.lrn_qr.lrn_clozeformulaV2 .lrn_response_wrapper .lrn_response_input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_imageclozechemistry .lrn_response_wrapper .lrn-clozeformula-input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_imageclozechemistry .lrn_response_wrapper .lrn_response_input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_clozechemistry .lrn_response_wrapper .lrn-clozeformula-input.lrn_not_attempted .mq-math-mode .mq-empty,

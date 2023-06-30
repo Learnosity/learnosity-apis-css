@@ -9696,13 +9696,13 @@ textarea.lds-form-control.lds-is-invalid,
     background: rgba(0, 0, 0, .1);
 }
 
-.lrn .lrn-author-ui .lrn-author-ui-add-extras .lrn-author-shared-passages-popover ul li a {
+.lrn .lrn-author-ui .lrn-author-region-passages-button {
     text-decoration: none;
     color: #000000;
 }
 
-.lrn .lrn-author-ui .lrn-author-ui-add-extras .lrn-author-shared-passages-popover ul li a:hover,
-.lrn .lrn-author-ui .lrn-author-ui-add-extras .lrn-author-shared-passages-popover ul li a:focus {
+.lrn .lrn-author-ui .lrn-author-region-passages-button:hover,
+.lrn .lrn-author-ui .lrn-author-region-passages-button:focus {
     outline: 0;
 }
 
@@ -10199,12 +10199,13 @@ textarea.lds-form-control.lds-is-invalid,
     display: inline-flex;
 }
 
-.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] label.semi-colon,
-.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=settings] label.semi-colon {
+.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-timeinput-separator,
+.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=settings] .lrn-author-timeinput-separator {
     text-align: center;
     margin-top: 31px;
     font-size: 22px;
     color: #939393;
+    line-height: normal;
 }
 
 .lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-item-for-activity-list,
@@ -11996,31 +11997,12 @@ textarea.lds-form-control.lds-is-invalid,
     text-align: center;
 }
 
-.lrn.lrn-author .lrn-author-nav li {
-    display: inline;
-}
-
-.lrn.lrn-author .lrn-author-nav li a {
-    font-size: 15px;
-    display: inline-block;
-    padding: 10px 15px;
-}
-
-.lrn.lrn-author .lrn-author-nav li a:hover,
-.lrn.lrn-author .lrn-author-nav li a:focus {
-    text-decoration: none;
-}
-
-.lrn.lrn-author .lrn-author-nav li.active a {
-    color: #333333;
-}
-
 .lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs:hover,
 .lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs:focus {
     color: #333333;
 }
 
-.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs li {
+.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs .lrn-author-tab {
     margin-bottom: -1px;
 }
 
@@ -12029,21 +12011,36 @@ textarea.lds-form-control.lds-is-invalid,
     outline: 0;
 }
 
-.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs li:not(.active) a {
+.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs .lrn-author-tab:not(.active) .lrn-author-tab-link {
     border-bottom: transparent;
     color: dimgray;
 }
 
-.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs li:not(.active):hover a {
+.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs .lrn-author-tab:not(.active):hover .lrn-author-tab-link {
     color: #333333;
 }
 
-.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs li:not(.active) .lrn-i-dropzone {
+.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs .lrn-author-tab:not(.active) .lrn-i-dropzone {
     color: #1877b1;
 }
 
 .lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs .lrn-i {
     padding-right: 0;
+}
+
+.lrn.lrn-author .lrn-author-tab-link {
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.lrn.lrn-author .lrn-author-tab-link:hover,
+.lrn.lrn-author .lrn-author-tab-link:focus {
+    text-decoration: none;
+}
+
+.lrn.lrn-author .active .lrn-author-tab-link {
+    color: #333333;
 }
 
 .lrn.lrn-author .lrn-inline-item-wrapper {
@@ -12569,6 +12566,10 @@ textarea.lds-form-control.lds-is-invalid,
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 30ch;
+}
+
+.lrn.lrn-author .lrn-author-breadcrumbs-item * {
+    text-decoration: inherit;
 }
 
 .lrn.lrn-author .lrn-author-breadcrumbs-separator {
@@ -15408,7 +15409,7 @@ textarea.lds-form-control.lds-is-invalid,
     min-width: 130px;
 }
 
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs a {
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs-link {
     border-radius: 2px;
     color: #333333;
     display: block;
@@ -15444,12 +15445,12 @@ textarea.lds-form-control.lds-is-invalid,
     left: .8571428571em;
 }
 
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-active a {
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-active .lrn-author-mathgen-breadcrumbs-link {
     background-color: #eaeaea;
     box-shadow: inset 0 0 0 1px dimgray;
 }
 
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-active a,
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-active .lrn-author-mathgen-breadcrumbs-link,
 .lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-active:before {
     color: #1877b1;
 }
@@ -15459,28 +15460,28 @@ textarea.lds-form-control.lds-is-invalid,
     cursor: default;
 }
 
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-disabled a {
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-disabled .lrn-author-mathgen-breadcrumbs-link {
     color: #939393;
 }
 
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-disabled a:hover,
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-disabled a:focus {
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-disabled .lrn-author-mathgen-breadcrumbs-link:hover,
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li.lrn-disabled .lrn-author-mathgen-breadcrumbs-link:focus {
     background-color: transparent;
     text-decoration: none;
 }
 
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li:not(.lrn-disabled):hover a,
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li:not(.lrn-disabled):focus a,
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs a:hover,
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs a:focus {
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li:not(.lrn-disabled):hover .lrn-author-mathgen-breadcrumbs-link,
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li:not(.lrn-disabled):focus .lrn-author-mathgen-breadcrumbs-link,
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs .lrn-author-mathgen-breadcrumbs-link:hover,
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs .lrn-author-mathgen-breadcrumbs-link:focus {
     background-color: #f7f7f7;
     outline: none;
 }
 
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li:not(.lrn-disabled):hover a:not(.lrn-active),
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li:not(.lrn-disabled):focus a:not(.lrn-active),
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs a:hover:not(.lrn-active),
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs a:focus:not(.lrn-active) {
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li:not(.lrn-disabled):hover .lrn-author-mathgen-breadcrumbs-link:not(.lrn-active),
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs li:not(.lrn-disabled):focus .lrn-author-mathgen-breadcrumbs-link:not(.lrn-active),
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs .lrn-author-mathgen-breadcrumbs-link:hover:not(.lrn-active),
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-breadcrumbs .lrn-author-mathgen-breadcrumbs-link:focus:not(.lrn-active) {
     text-decoration: underline;
 }
 

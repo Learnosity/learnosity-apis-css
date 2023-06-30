@@ -1941,7 +1941,7 @@ body .lrn-assess-spinner {
 .lrn.lrn-assess .lrn-horizontal-toc .lrn-assess-pagination li[data-attempted="fully_attempted"]:not(.pagination-active):before {
     content: "";
     position: absolute;
-    background-color: #939393;
+    background-color: dimgray;
     bottom: 0;
     width: calc(100% + 2px);
     margin-left: -1px;
@@ -2585,7 +2585,7 @@ body .lrn-assess-spinner {
     display: inline;
 }
 
-.lrn.lrn-assess.lrn-xs .lrn_btn .btn-label {
+.lrn.lrn-assess.lrn-xs .lrn_btn:not(.custom_btn) .btn-label {
     display: none;
 }
 
@@ -3672,8 +3672,12 @@ button.lrn_btn.try-again.after-complete:before {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
-    padding: 15px 15px 0 15px;
+    padding: 6px 1px 0 12px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
@@ -3681,10 +3685,10 @@ button.lrn_btn.try-again.after-complete:before {
 .lrn.lrn-assess .lds-floating-modal-c-modal .lds-floating-modal-c-modal__header .lds-floating-modal-c-button {
     margin-left: 8px;
     background: #f7f7f7;
-    border: 1px solid transparent;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
+    border: 2px solid transparent;
+    padding: 8px;
+    width: 38px;
+    height: 38px;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal .lds-floating-modal-c-modal__header .lds-floating-modal-c-button:focus,
@@ -3694,11 +3698,14 @@ button.lrn_btn.try-again.after-complete:before {
     background: #d9d9d9;
 }
 
+.lrn.lrn-assess .lds-floating-modal-c-modal .lds-floating-modal-c-modal__header .lds-floating-modal-c-button.lds-floating-modal-c-button--drag-move {
+    margin-left: 0;
+}
+
 .lrn.lrn-assess .lds-floating-modal-c-modal h2.lds-floating-modal-c-modal__title {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
     font-weight: 500;
     font-size: 15px;
     line-height: 1.5;
@@ -3714,17 +3721,7 @@ button.lrn_btn.try-again.after-complete:before {
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal .lds-floating-modal-c-modal__content {
-    padding: 15px;
-}
-
-.lrn.lrn-assess .lds-floating-modal-c-button {
-    margin: 0;
-    border: none;
-    padding: 5px 10px;
-    color: #333333;
-    background: #cccccc;
-    border-radius: 2px;
-    cursor: pointer;
+    padding: 16px 12px 55px;
 }
 
 .lrn.lrn-assess .lds-floating-modal-icon {
@@ -3735,8 +3732,9 @@ button.lrn_btn.try-again.after-complete:before {
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-button .lds-floating-modal-icon {
-    width: 11px;
-    height: 11px;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic {
@@ -3757,8 +3755,13 @@ button.lrn_btn.try-again.after-complete:before {
     -ms-touch-action: none;
     touch-action: none;
     -webkit-font-smoothing: antialiased;
-    -webkit-box-shadow: 0 3px 4px rgba(147, 147, 147, .3);
-    box-shadow: 0 3px 4px rgba(147, 147, 147, .3);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+}
+
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic.lds-floating-modal-c-modal-shadow--large {
+    -webkit-box-shadow: 0 16px 24px 0 rgba(0, 0, 0, .16), 0 0 0 1px rgba(0, 0, 0, .04);
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, .16), 0 0 0 1px rgba(0, 0, 0, .04);
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic.lds-floating-modal-is-dragging,
@@ -3804,10 +3807,10 @@ button.lrn_btn.try-again.after-complete:before {
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__title .lds-floating-modal-icon {
     position: absolute;
-    top: -5px;
-    left: -4px;
-    width: 32px;
-    height: 32px;
+    top: -4px;
+    left: 0;
+    width: 28px;
+    height: 28px;
     color: dimgray;
 }
 
@@ -3819,55 +3822,113 @@ button.lrn_btn.try-again.after-complete:before {
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls .lds-floating-modal-c-button {
     background-color: transparent;
+    border: 2px solid transparent;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls .lds-floating-modal-c-button:focus {
-    -webkit-box-shadow: inset 0 0 0 1px #f7f7f7, inset 0 0 0 2px #1877b1;
-    box-shadow: inset 0 0 0 1px #f7f7f7, inset 0 0 0 2px #1877b1;
     background-color: transparent;
-    border-color: transparent;
+    border: 2px solid #333333;
+    border-radius: 4px;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls .lds-floating-modal-c-button:hover {
-    background-color: #d9d9d9;
+    background-color: #eaeaea;
     border-color: transparent;
+    border-radius: 2px;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls .lds-floating-modal-c-button:hover:focus {
-    -webkit-box-shadow: inset 0 0 0 1px #d9d9d9, inset 0 0 0 2px #1877b1;
-    box-shadow: inset 0 0 0 1px #d9d9d9, inset 0 0 0 2px #1877b1;
+    background-color: #eaeaea;
+    border: 2px solid #333333;
+    border-radius: 4px;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls .lds-floating-modal-c-button:active {
     background-color: #d9d9d9;
-    border-color: dimgray;
+    border: 2px solid transparent;
+    border-radius: 2px;
 }
 
-.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls .lds-floating-modal-c-button:active:focus {
-    -webkit-box-shadow: inset 0 0 0 1px #d9d9d9, inset 0 0 0 2px #1877b1;
-    box-shadow: inset 0 0 0 1px #d9d9d9, inset 0 0 0 2px #1877b1;
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls .lds-floating-modal-c-button.lds-floating-modal-c-button--drag-move-active:focus {
+    color: #ffffff;
+    background-color: #333333;
+    outline-offset: -4px;
+    border: 2px solid #333333;
+    border-radius: 4px;
+    outline: 2px solid #ffffff;
+}
+
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls:last-child {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    text-align: right;
+}
+
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__controls:has(>.lds-floating-modal-c-button--drag-move) {
+    margin: 0 auto;
+}
+
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--drag-move {
+    margin: 0 auto;
+    cursor: move;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--resize {
-    width: 20px;
-    height: 20px;
+    background: #f7f7f7;
+    border-radius: 2px;
+    border: none;
+    width: 38px;
+    height: 38px;
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 0 3px 3px 0;
+    padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRvYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0dHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0+DTwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2UlMjAxIiB2aWV3Qm94PSIwIDAgNiA2IiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZmZmZmZmMDAiIHZlcnNpb249IjEuMSINCXhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiDQl4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjZweCIgaGVpZ2h0PSI2cHgiDT4NCTxnIG9wYWNpdHk9IjAuMzAyIj4NCQk8cGF0aCBkPSJNIDYgNiBMIDAgNiBMIDAgNC4yIEwgNCA0LjIgTCA0LjIgNC4yIEwgNC4yIDAgTCA2IDAgTCA2IDYgTCA2IDYgWiIgZmlsbD0iIzAwMDAwMCIvPg0JPC9nPg08L3N2Zz4=") bottom right no-repeat;
+    margin-right: 1px;
+    margin-bottom: 1px;
     background-origin: content-box;
     cursor: nwse-resize;
 }
 
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--resize.lds-floating-modal-resize-button-active:focus {
+    color: #ffffff;
+    background-color: #333333;
+    outline-offset: -4px;
+    border: 2px solid #333333;
+    border-radius: 4px;
+    outline: 2px solid #ffffff;
+}
+
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--resize.lds-floating-modal-resize-button-active:hover {
+    background-color: #333333;
+}
+
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--resize.lds-floating-modal-resize-button-active:hover:focus {
+    background-color: #333333;
+    color: #ffffff;
+}
+
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--resize:hover {
-    background-color: transparent;
+    background-color: #eaeaea;
+    border-color: transparent;
+}
+
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--resize:hover:focus {
+    background-color: #eaeaea;
+    border: 2px solid #333333;
+    border-radius: 4px;
+}
+
+.lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--resize:active {
+    background-color: #d9d9d9;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-button--resize:focus {
-    outline: 1px solid #1877b1;
+    border: 2px solid #333333;
+    border-radius: 4px;
+    outline: none;
 }
 
 .lrn.lrn-assess .lds-floating-modal-c-modal--basic .lds-floating-modal-c-modal__content {
@@ -3991,7 +4052,6 @@ button.lrn_btn.try-again.after-complete:before {
 
 .lrn.lrn-assess .lds-floating-modal .lds-floating-modal-c-skip-to-link:focus {
     background-color: #ffffff;
-    position: static;
     width: auto;
     height: auto;
     margin: 0;
@@ -4033,9 +4093,17 @@ button.lrn_btn.try-again.after-complete:before {
     box-shadow: inset 0 0 0 1px #d9d9d9, inset 0 0 0 2px #1877b1;
 }
 
-.lrn.lrn-assess .lds-floating-modal-c-modal--basic-with-transitions {
-    -webkit-transition: all .3s;
-    transition: all .3s;
+.lds-floating-modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+}
+
+.lds-floating-modal-background-hidden {
+    display: none;
 }
 
 body .lrn-assess-spinner {
@@ -4160,13 +4228,6 @@ body .lrn-assess-spinner {
 .lrn.lrn-assess .lrn-region .bottom-wrapper .pos-right {
     margin-right: 0;
     margin-left: 5px;
-}
-
-.lrn.lrn-assess .lrn-region .bottom-wrapper .pos-middle {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
 }
 
 .lrn.lrn-assess .lrn-region .top-right-wrapper>.lrn_btn,
@@ -4798,8 +4859,6 @@ body .lrn-assess-spinner {
 
 .lrn.lrn-assess .lrn-bottom-right-region.lrn-align-top {
     margin-top: 10px;
-    position: absolute;
-    top: 410px;
     right: 0;
     min-width: 0 !important;
     max-width: 288px;
@@ -4820,6 +4879,13 @@ body .lrn-assess-spinner {
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+}
+
+.lrn.lrn-assess .lrn-bottom-region .pos-middle {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .lrn.lrn-assess .lrn-bottom-region .lrn_btn .btn-label {
