@@ -22,9 +22,9 @@ Within each branch contains an individual file per Learnosity API product. Only 
 
 With individual LTS branches, it is possible to see the code diff between any two LTS versions here on GitHub. For example, if you are currently using `v2021.3.LTS` and are upgrading to `v2022.2.LTS` you will be able to use the following link to check for all styling differences:
 
-[https://github.com/Learnosity/learnosity-apis-css/compare/lts/v2022.1.LTS..lts/v2022.2.LTS?w=1](https://github.com/Learnosity/learnosity-apis-css/compare/lts/v2022.1.LTS..lts/v2022.2.LTS?w=1)
+[https://github.com/Learnosity/learnosity-apis-css/compare/lts/v2021.3.LTS..lts/v2022.2.LTS?w=1](https://github.com/Learnosity/learnosity-apis-css/compare/lts/v2021.3.LTS..lts/v2022.2.LTS?w=1)
 * The base URL tells GitHub to compare branches - https://github.com/Learnosity/learnosity-apis-css/compare/
-* The two versions listed tell GitHub to compare from v2022.1.LTS to v2022.2.LTS - `lts/v2022.1.LTS..lts/v2022.2.LTS`
+* The two versions listed tell GitHub to compare from v2021.3.LTS to v2022.2.LTS - `lts/v2021.3.LTS..lts/v2022.2.LTS`
 * The `w=1` parameter will ignore whitespaces
 
 The resulting page will list all CSS differences between the two specified LTS versions. From here, you will be able to see changes where we may have added styles for new features or modified older styles to improve the product accessibility. For a general summary of LTS to LTS styling changes, [check our migration guides on the Learnosity Help site](https://help.learnosity.com/hc/en-us/sections/360000194338-Long-Term-Support-Announcements).
