@@ -2585,7 +2585,7 @@ body .lrn-assess-spinner {
     display: inline;
 }
 
-.lrn.lrn-assess.lrn-xs .lrn_btn .btn-label {
+.lrn.lrn-assess.lrn-xs .lrn_btn:not(.custom_btn) .btn-label {
     display: none;
 }
 
@@ -3028,13 +3028,13 @@ body .lrn-assess-spinner {
 
 @media all and (min-width: 1025px) and (max-width: 1440px) {
     .lrn-assess.lrn-fullscreen .dialogs {
-        margin-top: -40px;
+        margin-top: -20px;
     }
 }
 
 @media all and (min-width: 1441px) {
     .lrn-assess.lrn-fullscreen .dialogs {
-        margin-top: -40px;
+        margin-top: -20px;
     }
 }
 
