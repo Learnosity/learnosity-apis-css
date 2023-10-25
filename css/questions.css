@@ -21263,11 +21263,13 @@ img.lrn-loading-image-hidden {
     color: #4d4d4d;
 }
 
-.lrn_widget .lrn_word_count {
+.lrn_widget .lrn_word_count,
+.lrn_widget .lrn_character_count {
     margin-right: 2px;
 }
 
-.lrn_widget .lrn_wordcount_warning_label {
+.lrn_widget .lrn_wordcount_warning_label,
+.lrn_widget .lrn_charactercount_warning_label {
     color: red;
 }
 
