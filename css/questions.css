@@ -635,6 +635,7 @@
 
 .lrn_widget .MathJax {
     font-size: 120%;
+    padding: 8px 0;
 }
 
 .lrn_widget .MathJax:focus {
@@ -3552,8 +3553,6 @@ fieldset:disabled .lrn .lrn_btn.lrn_validate:is(.lds-btn),
 
 .lrn_widget .lrn_response_input_wrapper,
 .lrn_widget .lrn_response_container,
-.lrn_widget.lrn_mcq .lrn_mcqgroup,
-.lrn_widget .lrn-response-validate-wrapper,
 .lrn_widget.lrn_choicematrix .lrn_response_input {
     margin-top: -0.35714286em;
     border-collapse: separate;
@@ -3563,10 +3562,6 @@ fieldset:disabled .lrn .lrn_btn.lrn_validate:is(.lds-btn),
 .lrn_widget .lrn_response_input_wrapper.lrn_incorrect,
 .lrn_widget .lrn_response_container.lrn_correct,
 .lrn_widget .lrn_response_container.lrn_incorrect,
-.lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct,
-.lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect,
-.lrn_widget .lrn-response-validate-wrapper.lrn_correct,
-.lrn_widget .lrn-response-validate-wrapper.lrn_incorrect,
 .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct,
 .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect {
     margin-top: -0.6428571486em;
@@ -3576,10 +3571,6 @@ fieldset:disabled .lrn .lrn_btn.lrn_validate:is(.lds-btn),
 .lrn_widget .lrn_response_input_wrapper.lrn_incorrect:after,
 .lrn_widget .lrn_response_container.lrn_correct:after,
 .lrn_widget .lrn_response_container.lrn_incorrect:after,
-.lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct:after,
-.lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect:after,
-.lrn_widget .lrn-response-validate-wrapper.lrn_correct:after,
-.lrn_widget .lrn-response-validate-wrapper.lrn_incorrect:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect:after {
     top: -0.92857143em;
@@ -5917,6 +5908,7 @@ fieldset:disabled .lrn .lrn_btn.lrn_validate:is(.lds-btn),
     padding-bottom: .7em;
     padding-left: 1em;
     clear: both;
+    overflow-x: auto;
 }
 
 .lrn_widget .lrn_correctAnswers>span {
@@ -10388,6 +10380,7 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_feature.lrn_scrollablepassage .lrn-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 .lrn_widget.lrn_feature.lrn_scrollablepassage .lrn-track {
@@ -10411,6 +10404,7 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_feature.lrn_scrollablepassage ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 .lrn_widget.lrn_feature.lrn_scrollablepassage ::-webkit-scrollbar-track {
@@ -16864,7 +16858,6 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn-selected polygon,
-.lrn_widget.lrn_hotspot .lrn-polygons .lrn-focused polygon,
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn_valid polygon {
     stroke-width: .2857142857em;
 }
@@ -16872,6 +16865,21 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn_correct polygon {
     fill: rgba(235, 246, 231, .6);
     stroke: #4a700a;
+}
+
+.lrn_widget.lrn_hotspot .lrn-polygons .lrn-focused polygon {
+    outline: .2142857143em solid #393939;
+    outline-offset: -0.2142857143em;
+}
+
+.lrn_widget.lrn_hotspot .lrn-polygons.lrn-polygons-support-safari .lrn-focused.lrn-selected polygon {
+    outline-offset: -0.3571428571em;
+}
+
+.lrn_widget.lrn_hotspot .lrn-polygons.lrn-polygons-support-chrome .lrn-focused.lrn-selected polygon,
+.lrn_widget.lrn_hotspot .lrn-polygons.lrn-polygons-support-edge .lrn-focused.lrn-selected polygon,
+.lrn_widget.lrn_hotspot .lrn-polygons.lrn-polygons-support-firefox .lrn-focused.lrn-selected polygon {
+    outline-offset: -0.7857142857em;
 }
 
 .lrn_widget.lrn_hotspot .lrn-polygons .lrn_incorrect polygon {
@@ -16915,11 +16923,6 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_hotspot .lrn-hotspot-wrapper.lrn_incorrect>label:before {
     content: "";
     color: #dd002f;
-}
-
-.lrn_widget.lrn_hotspot .lrn_correct a:focus,
-.lrn_widget.lrn_hotspot .lrn_incorrect a:focus {
-    outline: auto;
 }
 
 .lrn_widget.lrn_longtext .lrn_btn {
@@ -18584,6 +18587,7 @@ img.lrn-loading-image-hidden {
     margin-right: 0;
     cursor: pointer;
     border: 1px transparent solid;
+    overflow-x: auto;
 }
 
 .lrn_widget.lrn_mcq .lrn_mcqgroup .lrn_contentWrapper li {
