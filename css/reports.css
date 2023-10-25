@@ -5465,6 +5465,36 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     border-left: 1px solid #cccccc !important;
 }
 
+.learnosity-report .lrn-circle-icon-correct {
+    background-image: url("../../img/correct.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.learnosity-report .lrn-circle-icon-incorrect {
+    background-image: url("../../img/incorrect.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.learnosity-report .lrn-circle-icon-partial {
+    background-image: url("../../img/partially-correct.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.learnosity-report .lrn-circle-icon-not-attempted {
+    background-image: url("../../img/unattempted.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.learnosity-report .lrn-circle-icon-not-marked {
+    background-image: url("../../img/not-marked.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .learnosity-report .lrn-circle-correct,
 .learnosity-report .lrn-circle-completed {
     background-color: #4f7d0a;

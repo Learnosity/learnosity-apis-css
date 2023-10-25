@@ -4429,6 +4429,7 @@ textarea.lds-form-control.lds-is-invalid,
 }
 
 .lrn.lrn-author .lrn-item-for-activity-list .lrn-list-view-item .lrn-btn-default.lrn-close-preview {
+    color: #000000;
     font-size: 12px;
 }
 
@@ -15341,7 +15342,8 @@ textarea.lds-form-control.lds-is-invalid,
     color: #1877b1;
 }
 
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-hide [data-lrn-qe-template-reference=ec8f2f4e-c048-4347-906a-32b0c44c0515] {
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-hide [data-lrn-qe-template-reference=ec8f2f4e-c048-4347-906a-32b0c44c0515],
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-mathgen-hide [data-lrn-qe-template-reference="17149c09-83ba-4b1b-afff-a681e7edd8ff"] {
     display: none;
 }
 

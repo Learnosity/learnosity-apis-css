@@ -635,6 +635,7 @@
 
 .lrn_widget .MathJax {
     font-size: 120%;
+    padding: 8px 0;
 }
 
 .lrn_widget .MathJax:focus {
@@ -1125,6 +1126,71 @@
 
 .lrn .modal .close span {
     font-family: "Times New Roman";
+}
+
+.lrn .spinner-grow,
+.lrn .spinner-border {
+    display: inline-block;
+    width: var(--bs-spinner-width);
+    height: var(--bs-spinner-height);
+    vertical-align: var(--bs-spinner-vertical-align);
+    border-radius: 50%;
+    animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
+}
+
+@keyframes spinner-border {
+    to {
+        transform: rotate(360deg);     }
+}
+
+.lrn .spinner-border {
+    --bs-spinner-width: 2rem;
+    --bs-spinner-height: 2rem;
+    --bs-spinner-vertical-align: -0.125em;
+    --bs-spinner-border-width: .25em;
+    --bs-spinner-animation-speed: .75s;
+    --bs-spinner-animation-name: spinner-border;
+    border: var(--bs-spinner-border-width) solid currentcolor;
+    border-right-color: transparent;
+}
+
+.lrn .spinner-border-sm {
+    --bs-spinner-width: 1rem;
+    --bs-spinner-height: 1rem;
+    --bs-spinner-border-width: .2em;
+}
+
+@keyframes spinner-grow {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.lrn .spinner-grow {
+    --bs-spinner-width: 2rem;
+    --bs-spinner-height: 2rem;
+    --bs-spinner-vertical-align: -0.125em;
+    --bs-spinner-animation-speed: .75s;
+    --bs-spinner-animation-name: spinner-grow;
+    background-color: currentcolor;
+    opacity: 0;
+}
+
+.lrn .spinner-grow-sm {
+    --bs-spinner-width: 1rem;
+    --bs-spinner-height: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lrn .spinner-border,
+    .lrn .spinner-grow {
+        --bs-spinner-animation-speed: 1.5s;
+    }
 }
 
 .lrn_incorrectBubble {
@@ -2644,6 +2710,15 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
     margin-right: .4375em;
 }
 
+.lrn .lrn_btn.lrn_validate:is(.lds-btn,.lrn .lrn_btn:is(.lds-btn)) .lrn-spinner-validation-async-scoring {
+    display: none;
+}
+
+.lrn .lrn_btn.lrn_validate:is(.lds-btn,.lrn .lrn_btn:is(.lds-btn)) .lrn-spinner-validation-async-scoring.lrn-spinner-show {
+    display: inline-block;
+    margin-right: 8px;
+}
+
 .lrn_toolbar {
     background-color: #eaeaea;
     width: 100%;
@@ -3592,8 +3667,6 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 
 .lrn_widget .lrn_response_input_wrapper,
 .lrn_widget .lrn_response_container,
-.lrn_widget.lrn_mcq .lrn_mcqgroup,
-.lrn_widget .lrn-response-validate-wrapper,
 .lrn_widget.lrn_choicematrix .lrn_response_input {
     margin-top: -0.35714286em;
     border-collapse: separate;
@@ -3603,10 +3676,6 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget .lrn_response_input_wrapper.lrn_incorrect,
 .lrn_widget .lrn_response_container.lrn_correct,
 .lrn_widget .lrn_response_container.lrn_incorrect,
-.lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct,
-.lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect,
-.lrn_widget .lrn-response-validate-wrapper.lrn_correct,
-.lrn_widget .lrn-response-validate-wrapper.lrn_incorrect,
 .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct,
 .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect {
     margin-top: -0.6428571486em;
@@ -3616,10 +3685,6 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget .lrn_response_input_wrapper.lrn_incorrect:after,
 .lrn_widget .lrn_response_container.lrn_correct:after,
 .lrn_widget .lrn_response_container.lrn_incorrect:after,
-.lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct:after,
-.lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect:after,
-.lrn_widget .lrn-response-validate-wrapper.lrn_correct:after,
-.lrn_widget .lrn-response-validate-wrapper.lrn_incorrect:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect:after {
     top: -0.92857143em;
@@ -3655,7 +3720,7 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 }
 
 .lrn_widget .lrn_textinput.lrn_incorrect:after {
-    content: "";
+    content: "��";
     color: #dd002f;
 }
 
@@ -3805,7 +3870,10 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_responseIndex,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_responseIndex,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_responseIndex,
-.lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_responseIndex {
+.lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_responseIndex,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_responseIndex,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_responseIndex,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_responseIndex {
     top: 0;
     left: 0;
     padding: 0 .8em;
@@ -3828,7 +3896,10 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_cloze_response,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_cloze_response,
-.lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response {
+.lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_incorrect .lrn_cloze_response,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_correct .lrn_cloze_response,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response {
     border-left: none;
     padding-top: 0;
     padding-right: 20px;
@@ -3841,7 +3912,8 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_imageclozetext .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
 .lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
-.lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response {
+.lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted .lrn_cloze_response {
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -3851,7 +3923,8 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_imageclozetext .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after,
 .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after,
 .lrn_widget.lrn_clozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after,
-.lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after {
+.lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_textinput.lrn_not_attempted.lrn_response_pointer.lrn_response_pointer_left:after {
     content: none;
 }
 
@@ -3860,7 +3933,9 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn_incorrect,
 .lrn_widget.lrn_clozeformulaV2 .lrn_textinput.lrn_correct,
 .lrn_widget.lrn_imageclozeformula .lrn_textinput.lrn_incorrect,
-.lrn_widget.lrn_imageclozeformula .lrn_textinput.lrn_correct {
+.lrn_widget.lrn_imageclozeformula .lrn_textinput.lrn_correct,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_textinput.lrn_incorrect,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_textinput.lrn_correct {
     padding-right: 2.5em;
 }
 
@@ -5799,6 +5874,7 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 }
 
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput .lrn_responseIndex,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput .lrn_responseIndex,
 .lrn_widget.lrn_imageclozechemistry .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput .lrn_responseIndex {
     height: auto;
     width: 2em;
@@ -5810,12 +5886,15 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct,
 .lrn_widget.lrn_imageclozechemistry .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_imageclozechemistry .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct {
     border: 1px solid transparent;
 }
 
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
 .lrn_widget.lrn_imageclozechemistry .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted {
     background: #ffffff;
     border: 1px #888888 solid;
@@ -5825,6 +5904,7 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 }
 
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex,
 .lrn_widget.lrn_imageclozechemistry .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex {
     top: -1px;
     bottom: -1px;
@@ -5832,6 +5912,8 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 
 .lrn_widget.lrn_imageclozeformula .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_imageclozeformula .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct,
 .lrn_widget.lrn_imageclozechemistry .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_imageclozechemistry .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct {
     border-left-width: .21428571em;
@@ -5840,12 +5922,14 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 }
 
 .lrn_widget.lrn_imageclozeformula .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_imageclozechemistry .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_incorrect {
     border-left-color: #dd002f;
     background: #fbe3e3;
 }
 
 .lrn_widget.lrn_imageclozeformula .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct,
 .lrn_widget.lrn_imageclozechemistry .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_correct {
     border-left-color: #4a700a;
     background: #f0f8ed;
@@ -5982,6 +6066,7 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
     padding-bottom: .7em;
     padding-left: 1em;
     clear: both;
+    overflow-x: auto;
 }
 
 .lrn_widget .lrn_correctAnswers>span {
@@ -10555,6 +10640,7 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_feature.lrn_scrollablepassage .lrn-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 .lrn_widget.lrn_feature.lrn_scrollablepassage .lrn-track {
@@ -10578,6 +10664,7 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_feature.lrn_scrollablepassage ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 .lrn_widget.lrn_feature.lrn_scrollablepassage ::-webkit-scrollbar-track {
@@ -12336,6 +12423,7 @@ img.lrn-loading-image-hidden {
 .lrn_imageclozetext,
 .lrn_imageclozedropdown,
 .lrn_imageclozeformula,
+.lrn_imageclozeformulaV2,
 .lrn_imageclozechemistry {
     width: 100%;
     display: inline-block;
@@ -12346,6 +12434,7 @@ img.lrn-loading-image-hidden {
 .lrn_imageclozetext .lrn_response_input_wrapper,
 .lrn_imageclozedropdown .lrn_response_input_wrapper,
 .lrn_imageclozeformula .lrn_response_input_wrapper,
+.lrn_imageclozeformulaV2 .lrn_response_input_wrapper,
 .lrn_imageclozechemistry .lrn_response_input_wrapper {
     border: none;
 }
@@ -12355,6 +12444,7 @@ img.lrn-loading-image-hidden {
 .lrn_imageclozetext .lrn_response_input_wrapper .lrn_response_innerbody,
 .lrn_imageclozedropdown .lrn_response_input_wrapper .lrn_response_innerbody,
 .lrn_imageclozeformula .lrn_response_input_wrapper .lrn_response_innerbody,
+.lrn_imageclozeformulaV2 .lrn_response_input_wrapper .lrn_response_innerbody,
 .lrn_imageclozechemistry .lrn_response_input_wrapper .lrn_response_innerbody {
     border: 1px solid #eaeaea;
 }
@@ -12740,6 +12830,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_qr .lrn-clozeformula-input.lrn_correct,
 .lrn_widget.lrn_qr .lrn-clozeformula-input.lrn_incorrect,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted,
 .lrn_widget.lrn_imageclozechemistry .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted {
     padding-right: 1.7142857143em;
 }
@@ -12747,6 +12838,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_qr .lrn-clozeformula-input.lrn_correct .lrn_math_editable .mq-root-block,
 .lrn_widget.lrn_qr .lrn-clozeformula-input.lrn_incorrect .lrn_math_editable .mq-root-block,
 .lrn_widget.lrn_imageclozeformula .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_math_editable .mq-root-block,
+.lrn_widget.lrn_imageclozeformulaV2 .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_math_editable .mq-root-block,
 .lrn_widget.lrn_imageclozechemistry .lrn_display_correct_answer_enabled .lrn_imagecloze_container .lrn_imagecloze_response .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_math_editable .mq-root-block {
     white-space: pre;
 }
@@ -16064,8 +16156,6 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget .lrn_response.lrn_cloze .lrn_response_input .lrn_imagecloze_container .lrn_imagecloze_image {
     max-width: 100%;
-    height: auto;
-    width: auto;
     user-select: none;
 }
 
@@ -17396,11 +17486,6 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_hotspot .lrn-hotspot-wrapper.lrn_incorrect>label:before {
     content: "";
     color: #dd002f;
-}
-
-.lrn_widget.lrn_hotspot .lrn_correct a:focus,
-.lrn_widget.lrn_hotspot .lrn_incorrect a:focus {
-    outline: auto;
 }
 
 .lrn_widget.lrn_longtext .lrn_btn {
@@ -19065,6 +19150,7 @@ img.lrn-loading-image-hidden {
     margin-right: 0;
     cursor: pointer;
     border: 1px transparent solid;
+    overflow-x: auto;
 }
 
 .lrn_widget.lrn_mcq .lrn_mcqgroup .lrn_contentWrapper li {
@@ -22779,6 +22865,8 @@ img.lrn-loading-image-hidden {
 
 .lrn.lrn_widget.lrn_qr.lrn_imageclozeformula .lrn_response_wrapper .lrn-clozeformula-input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_imageclozeformula .lrn_response_wrapper .lrn_response_input.lrn_not_attempted .mq-math-mode .mq-empty,
+.lrn.lrn_widget.lrn_qr.lrn_imageclozeformulaV2 .lrn_response_wrapper .lrn-clozeformula-input.lrn_not_attempted .mq-math-mode .mq-empty,
+.lrn.lrn_widget.lrn_qr.lrn_imageclozeformulaV2 .lrn_response_wrapper .lrn_response_input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper .lrn-clozeformula-input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper .lrn_response_input.lrn_not_attempted .mq-math-mode .mq-empty,
 .lrn.lrn_widget.lrn_qr.lrn_clozeformulaV2 .lrn_response_wrapper .lrn-clozeformula-input.lrn_not_attempted .mq-math-mode .mq-empty,

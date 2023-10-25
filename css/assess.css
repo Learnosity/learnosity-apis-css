@@ -1244,7 +1244,6 @@ body .lrn-assess-spinner {
     left: 50%;
     min-width: 150px;
     margin-left: -75px;
-    margin-top: 11px;
 }
 
 .lrn-assess .lrn-start-page {
@@ -2366,6 +2365,10 @@ body .lrn-assess-spinner {
 .lrn-assess .learnosity-item .lrn-assess-content.content .lrn_widget .lrn_button {
     -webkit-transition: none;
     transition: none;
+}
+
+.lrn-assess .learnosity-item .lrn-assess-content.content:focus {
+    outline: none;
 }
 
 .lrn-assess .learnosity-item .tab-content>.active {
@@ -4104,6 +4107,37 @@ button.lrn_btn.try-again.after-complete:before {
 
 .lds-floating-modal-background-hidden {
     display: none;
+}
+
+.lrn-assess .lrn-start-time-wrapper {
+    text-align: center;
+    padding: 1em;
+    margin: .5em 0;
+}
+
+.lrn-assess .lrn-start-time-wrapper.unavailable {
+    background-color: #f7f7f7;
+}
+
+.lrn-assess .lrn-start-time-wrapper.unavailable+.lrn-start-test-wrapper {
+    display: none;
+}
+
+.lrn-assess .lrn-start-time-wrapper .lrn-start-time-ticks {
+    margin-top: 1em;
+}
+
+.lrn-assess .lrn-start-time-unavailable {
+    padding-top: .5em;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.lrn-assess .lrn-start-test-wrapper {
+    position: relative;
+    margin: 1em 0;
+    min-height: 1em;
 }
 
 body .lrn-assess-spinner {
