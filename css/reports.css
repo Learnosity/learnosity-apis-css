@@ -5385,7 +5385,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     width: 10px;
     height: 10px;
     margin-right: 1px;
-    background-color: #dddddd;
+    background-color: #d9d9d9;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
@@ -5467,7 +5467,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report .lrn-circle-correct,
 .learnosity-report .lrn-circle-completed {
-    background-color: #62ae41;
+    background-color: #4f7d0a;
     color: #ffffff;
 }
 
@@ -5478,7 +5478,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report .lrn-circle-incorrect,
 .learnosity-report .lrn-circle-discarded {
-    background-color: #da1919;
+    background-color: #dd002f;
     color: #ffffff;
 }
 
@@ -5489,28 +5489,27 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report .lrn-circle-partial,
 .learnosity-report .lrn-circle-in_progress {
-    background-color: #f39c12;
-    color: #ffffff;
+    background-color: #ffa551;
+    color: #333333;
 }
 
 .learnosity-report .lrn-circle-partial span,
 .learnosity-report .lrn-circle-in_progress span {
-    color: #ffffff;
+    color: #333333;
 }
 
 .learnosity-report .lrn-circle-not-attempted,
 .learnosity-report .lrn-circle-not_started {
-    background-color: #dddddd;
-    color: #aaaaaa;
+    background-color: #d9d9d9;
 }
 
 .learnosity-report .lrn-circle-not-attempted span,
 .learnosity-report .lrn-circle-not_started span {
-    color: #aaaaaa;
+    color: inherit;
 }
 
 .learnosity-report .lrn-circle-not-marked {
-    background-color: #aaaaaa;
+    background-color: #ababab;
 }
 
 .learnosity-report .lrn-circle-saved,
@@ -5575,12 +5574,12 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report.live-activitystatus-by-user .lrn-report-table .icon-focused::before {
-    color: #62ae41;
+    color: #4f7d0a;
     content: "\f00c";
 }
 
 .learnosity-report.live-activitystatus-by-user .lrn-report-table .icon-unfocused::before {
-    color: #da1919;
+    color: #dd002f;
     content: "\f00d";
 }
 
@@ -6027,7 +6026,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .learnosity-report .lrn-report-list .lrn-local-date {
     font-weight: normal;
     font-size: 12px;
-    color: #aaaaaa;
+    color: #ababab;
 }
 
 .learnosity-report .lrn-report-list .lrn-progress {
@@ -6064,7 +6063,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .lrn-teststatus {
-    color: #aaaaaa;
+    color: #ababab;
     margin: 0 1em;
 }
 
@@ -6073,7 +6072,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .lrn-teststatus.lrn-teststatus-in_progress {
-    color: #f39c12;
+    color: #ffa551;
 }
 
 .learnosity-report .lrn-teststatus.lrn-teststatus-in_progress:before {
