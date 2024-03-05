@@ -3004,7 +3004,7 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 }
 
 .lrn_widget .lrn_canvas_drawing .lrn_line_colour_palette_trigger:after {
-    content: "��";
+    content: "";
     transform: rotate(90deg);
     position: absolute;
     top: .8em;
@@ -12254,6 +12254,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_classification .lrn_possibilityList.lrn_list_top,
 .lrn_widget.lrn_classification .lrn_possibilityList.lrn_list_bottom {
     min-height: 5.5em;
+    overflow-x: auto;
 }
 
 .lrn_widget.lrn_classification .lrn_possibilityList .lrn_draggable {
@@ -12338,6 +12339,7 @@ img.lrn-loading-image-hidden {
     padding: .25em;
     line-height: 1.4em;
     vertical-align: top;
+    overflow-x: auto;
 }
 
 .lrn_widget.lrn_classification .lrn_response .lrn_response_input_wrapper.lrn_incorrect table.lrn_response_input td,
@@ -12349,6 +12351,10 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_classification .lrn_response .lrn_hide_shadow {
     display: none;
+}
+
+.lrn_widget.lrn_classification .lrn_classification_table {
+    table-layout: fixed;
 }
 
 .lrn_widget.lrn_classification.lrn_ie8 .lrn_response .lrn_response_input_wrapper table .lrn_response_container.lrn_dragdrop {
@@ -12465,6 +12471,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList.lrn_list_top,
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_possibilityList.lrn_list_bottom {
     min-height: 5.5em;
+    overflow-x: auto;
 }
 
 .lrn_widget.lrn_clozeassociation .lrn_possibilityList .lrn_draggable,
@@ -12493,6 +12500,7 @@ img.lrn-loading-image-hidden {
     padding-right: 1.2em;
     padding-bottom: 0;
     padding-left: 1.2em;
+    overflow-x: auto;
 }
 
 .lrn_widget.lrn_clozeassociation .lrn_response_input .lrn_response_container,
@@ -12600,12 +12608,6 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_imagecloze_container .lrn_cloze_response {
     position: absolute;
     z-index: 3;
-}
-
-.lrn_widget.lrn_clozeassociation .lrn_btn_drag,
-.lrn_widget.lrn_imageclozeassociation .lrn_btn_drag,
-.lrn_widget.lrn_imageclozeassociationV2 .lrn_btn_drag {
-    max-width: 374px;
 }
 
 .lrn_widget.lrn_clozeassociation.lrn_ie8 .lrn_response_input .lrn_response_container.lrn_dragdrop .lrn_btn_drag,
@@ -16505,7 +16507,8 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response .lrn_dropzone_mask.lrn_focus {
-    outline: 5px auto #52a8ec;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #1877b1, 0 0 0 6px #ffffff;
+    border-radius: 4px;
 }
 
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response.lrn_correct_marker .lrn_dropzone_wrapper .lrn_dropzone_mask {
