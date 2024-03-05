@@ -2293,21 +2293,6 @@ body .lrn-assess-spinner {
     top: 0;
 }
 
-.lrn-assess.test-ready .lrn-items-region .col-xs-11,
-.lrn-assess.test-ready .lrn-items-region .col-xs-10,
-.lrn-assess.test-ready .lrn-items-region .col-xs-9,
-.lrn-assess.test-ready .lrn-items-region .col-xs-8,
-.lrn-assess.test-ready .lrn-items-region .col-xs-7,
-.lrn-assess.test-ready .lrn-items-region .col-xs-6,
-.lrn-assess.test-ready .lrn-items-region .col-xs-5,
-.lrn-assess.test-ready .lrn-items-region .col-xs-4,
-.lrn-assess.test-ready .lrn-items-region .col-xs-3,
-.lrn-assess.test-ready .lrn-items-region .col-xs-2,
-.lrn-assess.test-ready .lrn-items-region .col-xs-1,
-.lrn-assess.test-ready .lrn-items-region .col-xs-12 {
-    float: none;
-}
-
 .lrn-assess.test-ready .items {
     height: 0;
 }
