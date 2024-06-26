@@ -19864,7 +19864,7 @@ img.lrn-loading-image-hidden {
     outline-offset: -5px;
 }
 
-.lrn_widget.lrn_numberlineplot .lrn_jxg_toolbox li button[data-type=cross] span {
+.lrn_widget.lrn_numberlineplot .lrn_jxg_toolbox li button[data-type=cross] .lrn-toolbox-icon {
     font-size: .5em;
     vertical-align: middle;
     font-weight: bold;
@@ -19930,7 +19930,8 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_numberlineplot ellipse:focus,
-.lrn_widget.lrn_numberlineplot line:focus {
+.lrn_widget.lrn_numberlineplot line:focus,
+.lrn_widget.lrn_numberlineplot path:focus {
     outline: none;
 }
 

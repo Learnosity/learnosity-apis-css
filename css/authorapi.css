@@ -15941,6 +15941,10 @@
     right: 1.0714285714em;
 }
 
+.lrn.lrn-author .lrn-author-tab-pane {
+    padding-inline-end: var(--lds-space--2-and-a-half-x);
+}
+
 .lrn.lrn-author .lrn-spinner {
     position: absolute;
     top: 50%;
@@ -16878,7 +16882,6 @@
 .lrn.lrn-author .lrn-author-intro-outro-toolbar {
     display: flex;
     align-items: center;
-    margin-right: 20px;
     margin-left: -1px;
 }
 
@@ -22574,14 +22577,6 @@
     cursor: pointer;
 }
 
-.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=adaptive] .lrn-item-for-activity-list,
-.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-item-for-activity-list,
-.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-item-for-activity-list,
-.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-item-for-activity-list,
-.lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-item-for-activity-list {
-    margin-right: 20px;
-}
-
 .lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=adaptive] .lrn-item-for-activity-list .lrn-check-box-wrapper,
 .lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-item-for-activity-list .lrn-check-box-wrapper,
 .lrn .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-item-for-activity-list .lrn-check-box-wrapper,
@@ -25185,7 +25180,6 @@
 .lrn.lrn-author .lrn-author-activity-summary-main-container {
     display: flex;
     flex-direction: row;
-    margin-right: 1.4285714286em;
 }
 
 .lrn.lrn-author .lrn-author-activity-summary-container {
@@ -25202,6 +25196,10 @@
 
 .lrn-sm:not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-activity-summary-container {
     grid-template-columns: 50% 50%;
+}
+
+.lrn.lrn-author .lrn-author-remove-groups-btn {
+    height: 2.7142857143em;
 }
 
 .lrn.lrn-author .lrn-author-activity-summary {
@@ -25348,8 +25346,14 @@
     width: calc(100% - var(--icon-wrapper-size) - var(--gap));
 }
 
-.lrn.lrn-author .lrn-author-random-activity-edit {
-    margin-inline-end: 1.4285714286em;
+.lrn.lrn-author .lrn-author-activity-summary-with-icon:nth-child(2):last-child .lrn-author-activity-summary-icon-wrapper {
+    align-self: flex-end;
+}
+
+.lrn.lrn-author .lrn-author-activity-summary-with-icon:nth-child(2):last-child .lrn-author-activity-summary-title,
+.lrn.lrn-author .lrn-author-activity-summary-with-icon:nth-child(2):last-child .lrn-author-activity-summary-text {
+    max-width: max-content;
+    align-self: flex-start;
 }
 
 .lrn.lrn-author .lrn-author-random-activity-edit-loading-wrapper {
@@ -25391,10 +25395,6 @@
     font-size: 1em;
 }
 
-.lrn.lrn-author .lrn-author-random-activity-edit-dropdown-button {
-    font-size: 1em;
-}
-
 .lrn.lrn-author .lrn-author-random-activity-edit-item-group-row {
     margin-bottom: var(--lds-space--1-and-a-half-x);
 }
@@ -25431,8 +25431,8 @@
     width: 100%;
 }
 
-.lrn-sm:not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-accordion-header-content {
-    --gap: var(--lds-space--2-x);
+.lrn-res:not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-accordion-header-content {
+    --gap: var(--lds-space--1-x);
 }
 
 .lrn.lrn-author .lrn-author-item-group-accordion .lrn-author-message-info {
@@ -25448,7 +25448,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: calc(var(--lds-space--1-and-a-half-x) * .875);
+    gap: calc(var(--lds-space--half-x) * .875);
     flex-shrink: 0;
     margin-inline-start: auto;
     text-align: end;
@@ -25457,11 +25457,18 @@
 .lrn-sm:not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-type {
     flex-grow: 0;
     flex-basis: 86px;
+}
+
+.lrn-sm:not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-type-text {
     text-overflow: ellipsis;
-    gap: calc(var(--lds-space--1-x) * .875);
 }
 
 .lrn-res:not(.lrn-sm):not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-type {
+    flex-grow: 0;
+    flex-basis: fit-content;
+}
+
+.lrn-res:not(.lrn-sm):not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-type-text {
     display: none;
 }
 
@@ -25478,7 +25485,6 @@
 }
 
 .lrn.lrn-author .lrn-author-item-group-name-input-icon {
-    opacity: 0;
     position: relative;
     transform: translateX(calc(-100% - .75em));
     flex-grow: 0;
@@ -25486,11 +25492,6 @@
     pointer-events: none;
     cursor: pointer;
     transition: opacity .2s;
-}
-
-.lrn.lrn-author .lrn-author-item-group-name-input:hover+.lrn-author-item-group-name-input-icon,
-.lrn.lrn-author .lrn-author-item-group-name-input:focus+.lrn-author-item-group-name-input-icon {
-    opacity: 1;
 }
 
 .lrn.lrn-author .lrn-author-item-group-name-input-wrapper {
@@ -25509,20 +25510,20 @@
 }
 
 .lrn-res:not(.lrn-sm):not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-items-fraction {
-    display: none;
-}
-
-.lrn-sm:not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-items-fraction {
     flex-basis: 55px;
 }
 
-.lrn-sm:not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-items-fraction-rest-text {
+.lrn-res:not(.lrn-sm):not(.lrn-md):not(.lrn-large).lrn.lrn-author .lrn-author-item-group-items-fraction-rest-text {
     display: none;
 }
 
 .lrn.lrn-author .lrn-author-item-group-config-bar {
     display: flex;
+    flex-wrap: wrap;
+    gap: var(--lds-space--2-and-a-half-x) var(--lds-space--8-x);
     align-items: baseline;
+    padding-inline-start: var(--lds-space--2-and-a-half-x);
+    margin-bottom: var(--lds-space--3-x);
 }
 
 .lrn.lrn-author .lrn-author-item-group-config-bar .lrn-author-message-info {
@@ -25534,23 +25535,21 @@
     color: #0a4a71;
 }
 
-.lrn.lrn-author .lrn-author-item-group-shuffle-items {
-    margin-left: 4em;
-}
-
 .lrn.lrn-author .lrn-author-item-group-deliver-items {
     align-items: baseline;
     display: flex;
     flex-grow: 1;
-    margin-left: 2.2857142857em;
-}
-
-.lrn.lrn-author .lrn-author-item-group-deliver-items .lds-form-label {
-    margin-right: .5714285714em;
+    flex-wrap: wrap;
+    column-gap: .5714285714em;
 }
 
 .lrn.lrn-author .lrn-author-item-group-deliver-items-input {
     flex-grow: 1;
+}
+
+.lrn.lrn-author .was-validated .lrn-author-item-group-name-input:invalid+.lrn-author-item-group-name-input-icon,
+.lrn.lrn-author .was-validated .lrn-author-item-group-name-input.is-invalid+.lrn-author-item-group-name-input-icon {
+    opacity: 0;
 }
 
 .lrn.lrn-author .lrn-author-api-react-container {
