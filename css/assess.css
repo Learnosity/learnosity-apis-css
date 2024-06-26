@@ -2205,6 +2205,10 @@ body .lrn-assess-spinner {
     position: relative;
 }
 
+.lrn-assess .slides-container:has(.inline-item):has(.items-loading.show) {
+    overflow: hidden;
+}
+
 .lrn-assess .slides-container.scrollable .learnosity-item {
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;

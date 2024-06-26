@@ -184,6 +184,7 @@
 .lrn_widget.lrn_simpleshading .lrn-shading-wrapper.lrn_no_touch .lrn-shading-cell.lrn_incorrect:after,
 .lrn_widget.lrn_simpleshading .lrn-shading-wrapper.lrn_no_touch .lrn-shading-cell.lrn_valid:after,
 .lrn_widget.lrn_sortlist .lrn_response .lrn_btn_sort:before,
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button-new button:before,
 .lrn_widget.lrn_mcq .lrn_mcqgroup .lrn-mcq-option .lrn-label:before,
 .lrn_widget .lrn-imageupload-annotation.lrn_correct .lrn-imageupload-annotation-preview-inner:after,
 .lrn_widget .lrn-imageupload-annotation.lrn_incorrect .lrn-imageupload-annotation-preview-inner:after,
@@ -6194,6 +6195,51 @@ fieldset:disabled .lrn .lrn_btn:is(.lds-btn),
 .lrn_widget.lrn_clozechemistry .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_responseIndex {
     top: -1px;
     bottom: -1px;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-response-validate-wrapper.lrn_correct,
+.lrn_widget.lrn_multistepmath .lrn-response-validate-wrapper.lrn_incorrect {
+    padding-top: .5em;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_correct,
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_incorrect,
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_valid {
+    border: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_correct:after,
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_incorrect:after,
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_valid:after {
+    font-size: 1em;
+    color: #ffffff;
+    margin-left: 8px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    padding-left: 3px;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_incorrect:after {
+    content: "";
+    background-color: #dd002f;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_correct:after {
+    content: "";
+    background-color: #4a700a;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_textinput.lrn_valid:after {
+    font-size: 1.4285714286em;
+    content: "";
+    color: #4a700a;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 1px;
 }
 
 .lrn_widget .lrn_suggested_answer_item {
@@ -19603,6 +19649,196 @@ img.lrn-loading-image-hidden {
     background-color: #dd002f;
 }
 
+.lrn_widget.lrn_multistepmath .lrn_response_input {
+    overflow: auto;
+    margin-bottom: 0;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_response_input .lrn_math_editable {
+    font-size: 1em;
+    padding: 0;
+    transition: padding-left .2s ease-in-out;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_response_input .lrn_math_editable:before {
+    right: auto;
+    left: 0;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_response_input .lrn_math_editable.lrn-state-error,
+.lrn_widget.lrn_multistepmath .lrn_response_input .lrn_math_editable.lrn-state-awaiting-update {
+    padding-left: 1em;
+}
+
+.lrn_widget.lrn_multistepmath .lrn_response_input.lrn_response_font_boost .lrn_math_editable,
+.lrn_widget.lrn_multistepmath .lrn_response_input.lrn_response_font_boost .lrn_editor_area {
+    font-size: 1.2142857143em;
+}
+
+@media (max-width: 522px) {
+    .lrn_widget.lrn_multistepmath .lrn_response_input.lrn_response_font_boost .lrn_math_editable,
+    .lrn_widget.lrn_multistepmath .lrn_response_input.lrn_response_font_boost .lrn_editor_area {
+        width: 100%;
+    }
+}
+
+.lrn_widget.lrn_multistepmath .lrn_response:focus,
+.lrn_widget.lrn_multistepmath .lrn_response_input:focus,
+.lrn_widget.lrn_multistepmath .lrn_response_input_wrapper:focus,
+.lrn_widget.lrn_multistepmath .lrn_response_wrapper:focus {
+    outline: none;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line-container {
+    background-color: #ffffff;
+    cursor: text;
+    padding: 1em 0;
+    min-height: 9em;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line {
+    position: relative;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line.selected {
+    z-index: 1;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line.selected .lrn-multistepmath-button {
+    display: inline-block;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line.selected .lrn-multistepmath-button.hidden {
+    display: none;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line.selected .lrn-multistepmath-line-inner-wrapper {
+    border-color: #52a8ec;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-button {
+    margin: 0;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-line-inner-wrapper {
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    position: relative;
+    min-height: 3.1428571429em;
+    padding-right: 3em;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-line-editor-outlet {
+    padding: .4285714286em .8571428571em;
+    min-height: 2.8571428571em;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-line-editor-outlet .lrn_textinput {
+    display: inline-block;
+    position: relative;
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+
+@media (max-width: 522px) {
+    .lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-line-editor-outlet .lrn_textinput {
+        width: 100%;
+    }
+}
+
+@media (max-width: 522px) {
+    .lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-line-editor-outlet .lrn_textinput.lrn_correct:after,
+    .lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-line-editor-outlet .lrn_textinput.lrn_incorrect:after,
+    .lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-line-editor-outlet .lrn_textinput.lrn_valid:after {
+        right: -46px;
+    }
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-buttons {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    padding: 0;
+    height: 3.1428571429em;
+    list-style: none;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button {
+    display: none;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button.selected button:before {
+    background-color: #eaeaea;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button.selected button:hover:before {
+    background-color: #eaeaea;
+    border-color: #eaeaea;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button button {
+    border: none;
+    display: block;
+    position: relative;
+    width: 2.7142857143em;
+    height: 2.7142857143em;
+    text-indent: -9999px;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button button:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    content: " ";
+    color: #888888;
+    line-height: 2;
+    text-align: center;
+    text-indent: 0;
+    padding: 0;
+    width: 66.666666%;
+    height: 66.666666%;
+    transition: background-color .3s, border-color .3s;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button button:hover:before {
+    background-color: #fbfbfb;
+    border-color: #cccccc;
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button-new button:before {
+    background-color: #1877b1;
+    border-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    content: "";
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button-new button:hover:before {
+    background-color: #0b5684;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.lrn_widget.lrn_multistepmath .lrn-multistepmath-button-new button:active:before {
+    background-color: #0a4a71;
+    border-color: rgba(0, 0, 0, 0);
+}
+
 .lrn_widget.lrn_numberline .lrn_response_input_wrapper {
     touch-action: none;
     -ms-touch-action: none;
@@ -19864,7 +20100,7 @@ img.lrn-loading-image-hidden {
     outline-offset: -5px;
 }
 
-.lrn_widget.lrn_numberlineplot .lrn_jxg_toolbox li button[data-type=cross] span {
+.lrn_widget.lrn_numberlineplot .lrn_jxg_toolbox li button[data-type=cross] .lrn-toolbox-icon {
     font-size: .5em;
     vertical-align: middle;
     font-weight: bold;
@@ -19930,7 +20166,8 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_numberlineplot ellipse:focus,
-.lrn_widget.lrn_numberlineplot line:focus {
+.lrn_widget.lrn_numberlineplot line:focus,
+.lrn_widget.lrn_numberlineplot path:focus {
     outline: none;
 }
 
@@ -31225,8 +31462,4 @@ fieldset[disabled] .lrn .btn-link:focus {
 
 .lrn .mq-root-block {
     white-space: pre;
-}
-
-.lrn .mq-editable-field .mq-root-block {
-    padding: 0;
 }

@@ -6489,6 +6489,14 @@
     margin-bottom: 8px;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-edit-form-multistepmath .lrn-qe-accordion-header-inner span[data-lrn-element-index] {
+    display: none;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-edit-form-multistepmath .lrn-qe-ckeditor-lg .lrn_response_wrapper {
+    padding-right: 3.4285714286em;
+}
+
 .lrn-qe.lrn-qe-modal {
     display: none;
     z-index: 13;
