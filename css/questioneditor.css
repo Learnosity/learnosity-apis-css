@@ -283,12 +283,10 @@
 }
 
 .lrn-qe-spinner .lrn-qe-bounce1 {
-    -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
 }
 
 .lrn-qe-spinner .lrn-qe-bounce2 {
-    -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
 }
 
@@ -299,7 +297,6 @@
     background-color: #cccccc;
     border-radius: 100%;
     display: inline-block;
-    -webkit-animation: bouncedelay 1.4s both infinite ease-in-out;
     animation: bouncedelay 1.4s both infinite ease-in-out;
 }
 
@@ -1375,7 +1372,6 @@
     background-color: #f7f7f7;
     border: .0714285714em solid #eaeaea;
     padding: .2857142857em;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
 }
@@ -2567,6 +2563,14 @@
     right: 0;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-hide-remove-array-button .lrn-qe-form-el-removable .lrn-qe-form-el-action {
+    display: none;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-hide-remove-array-button .lrn-qe-form-el-removable .lrn-qe-form-el-wrapper {
+    padding-right: 0;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-form-el-reorderable {
     position: relative;
 }
@@ -2702,7 +2706,6 @@
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-wysihtml-editor-toolbar>.lrn-qe-visible.lrn-qe-animated {
-    -webkit-animation: fade-in .5s ease;
     animation: fade-in .5s ease;
 }
 
@@ -2858,7 +2861,6 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-focus .lrn-qe-form-control-wysihtml-editor .lrn-qe-wysihtml-editor-toolbar.lrn-qe-wysihtml-editor-toolbar-bottom {
     top: auto;
     bottom: -35px;
-    -webkit-animation: fade-in .3s ease;
     animation: fade-in .3s ease;
     border-radius: 0;
     border-bottom-left-radius: 4px;
@@ -2867,7 +2869,6 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-focus .lrn-qe-form-control-wysihtml-editor .lrn-qe-wysihtml-editor-toolbar.lrn-qe-active {
     opacity: 1;
-    -webkit-animation: fade-in .3s ease;
     animation: fade-in .3s ease;
 }
 
@@ -3465,7 +3466,6 @@
     position: fixed;
     top: 0;
     z-index: 2;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -6493,8 +6493,25 @@
     display: none;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-edit-form-multistepmath .lrn-qe-ckeditor-lg .lrn_response_wrapper {
+.lrn-qe .lrn-qe-ui .lrn-qe-edit-form-multistepmath .lrn-qe-ckeditor-lg[data-lrn-qe-input-path*=given_expressions] .lrn_response_wrapper {
     padding-right: 3.4285714286em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-edit-form-multistepmath .lrn-qe-ckeditor-lg[data-lrn-qe-input-path*=given_expressions] .lrn_math_editable {
+    padding: 8.5px;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-edit-form-multistepmath .lrn-qe-ckeditor-lg[data-lrn-qe-input-path*=given_expressions] .lrn_widget {
+    margin-bottom: 3px;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-edit-form-multistepmath .lrn-qe-ckeditor-lg[data-lrn-qe-input-path*=given_expressions] .lrn-qe-question-container {
+    min-height: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-edit-form-multistepmath .lrn-qe-multistep-math-given-expressions {
+    margin-bottom: 23px;
+    margin-top: 13px;
 }
 
 .lrn-qe.lrn-qe-modal {
@@ -6597,7 +6614,6 @@
 }
 
 .lrn-qe .lrn-qe-modal-footer li:last-child {
-    -webkit-margin-end: .2857142857em;
     margin-inline-end: .2857142857em;
 }
 
@@ -6787,7 +6803,6 @@
 .lrn-qe .lrn-qe-help-filter .lrn-qe-form-el-wrapper {
     display: flex;
     flex-wrap: wrap;
-    -webkit-margin-end: .2857142857em;
     margin-inline-end: .2857142857em;
 }
 
@@ -7056,15 +7071,8 @@
 .lrn-qe .cm-animate-fat-cursor {
     width: auto;
     border: 0;
-    -webkit-animation: blink 1.06s steps(1) infinite;
     animation: blink 1.06s steps(1) infinite;
     background-color: #77ee77;
-}
-
-@-webkit-keyframes blink {
-    50% {
-        background-color: transparent;
-    }
 }
 
 @keyframes blink {
@@ -7700,27 +7708,7 @@
     margin-left: 4px;
 }
 
-@-webkit-keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fade-in-sub {
     0% {
         opacity: 0;
     }

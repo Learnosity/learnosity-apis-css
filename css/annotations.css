@@ -18472,7 +18472,7 @@ textarea.lrn-annotations-c-textarea {
     --lds-button-color-border--ghost-secondary-pressed: #fff25d;
     --lds-button-outline-radius: var(--lds-border-radius--large);
     border-radius: 6px;
-    z-index: 100;
+    z-index: 102;
 }
 
 .lrn-annotations-c-modal--stickynote .lds-icon {
