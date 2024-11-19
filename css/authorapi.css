@@ -24382,7 +24382,7 @@
 
 .lrn.lrn-author .lrn-list-activity-item-view-extended .lrn-author-activity-preview {
     transition: max-height .5s;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .lrn.lrn-author .lrn-activity-item-ref-wrapper {
