@@ -10966,6 +10966,10 @@ img.lrn-loading-image-hidden {
     padding-right: 15px;
 }
 
+.lrn.lrn_popup {
+    font-size: inherit;
+}
+
 .lrn.lrn-questions-popup-modal {
     z-index: 120;
 }
