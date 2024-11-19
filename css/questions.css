@@ -19351,7 +19351,7 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_sortlist .lrn_response .lrn_btn_sort:before {
     width: 1.3em;
-    content: "���";
+    content: "";
     color: #4d4d4d;
 }
 
