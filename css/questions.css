@@ -18946,6 +18946,10 @@ fieldset:disabled .lrn .lds-btn {
     margin-bottom: .5714285714em;
 }
 
+.lrn .fade.in {
+    opacity: 1;
+}
+
 .lrn_incorrectBubble {
     margin-top: 1em;
     padding: 1em;
@@ -20306,54 +20310,6 @@ fieldset:disabled .lrn .lds-btn {
 
 .lrn.lrn_widget .lrn-state-error:before {
     content: "";
-}
-
-.lrn.lrn-handwriting {
-    display: none;
-    height: 260px;
-}
-
-.lrn.lrn-handwriting .lrn_canvas_drawing {
-    background-color: #fbfbfb;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbdpVFh0WE1MOmNvbS5hZG9iZS54bXAAAQAAADiNfZLbTuMwEIZfxTK3JLbTHIhFFkEPWi6CUKkEt6ljqFV8kO1uQ19tL/aR9hVwCumukIKvPOP/G8/Y/+VVZxq25R6s+YtQFfz7+w8Eoq3gY1bj2kz5Rvw8WP5wuFuxw5aVLbz6AS472kkjuW9AJ1+Vo10Fm1avOQ37Po0gOEr8toLX/QF4qu/BVFsOshhHDOcE5GlMUlym5TlIMMGIJAgXEcE0Kygm4HPBcJttn+lytvi8K0QV3HhvKEL7/T7eT2JtXxApyxLhBCVJFBSRe1O+6SLlzoYKM+6YFcYLrUAfN2u98xWEwwjSnMoqFx/HiZmWqGsMIjFG/wnr+nuplCe180v+/L3ard4MR0vu9M4yHuRnPWzo1PLGa7vS+nV4xfuN9tpttAHThywmoG6YUH3mSNQ1vVXON4rx21kFQyYWoqUXZTHP5/MsJxkmZJ7eXBT59aLMUpzeTAqSDuxMs53kyg9s+4/NR9neDB80t+IXbxdWS3AcmorxXibjvXyw7Xgv6SiLQjPoy1cPqeCffnsybghO1ucq+N0GY78DUpvyYfB6JvgAAAAsSURBVDjLY/z
-    background-image: linear-gradient(90deg, transparent 90%, rgba(0, 0, 0, .05) 90%, rgba(0, 0, 0, .05) 100%),
-                      linear-gradient(transparent 90%, rgba(0, 0, 0, .05) 90%, rgba(0, 0, 0, .05) 100%);
-    background-size: 20px 20px;
-}
-
-.lrn.lrn-handwriting .lrn_canvas_drawing .lrn_toolbar {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    width: auto;
-}
-
-.lrn.lrn-handwriting .lrn_canvas_drawing .lrn_toolbar .lrn_btn {
-    height: 3.5em;
-    line-height: 3.5em;
-    padding: 0 1em;
-}
-
-@media (max-width: 800px) {
-    .lrn.lrn-handwriting .lrn_canvas_drawing .lrn_toolbar .lrn_btn .lrn-label {
-        display: none;
-    }
-}
-
-.lrn.lrn-handwriting.lrn_handwriting_fixed {
-    position: fixed;
-    width: 100%;
-    margin: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 200;
-    height: 40%;
-}
-
-.lrn.lrn-handwriting.lrn_scalable {
-    position: absolute;
-    transform-origin: bottom left;
-    transition: transform .3s;
 }
 
 .lrn .lrn_response_innerbody.lrn_horizontal_list {
@@ -24453,14 +24409,7 @@ fieldset:disabled .lrn .lds-btn {
     font-size: 1em;
 }
 
-.lrn_widget .lrn-formula-keyboard .lrn-group-handwriting:before {
-    font-family: "LearnosityIconsRegular";
-    content: "";
-    font-size: 1em;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-group-qwerty span,
-.lrn_widget .lrn-formula-keyboard .lrn-group-handwriting span {
+.lrn_widget .lrn-formula-keyboard .lrn-group-qwerty span {
     display: none;
 }
 
@@ -24544,8 +24493,7 @@ fieldset:disabled .lrn .lds-btn {
 }
 
 .lrn_widget .lrn-ui-style-floating-keyboard,
-.lrn_widget .lrn-ui-style-block-on-focus-keyboard,
-.lrn_widget .lrn-ui-style-fixed-handwriting-only {
+.lrn_widget .lrn-ui-style-block-on-focus-keyboard {
     display: none;
 }
 
@@ -28675,6 +28623,17 @@ img.lrn-loading-image-hidden {
     visibility: hidden;
 }
 
+.lrn-math-image-capture-container .testing-buttons-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5em;
+}
+
+.lrn-math-image-capture-container .testing-buttons-container .dev-testing-btn {
+    border-radius: 0;
+}
+
 .lrn-math-image-capture-container .lds-root {
     height: 100%;
 }
@@ -28725,6 +28684,11 @@ img.lrn-loading-image-hidden {
     font-weight: 700;
     font-size: 1.1428571429em;
     margin-bottom: 1.1428571429em;
+}
+
+.lrn-math-image-capture-container .lrn-math-image-capture-container-react .lrn-math-image-capture-latex-container {
+    max-height: 125px;
+    overflow: auto;
 }
 
 .lrn-math-image-capture-container .lrn-math-image-capture-container-react .lrn-math-image-capture-waiting {
@@ -28786,6 +28750,7 @@ img.lrn-loading-image-hidden {
 
 .lrn-math-image-capture-container .lrn-math-image-capture-container-react .lrn-math-image-capture-converted-image .lrn-math-image-capture-converted-image-text-content {
     flex-grow: 1;
+    max-height: 90%;
 }
 
 .lrn-math-image-capture-container .lrn-math-image-capture-container-react .lrn-math-image-capture-control-group {
@@ -28806,11 +28771,48 @@ img.lrn-loading-image-hidden {
     margin: 0;
 }
 
+.lrn-math-image-capture-container .lrn-math-image-capture-container-react .lrn-math-image-capture-control-group .lds-form-check label {
+    max-width: initial;
+}
+
+.lrn-math-image-capture-container .lrn_font_size_xxlarge {
+    font-size: 24px;
+}
+
+.lrn-math-image-capture-container .lrn_font_size_xlarge {
+    font-size: 20px;
+}
+
+.lrn-math-image-capture-container .lrn_font_size_large {
+    font-size: 17px;
+}
+
+.lrn-math-image-capture-container .lrn_font_size_small {
+    font-size: 12px;
+}
+
+.lrn-ui-style-block-keyboard .lrn-math-image-capture-container,
+.lrn-ui-style-block-on-focus-keyboard .lrn-math-image-capture-container {
+    top: 1px;
+}
+
 .lrn_formulaessayV2 .lrn-wysihtml-floating-modal .lrn-formula-keyboard .lrn-math-image-capture-container {
-    top: -50px;
+    top: 0;
     left: -2px;
     right: -2px;
     bottom: -50px;
+}
+
+.lrn_formulaessayV2.lrn_font_size_xxlarge .lrn-wysihtml-floating-modal .lrn-formula-keyboard .lrn-math-image-capture-container {
+    bottom: -85px;
+}
+
+.lrn_formulaessayV2.lrn_font_size_xlarge .lrn-wysihtml-floating-modal .lrn-formula-keyboard .lrn-math-image-capture-container {
+    bottom: -72px;
+}
+
+.lrn_formulaessayV2.lrn_font_size_large .lrn-wysihtml-floating-modal .lrn-formula-keyboard .lrn-math-image-capture-container {
+    bottom: -62px;
 }
 
 .lrn_review_padding,
@@ -40134,7 +40136,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget .lrn_charactermap.lrn_bubble {
-    position: static;
+    position: relative;
 }
 
 .lrn_widget .lrn_charactermap .lrn_charactermap_title {
@@ -49960,6 +49962,20 @@ fieldset[disabled] .lrn .btn-link:focus {
 
 .lrn .mq-math-mode .mq-matrix td.mq-array-column-r {
     text-align: right;
+}
+
+.lrn .mq-math-mode .mq-matrix td.mq-aligned-column-l {
+    text-align: left;
+    padding-left: 0;
+}
+
+.lrn .mq-math-mode .mq-matrix td.mq-aligned-column-l .mq-binary-operator:first-child {
+    padding-left: 0;
+}
+
+.lrn .mq-math-mode .mq-matrix td.mq-aligned-column-r {
+    text-align: right;
+    padding-right: 0;
 }
 
 .lrn .mq-math-mode .mq-abs {
