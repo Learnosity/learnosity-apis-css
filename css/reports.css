@@ -5316,7 +5316,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .lrn-report-content .lrn-accord-head .chapter-average p small {
-    color: #aaaaaa;
+    color: dimgray;
     font-size: 14px;
 }
 
@@ -5410,10 +5410,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     padding-top: 20px;
 }
 
-.learnosity-report.sessions-summary .lrn-loading,
-.learnosity-report.activitystatus-by-class .lrn-loading,
-.learnosity-report.activitystatus-by-school .lrn-loading,
-.learnosity-report.activitystatus-by-activity .lrn-loading {
+.learnosity-report.sessions-summary .lrn-loading {
     height: 100px;
 }
 
@@ -5621,7 +5618,6 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     line-height: 40px;
     height: 40px;
     margin-top: 0;
-    width: 40px;
     text-align: center;
     vertical-align: middle;
     border-radius: 20px;
@@ -6073,27 +6069,6 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     height: 8px;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-
-.learnosity-report.activitystatus-by-activity .lrn-report-area span {
-    color: #999999;
-}
-
-@media (max-width: 979px) {
-    .learnosity-report.activitystatus-by-activity .lrn-report-dimension-name,
-    .learnosity-report.activitystatus-by-activity .lrn-accord-title {
-        width: 80%;
-    }
-}
-
-@media (max-width: 767px) {
-    .learnosity-report.activitystatus-by-activity .lrn-accord-head .expand {
-        display: none !important;
-    }
-
-    .learnosity-report.activitystatus-by-activity .chapter-average {
-        margin-right: 0 !important;
-    }
 }
 
 .learnosity-report.progress-single .lrn-progress {
