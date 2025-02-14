@@ -12111,10 +12111,26 @@ img.lrn-loading-image-hidden {
 .lrn_box_skin_wrapper .lrn_widget_content .lrn_waveform .lrn_position {
     position: absolute;
     background: rgba(0, 0, 0, 0);
-    border-right: 2px solid #333333;
+    border-right: 2px solid var(--lds-color--grey-D500);
+    max-width: 100%;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     opacity: .4;
-    max-width: 100%;
+}
+
+.lrn_box_skin_wrapper .lrn_widget_content .lrn_waveform .lrn_position:focus,
+.lrn_box_skin_wrapper .lrn_widget_content .lrn_waveform .lrn_position:active {
+    outline: none;
+}
+
+.lrn_box_skin_wrapper .lrn_widget_content .lrn_waveform .lrn_position:focus:after,
+.lrn_box_skin_wrapper .lrn_widget_content .lrn_waveform .lrn_position:active:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    right: -5px;
+    top: -3px;
+    bottom: -3px;
+    border: 2px solid var(--lds-color--blue-M900);
 }
 
 .lrn_box_skin_wrapper .lrn_widget_content .lrn_waveform .lrn_wfgraphic {
@@ -22317,6 +22333,40 @@ img.lrn-loading-image-hidden {
     cursor: pointer;
 }
 
+.lrn_widget.lrn_audioplayer .lrn_bubble .lrn_waveform img {
+    position: absolute;
+}
+
+.lrn_widget.lrn_audioplayer .lrn_bubble .lrn_waveform .lrn_position {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border-right: 2px solid var(--lds-color--grey-D500);
+    max-width: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: .4;
+}
+
+.lrn_widget.lrn_audioplayer .lrn_bubble .lrn_waveform .lrn_position:focus,
+.lrn_widget.lrn_audioplayer .lrn_bubble .lrn_waveform .lrn_position:active {
+    outline: none;
+}
+
+.lrn_widget.lrn_audioplayer .lrn_bubble .lrn_waveform .lrn_position:focus:after,
+.lrn_widget.lrn_audioplayer .lrn_bubble .lrn_waveform .lrn_position:active:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    right: -5px;
+    top: -3px;
+    bottom: -3px;
+    border: 2px solid var(--lds-color--blue-M900);
+}
+
+.lrn_widget.lrn_audio .lrn_bubble .lrn_waveform img {
+    position: absolute;
+    z-index: 1;
+}
+
 .lrn_widget .lrn_bubble {
     position: absolute;
     width: 224px;
@@ -26864,7 +26914,7 @@ fieldset[disabled] .lrn .btn-link:focus {
 }
 
 .lrn .btn-group>.btn-lg+.dropdown-toggle,
-.lrn .btn-group.btn-group-lg>.btn+.dropdown-toggle {
+.lrn .btn-group-lg.btn-group>.btn+.dropdown-toggle {
     padding-left: 12px;
     padding-right: 12px;
 }

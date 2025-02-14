@@ -7355,9 +7355,9 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .lrn-ibtbu-chart-bar_correct {
-    background: #65a00d !important;
-    -webkit-box-shadow: inset 0 0 0 1000px #65a00d;
-    box-shadow: inset 0 0 0 1000px #65a00d;
+    background: #4f7d0a !important;
+    -webkit-box-shadow: inset 0 0 0 1000px #4f7d0a;
+    box-shadow: inset 0 0 0 1000px #4f7d0a;
 }
 
 .lrn-ibtbu-chart-bar_correct:hover {
@@ -7367,9 +7367,9 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .lrn-ibtbu-chart-bar_incorrect {
-    background: #e14747 !important;
-    -webkit-box-shadow: inset 0 0 0 1000px #e14747;
-    box-shadow: inset 0 0 0 1000px #e14747;
+    background: #dd002f !important;
+    -webkit-box-shadow: inset 0 0 0 1000px #dd002f;
+    box-shadow: inset 0 0 0 1000px #dd002f;
 }
 
 .lrn-ibtbu-chart-bar_incorrect:hover {
@@ -7379,9 +7379,9 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .lrn-ibtbu-chart-bar_unattempted {
-    background: #dddddd !important;
-    -webkit-box-shadow: inset 0 0 0 1000px #dddddd;
-    box-shadow: inset 0 0 0 1000px #dddddd;
+    background: #d9d9d9 !important;
+    -webkit-box-shadow: inset 0 0 0 1000px #d9d9d9;
+    box-shadow: inset 0 0 0 1000px #d9d9d9;
 }
 
 .lrn-ibtbu-chart-bar_unattempted:hover {

@@ -5103,8 +5103,6 @@
 .lrn-qe .lrn-qe-ui button.lrn-qe-more-options.lrn-active,
 .lrn-qe .lrn-qe-ui .lrn-qe-more-options:active,
 .lrn-qe .lrn-qe-ui .lrn-qe-more-options.lrn-active {
-    border-color: #0b5684;
-    border-bottom: 0;
     color: #0b5684;
 }
 
