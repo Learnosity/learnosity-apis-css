@@ -11240,6 +11240,11 @@ svg.react-flow__connectionline {
     flex-direction: column;
 }
 
+.lrn-author.lrn-author .lrn-author-activity-edit-branching-side-panel-empty .lrn-author-activity-view-empty-img {
+    height: 130px;
+    width: 130px;
+}
+
 .lrn-author.lrn-author .lrn-author-activity-edit-branching-side-panel-content-logic .lrn-author-branching-right-panel-header {
     border-bottom: 1px solid var(--lds-color--grey-L400);
     padding: var(--lds-space--half-x) var(--lds-space--half-x) var(--lds-space--half-x) var(--lds-space--1-and-a-half-x);
@@ -11322,7 +11327,7 @@ svg.react-flow__connectionline {
 
 .lrn-author.lrn-author .lrn-author-branching-preview-header-step-name {
     font-weight: var(--lds-font-weight--700);
-    margin: 0 var(--lds-space--1-x);
+    margin: var(--lds-space--half-x) var(--lds-space--1-x);
     overflow: hidden;
     text-overflow: ellipsis;
 }
