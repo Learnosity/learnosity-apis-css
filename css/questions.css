@@ -19995,23 +19995,6 @@ img.lrn-loading-image-hidden {
     border-top: 1px solid #000000;
 }
 
-.lrn_widget.lrn_numberlineplot.is-safari {
-    overflow: visible;
-}
-
-.lrn_widget.lrn_numberlineplot.is-safari .jxgbox {
-    overflow: visible !important;
-}
-
-.lrn_widget.lrn_numberlineplot.is-safari .jxgbox svg {
-    overflow: visible !important;
-}
-
-.lrn-question-preview .lrn_widget.lrn_numberlineplot.is-safari,
-.lrn-qe-question-container .lrn_widget.lrn_numberlineplot.is-safari {
-    overflow-y: hidden;
-}
-
 .lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_sort_block {
     box-shadow: inset 0 0 0 1px #939393;
 }
