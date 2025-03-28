@@ -10830,10 +10830,6 @@ img.lrn-loading-image-hidden {
     height: 100%;
 }
 
-.lrn_widget.lrn_feature.lrn_scrollablepassage .lrn-viewport:has(.lrn-float-element) {
-    overflow: visible;
-}
-
 .lrn_widget.lrn_feature.lrn_scrollablepassage .lrn-overview {
     margin-right: 5px;
 }
@@ -10912,10 +10908,6 @@ img.lrn-loading-image-hidden {
 .lrn_feature.lrn_sharedpassage .lrn-sharedpassage-prev-btn.lrn_btn_blue:focus,
 .lrn_feature.lrn_sharedpassage .lrn-sharedpassage-next-btn.lrn_btn_blue:focus {
     box-shadow: inset 0 0 0 1px #1877b1, inset 0 0 0 1px #ffffff;
-}
-
-.lrn_feature.lrn_sharedpassage:has(.lrn-float-element) {
-    overflow: visible;
 }
 
 .lrn-icon-linereader::before {
@@ -20022,6 +20014,15 @@ img.lrn-loading-image-hidden {
     display: table-cell;
 }
 
+.lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multiple-columns {
+    display: flex;
+}
+
+.lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multiple-columns-content {
+    display: flex;
+    align-items: center;
+}
+
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-input[type=radio],
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-input[type=checkbox] {
     position: absolute;
@@ -20788,25 +20789,6 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_numberlineplot .lrn-numberline-fraction hr {
     margin: 0;
     border-top: 1px solid #000000;
-}
-
-.lrn_widget.lrn_numberlineplot.is-safari {
-    overflow: visible;
-}
-
-.lrn_widget.lrn_numberlineplot.is-safari .jxgbox {
-    overflow: visible !important;
-    width: 100%;
-    height: auto;
-}
-
-.lrn_widget.lrn_numberlineplot.is-safari .jxgbox svg {
-    overflow: visible !important;
-}
-
-.lrn-question-preview .lrn_widget.lrn_numberlineplot.is-safari,
-.lrn-qe-question-container .lrn_widget.lrn_numberlineplot.is-safari {
-    overflow-y: hidden;
 }
 
 .lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_sort_block {
