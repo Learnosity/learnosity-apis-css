@@ -12684,6 +12684,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_minimalplayer .lrn_volume_slider {
+    left: 1em;
     z-index: 10;
 }
 
@@ -23076,7 +23077,7 @@ img.lrn-loading-image-hidden {
 
 .lrn_volume_slider {
     height: 0;
-    width: 2.04em;
+    width: 1.786em;
     background: dimgray;
     border-radius: 2px;
     z-index: 1;
@@ -23115,7 +23116,7 @@ img.lrn-loading-image-hidden {
 
 .lrn_volume_handle {
     position: absolute;
-    left: .6em;
+    left: .5em;
     top: -0.214em;
     width: .857em;
     height: .857em;
