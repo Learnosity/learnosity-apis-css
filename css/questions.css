@@ -19407,6 +19407,15 @@ img.lrn-loading-image-hidden {
     display: table-cell;
 }
 
+.lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multiple-columns {
+    display: flex;
+}
+
+.lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multiple-columns-content {
+    display: flex;
+    align-items: center;
+}
+
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-input[type=radio],
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-input[type=checkbox] {
     position: absolute;
