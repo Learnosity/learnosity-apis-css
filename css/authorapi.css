@@ -2387,6 +2387,14 @@ svg.react-flow__connectionline {
     padding: 0 .7142857143em;
 }
 
+.lrn-author.lrn-author .lrn-author-item-for-activity-list .lrn-author-thick-padding-row button {
+    padding: 0 .7142857143em;
+}
+
+.lrn-author.lrn-author .lrn-author-item-for-activity-list .lrn-author-list-view-checkbox {
+    padding-top: 1.4285714286em;
+}
+
 .lrn-author.lrn-author .lrn-author-item-for-activity-list .lrn-author-question-wrapper {
     max-height: 500px;
     overflow-x: hidden;
@@ -9793,13 +9801,17 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author .lrn-author-duplicate-error-wrapper .lrn-author-duplicate-tick-wrapper {
-    top: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .lrn-author.lrn-author .lrn-author-duplicate-tick-wrapper {
-    position: relative;
-    top: 10px;
-    left: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .lrn-author.lrn-author .learnosity-items-container {
@@ -10137,6 +10149,10 @@ svg.react-flow__connectionline {
     padding: 1.6428571429em 1.4285714286em;
     margin-bottom: 1em;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+}
+
+.lrn-author.lrn-author .lrn-author-takeover-header-no-shadow {
+    box-shadow: none;
 }
 
 .lrn-author.lrn-author .lrn-author-takeover-title {
@@ -13140,6 +13156,13 @@ svg.react-flow__connectionline {
 
 .lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-tb .lrn-author-name-edit .lrn-author-message-error {
     padding: .5714285714em;
+}
+
+.lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-tb .lrn-author-name-edit-error-message {
+    position: absolute;
+    top: 7vh;
+    left: 18%;
+    margin-left: 10px;
 }
 
 .lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-tb .lrn-author-tb-wrapper {
