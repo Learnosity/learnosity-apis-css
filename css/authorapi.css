@@ -9,7 +9,7 @@
     --xy-connectionline-stroke-width-default: 1;
     --xy-attribution-background-color-default: rgba(255, 255, 255, .5);
     --xy-minimap-background-color-default: #ffffff;
-    --xy-minimap-mask-background-color-default: rgb(240, 240, 240, .6);
+    --xy-minimap-mask-background-color-default: rgba(240, 240, 240, .6);
     --xy-minimap-mask-stroke-color-default: transparent;
     --xy-minimap-mask-stroke-width-default: 1;
     --xy-minimap-node-background-color-default: #e2e2e2;
@@ -50,7 +50,7 @@
     --xy-connectionline-stroke-width-default: 1;
     --xy-attribution-background-color-default: rgba(150, 150, 150, .25);
     --xy-minimap-background-color-default: #141414;
-    --xy-minimap-mask-background-color-default: rgb(60, 60, 60, .6);
+    --xy-minimap-mask-background-color-default: rgba(60, 60, 60, .6);
     --xy-minimap-mask-stroke-color-default: transparent;
     --xy-minimap-mask-stroke-width-default: 1;
     --xy-minimap-node-background-color-default: #2b2b2b;
@@ -317,6 +317,12 @@ svg.react-flow__connectionline {
     bottom: 0;
 }
 
+.react-flow__panel.top.center,
+.react-flow__panel.bottom.center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .react-flow__panel.left {
     left: 0;
 }
@@ -325,9 +331,10 @@ svg.react-flow__connectionline {
     right: 0;
 }
 
-.react-flow__panel.center {
-    left: 50%;
-    transform: translateX(-50%);
+.react-flow__panel.left.center,
+.react-flow__panel.right.center {
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .react-flow__attribution {
@@ -518,6 +525,15 @@ svg.react-flow__connectionline {
 
 .react-flow__controls-button:last-child {
     border-bottom: none;
+}
+
+.react-flow__controls.horizontal .react-flow__controls-button {
+    border-bottom: none;
+    border-right: 1px solid var(--xy-controls-button-border-color-props, var(--xy-controls-button-border-color, var(--xy-controls-button-border-color-default)));
+}
+
+.react-flow__controls.horizontal .react-flow__controls-button:last-child {
+    border-right: none;
 }
 
 .react-flow__resize-control {
@@ -11624,6 +11640,57 @@ svg.react-flow__connectionline {
     background-color: var(--lds-color--grey-L400);
     border-radius: var(--lds-space--quarter-x);
     border-width: var(--lds-border-width--xs);
+}
+
+.lrn-author.lrn-author .lrn-author-math-hints-generator__loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: var(--lds-space--1-x);
+}
+
+.lrn-author.lrn-author .lrn-author-math-hints-generator__loading-text {
+    font-size: var(--lds-font-size--body-large);
+    font-weight: bold;
+}
+
+.lrn-author.lrn-author .lrn-author-hints-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lds-space--2-x);
+}
+
+.lrn-author.lrn-author .lrn-author-hints-form__description {
+    margin: 0;
+}
+
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-hints-form__label {
+    font-weight: bold;
+}
+
+.lrn-author.lrn-author .lrn-author-math-hints {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lds-space--2-x);
+}
+
+.lrn-author.lrn-author .lrn-author-math-hints--math-rendered {
+    visibility: visible;
+}
+
+.lrn-author.lrn-author .lrn-author-math-hint {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lds-space--1-x);
+    line-height: var(--lds-font-line-height--500);
+}
+
+.lrn-author.lrn-author .lrn-author-math-hint__title {
+    color: var(--lds-color--grey-D500);
+    font-size: var(--lds-font-size--body-medium);
+    font-weight: var(--lds-font-weight--bold);
 }
 
 .lrn-author.lrn-author .lrn-author-api-react-container {

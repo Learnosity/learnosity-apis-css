@@ -1345,6 +1345,14 @@
     left: 0;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-i-math-ai {
+    background-image: url("../../img/sparkle-star-icon-22.svg");
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-i-undo .lrn-qe-i-redo,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-i-undo .lrn-qe-i-redo {
     font-size: 1em;
@@ -1380,6 +1388,7 @@
     margin: 0 .2857142857em;
 }
 
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-layout-math-ai-modal],
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-undo-redo],
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-global-help],
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-widget-source] {
@@ -1387,6 +1396,7 @@
     height: 32px;
 }
 
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-math-ai-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-undo-redo,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-help-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-embed-text {
@@ -1410,6 +1420,7 @@
     min-width: 80px;
 }
 
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-math-ai-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-undo-redo,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-help-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-embed-text {

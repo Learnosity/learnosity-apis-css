@@ -9453,11 +9453,11 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn.lrn_widget .lrn-wysihtml-modal .lrn-wysihtml-modal-dialog .lrn-wysihtml-modal-controls {
-    text-align: left;
+    text-align: right;
 }
 
 .lrn.lrn_widget .lrn-wysihtml-modal .lrn-wysihtml-modal-dialog .lrn-wysihtml-modal-controls .editor-modal-blue-button {
-    margin-right: 1.0714285714em;
+    margin-left: 1.0714285714em;
 }
 
 .lrn.lrn_widget .lrn-wysihtml-modal.lrn-wysihtml-modal-table-edit .lrn-wysihtml-modal-dialog {
