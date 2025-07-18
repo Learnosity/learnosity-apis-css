@@ -8506,6 +8506,11 @@ svg.react-flow__connectionline {
     padding-left: 0;
 }
 
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-activity-edit-toolbar-message {
+    margin: 0;
+    padding: 5px 16px;
+}
+
 .lrn-author .lrn-author-ui .lrn-author-draggable .gu-mirror {
     position: fixed !important;
     margin: 0 !important;

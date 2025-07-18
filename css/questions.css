@@ -11828,6 +11828,22 @@ img.lrn-loading-image-hidden {
     height: 280px;
 }
 
+.lrn-math-image-capture-tab.lrn-math-image-capture-tab--mobile .lrn-math-image-capture-unable-convert {
+    max-height: 280px;
+}
+
+.lrn-math-image-capture-tab.lrn-math-image-capture-tab--mobile .lrn-math-image-capture-unable-convert img {
+    max-height: 75px;
+}
+
+.lrn-math-image-capture-tab.lrn-math-image-capture-tab--mobile .lrn-math-image-capture-converted-image {
+    max-height: 280px;
+}
+
+.lrn-math-image-capture-tab.lrn-math-image-capture-tab--mobile .lrn-math-image-capture-converted-image .lrn-math-image-capture-converted-image-text-content {
+    height: 80%;
+}
+
 .lrn-math-image-capture-tab.lrn-math-image-capture-tab--mobile .testing-buttons-container {
     display: none;
 }
@@ -12039,7 +12055,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-converted-image {
-    padding-top: 1.7142857143em;
+    padding-top: 1.4285714286em;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -12080,6 +12096,7 @@ img.lrn-loading-image-hidden {
     gap: .5714285714em;
     padding: 0 .5714285714em;
     margin-bottom: 2.2857142857em;
+    margin-top: .5714285714em;
 }
 
 .lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-control-group .lds-form-check {
@@ -24596,6 +24613,27 @@ body.lrn-hidden-element-helper .lrn-hidden-element-shown {
     .lrn_widget {
         page-break-inside: avoid;
     }
+}
+
+:is(.lds#lds,body) .lds-nav-link:hover {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--blue-M900) rgba(0, 0, 0, 0) !important;
+}
+
+:is(.lds#lds,body) .lds-nav-link.active {
+    color: var(--lds-color--grey-D500);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--grey-D500) rgba(0, 0, 0, 0) !important;
+}
+
+:is(.lds#lds,body) .lds-tabs--variant-boxed .lds-nav-link {
+    box-sizing: border-box;
+}
+
+:is(.lds#lds,body) .lds-tabs--variant-boxed .lds-nav-link:hover {
+    color: var(--lds-color--blue-M900);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--blue-M900) rgba(0, 0, 0, 0);
+    border-bottom-width: 3px;
+    padding-bottom: calc(var(--lds-space--1-x) - 2px);
+    cursor: pointer;
 }
 
 @-webkit-keyframes lrn-progress-bar-stripes {

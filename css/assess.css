@@ -4111,6 +4111,52 @@ button.lrn_btn.try-again.after-complete:before {
     min-height: 1em;
 }
 
+.lrn-assess .compatibility-inline .lds-alert-icon {
+    margin-right: .5rem;
+}
+
+.lrn-assess .compatibility-inline .alert-warning {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    background-color: #fcfcd3;
+    border: none;
+    color: #000000;
+}
+
+.modal-dialog.modal-fullscreen .modal-content {
+    padding-bottom: 40px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.modal-dialog.modal-fullscreen .modal-content .modal-body .alert-danger {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fdeeee;
+    border: none;
+    color: #990000;
+}
+
+.modal-dialog.modal-fullscreen .modal-content .modal-body .lds-alert-icon {
+    margin-right: .5rem;
+}
+
+.modal-dialog.modal-fullscreen .modal-content .modal-footer .btn-danger {
+    width: 100%;
+}
+
 body .lrn-assess-spinner {
     position: absolute;
     top: 50%;
@@ -5194,6 +5240,7 @@ body .lrn-assess-spinner {
 .lrn-assess.test-ready,
 .lrn-assess.test-init {
     overflow: hidden;
+    z-index: 1;
 }
 
 .lrn-assess.test-init {
