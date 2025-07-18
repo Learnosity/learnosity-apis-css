@@ -24598,6 +24598,27 @@ body.lrn-hidden-element-helper .lrn-hidden-element-shown {
     }
 }
 
+:is(.lds#lds,body) .lds-nav-link:hover {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--blue-M900) rgba(0, 0, 0, 0) !important;
+}
+
+:is(.lds#lds,body) .lds-nav-link.active {
+    color: var(--lds-color--grey-D500);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--grey-D500) rgba(0, 0, 0, 0) !important;
+}
+
+:is(.lds#lds,body) .lds-tabs--variant-boxed .lds-nav-link {
+    box-sizing: border-box;
+}
+
+:is(.lds#lds,body) .lds-tabs--variant-boxed .lds-nav-link:hover {
+    color: var(--lds-color--blue-M900);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--blue-M900) rgba(0, 0, 0, 0);
+    border-bottom-width: 3px;
+    padding-bottom: calc(var(--lds-space--1-x) - 2px);
+    cursor: pointer;
+}
+
 @-webkit-keyframes lrn-progress-bar-stripes {
     from {
         background-position: 40px 0;
