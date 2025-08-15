@@ -17525,6 +17525,10 @@ svg.lds-icon {
     color: #333333;
 }
 
+:is(#lds,body) .lds-root {
+    font-size: inherit;
+}
+
 .lrn-annotations-icon {
     display: inline-block;
     width: 1em;
