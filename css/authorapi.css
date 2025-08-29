@@ -2621,17 +2621,20 @@ svg.react-flow__connectionline {
     flex-direction: column;
     white-space: nowrap;
     max-width: calc(100% - 65px);
+    align-items: flex-start;
 }
 
-.lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-intro-outro .lrn-author-activity-resource-content .lrn-author-message,
-.lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-resource-item .lrn-author-activity-resource-content .lrn-author-message {
-    margin-bottom: 0;
-    line-height: normal;
+.lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-intro-outro .lrn-author-activity-resource-content .lrn-author-activity-resource-row,
+.lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-resource-item .lrn-author-activity-resource-content .lrn-author-activity-resource-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
-.lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-intro-outro .lrn-author-activity-resource-content .lrn-author-message-text,
-.lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-resource-item .lrn-author-activity-resource-content .lrn-author-message-text {
-    flex-grow: inherit;
+.lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-intro-outro .lrn-author-activity-resource-content .lrn-author-tooltip-wrapper,
+.lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-resource-item .lrn-author-activity-resource-content .lrn-author-tooltip-wrapper {
+    cursor: pointer;
 }
 
 .lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-intro-outro .lrn-author-activity-resource-content .lrn-author-resource-item-name,
@@ -2639,10 +2642,11 @@ svg.react-flow__connectionline {
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: underline;
-    font-weight: bold;
     cursor: pointer;
-    color: var(--lds-color--grey-D500);
+    color: #1877b1;
+    margin-top: -3px;
     padding-right: 12px;
+    max-width: 100%;
 }
 
 .lrn-author.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-intro-outro .lrn-author-activity-intro-outro-toggle,
@@ -10872,10 +10876,6 @@ svg.react-flow__connectionline {
     padding-block: var(--lds-space--3-and-a-half-x);
 }
 
-.lrn-author.lrn-author .lrn-author-random-activity-edit-toolbar-row .lrn-author-message-warning {
-    color: var(--lds-color--yellow-M900);
-}
-
 .lrn-author.lrn-author .lrn-author-random-activity-edit-toolbar-buttons {
     display: flex;
     gap: var(--lds-space--2-x);
@@ -11530,6 +11530,7 @@ svg.react-flow__connectionline {
 
 .lrn-author.lrn-author .lrn-author-item-group-accordion .lrn-author-message-info {
     color: var(--lds-color--blue-D500);
+    padding: 6px 11px;
 }
 
 .lrn-author.lrn-author .lrn-author-item-group-accordion .lrn-author-list-view-item .lrn-author-list-view-col-first .lrn-author-check-box-wrapper {
@@ -11625,6 +11626,10 @@ svg.react-flow__connectionline {
     align-items: baseline;
     padding-inline-start: var(--lds-space--2-and-a-half-x);
     margin-bottom: var(--lds-space--3-x);
+}
+
+.lrn-author.lrn-author .lrn-author-item-group-config-bar .lrn-author-tooltip-wrapper {
+    cursor: pointer;
 }
 
 .lrn-author.lrn-author .lrn-author-item-group-config-bar .lrn-author-message-info {
@@ -13258,10 +13263,6 @@ svg.react-flow__connectionline {
 
 .lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-tb .lrn-author-name-edit .lrn-author-name-wrapper .lrn-author-template-warning .lrn-author-i-edit {
     color: var(--lds-color--red-D200);
-}
-
-.lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-tb .lrn-author-name-edit .lrn-author-message-error {
-    padding: .5714285714em;
 }
 
 .lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-tb .lrn-author-name-edit-error-message {
