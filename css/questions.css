@@ -16772,7 +16772,7 @@ img.lrn-loading-image-hidden {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #eaeaea;
+    background-color: #f7f7f7;
 }
 
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn-graphplotting-toolbar .lrn-graphplotting-toolbar-btn:before {
@@ -16837,12 +16837,14 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn-graphplotting-toolbar .lrn-graphplotting-toolbar-left-section {
     display: flex;
+    flex-wrap: wrap;
     gap: .2857142857em;
     padding: .2857142857em;
 }
 
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn-graphplotting-toolbar .lrn-graphplotting-toolbar-right-section {
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     gap: .2857142857em;
     padding: .2857142857em;
