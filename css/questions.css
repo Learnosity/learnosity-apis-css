@@ -1497,7 +1497,10 @@
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_response_container.lrn_dragdrop.lrn_correct_marker:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell .lrn_inline_input_content:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:before,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:before,
 .lrn_widget.lrn_association .lrn_response_container.lrn_dragdrop .lrn_correct:after,
 .lrn_widget.lrn_association .lrn_response_container.lrn_dragdrop .lrn_incorrect:after,
 .lrn_widget.lrn_texthighlight .lrn_texthighlight_highlight.lrn_correct:after,
@@ -21779,37 +21782,46 @@ fieldset:disabled .lrn .lds-btn {
     border-color: #939393;
 }
 
-.lrn_widget.lrn_choicematrix .lrn_response_input>table tr.lrn_stem {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table tr.lrn_stem,
+.lrn_widget.lrn_nclex .lrn_response_input>table tr.lrn_stem {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.lrn_widget.lrn_choicematrix .lrn_response_input>table tr.lrn_stem.lrn_valid>td:first-child {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table tr.lrn_stem.lrn_valid>td:first-child,
+.lrn_widget.lrn_nclex .lrn_response_input>table tr.lrn_stem.lrn_valid>td:first-child {
     box-shadow: .21428571em 0 0 0 #888888 inset;
 }
 
-.lrn_widget.lrn_choicematrix .lrn_response_input>table tr.lrn_stem.lrn_correct>td:first-child {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table tr.lrn_stem.lrn_correct>td:first-child,
+.lrn_widget.lrn_nclex .lrn_response_input>table tr.lrn_stem.lrn_correct>td:first-child {
     box-shadow: .21428571em 0 0 0 #4a700a inset;
 }
 
-.lrn_widget.lrn_choicematrix .lrn_response_input>table tr.lrn_stem.lrn_incorrect>td:first-child {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table tr.lrn_stem.lrn_incorrect>td:first-child,
+.lrn_widget.lrn_nclex .lrn_response_input>table tr.lrn_stem.lrn_incorrect>td:first-child {
     box-shadow: .21428571em 0 0 0 #dd002f inset;
 }
 
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell {
     position: relative;
 }
 
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell label {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell label,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell label {
     margin-bottom: 0;
 }
 
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:before {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:before,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:before {
     content: "";
     visibility: collapse;
 }
 
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:after,
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell .lrn_inline_input_content:after {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell .lrn_inline_input_content:after {
     content: "";
     visibility: collapse;
     color: rgba(0, 0, 0, 0);
@@ -21822,44 +21834,65 @@ fieldset:disabled .lrn .lds-btn {
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid .lrn_inline_input_content:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect:after,
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect .lrn_inline_input_content:after {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect .lrn_inline_input_content:after {
     visibility: visible;
 }
 
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct:after,
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct .lrn_inline_input_content:after {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct .lrn_inline_input_content:after {
     color: #4a700a;
 }
 
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect.lrn_selected.lrn_enabled:hover {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect.lrn_selected.lrn_enabled:hover,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect.lrn_selected.lrn_enabled:hover {
     background-color: #fbe3e3;
 }
 
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect:after,
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect .lrn_inline_input_content:after {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_incorrect .lrn_inline_input_content:after {
     content: "";
     color: #dd002f;
 }
 
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid:after,
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid .lrn_inline_input_content:after {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid .lrn_inline_input_content:after {
     color: #888888;
 }
 
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct.lrn_selected.lrn_enabled:hover,
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid.lrn_selected.lrn_enabled:hover {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid.lrn_selected.lrn_enabled:hover,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct.lrn_selected.lrn_enabled:hover,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid.lrn_selected.lrn_enabled:hover {
     background-color: #f0f8ed;
 }
 
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct .lrn_inline_input_content:after,
 .lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid:after,
-.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid .lrn_inline_input_content:after {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_correct .lrn_inline_input_content:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_choicematrix_cell.lrn_valid .lrn_inline_input_content:after {
     content: "";
 }
 
 .lrn_widget.lrn_choicematrix .lrn_response_input>table.lrn_choicematrix_type_inline tbody td.lrn_option.lrn_choicematrix_cell:before,
-.lrn_widget.lrn_choicematrix .lrn_response_input>table.lrn_choicematrix_type_inline tbody td.lrn_option.lrn_choicematrix_cell:after {
+.lrn_widget.lrn_choicematrix .lrn_response_input>table.lrn_choicematrix_type_inline tbody td.lrn_option.lrn_choicematrix_cell:after,
+.lrn_widget.lrn_nclex .lrn_response_input>table.lrn_choicematrix_type_inline tbody td.lrn_option.lrn_choicematrix_cell:before,
+.lrn_widget.lrn_nclex .lrn_response_input>table.lrn_choicematrix_type_inline tbody td.lrn_option.lrn_choicematrix_cell:after {
     content: none;
 }
 
@@ -39073,30 +39106,38 @@ img.lrn-loading-image-hidden {
     display: none;
 }
 
-.lrn_choicematrix .lrn_response_input {
+.lrn_choicematrix .lrn_response_input,
+.lrn_nclex .lrn_response_input {
     display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .lrn_qr.lrn_choicematrix .lrn_response_input>table.lrn_choicematrix_type_table td.lrn_option,
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-numeration {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-numeration,
+.lrn_qr.lrn_nclex .lrn_response_input>table.lrn_choicematrix_type_table td.lrn_option,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-stem-numeration {
     text-align: center;
 }
 
-.lrn_qr.lrn_choicematrix input {
+.lrn_qr.lrn_choicematrix input,
+.lrn_qr.lrn_nclex input {
     cursor: pointer;
 }
 
-.lrn_qr.lrn_choicematrix .lrn-choicematrix-input-content {
+.lrn_qr.lrn_choicematrix .lrn-choicematrix-input-content,
+.lrn_qr.lrn_nclex .lrn-choicematrix-input-content {
     display: inline-block;
 }
 
 .lrn_qr.lrn_choicematrix .lrn-masking .lrn_response_input>table tbody td.lrn_enabled,
-.lrn_qr.lrn_choicematrix .lrn-masking .lrn_response_input>table tbody td.lrn_enabled label {
+.lrn_qr.lrn_choicematrix .lrn-masking .lrn_response_input>table tbody td.lrn_enabled label,
+.lrn_qr.lrn_nclex .lrn-masking .lrn_response_input>table tbody td.lrn_enabled,
+.lrn_qr.lrn_nclex .lrn-masking .lrn_response_input>table tbody td.lrn_enabled label {
     cursor: default;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table,
+.lrn_qr.lrn_nclex .lrn_response_input>table {
     background-color: #ffffff;
     border-collapse: collapse;
     border-spacing: 0;
@@ -39104,59 +39145,73 @@ img.lrn-loading-image-hidden {
     margin-bottom: 0;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table>thead {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table>thead,
+.lrn_qr.lrn_nclex .lrn_response_input>table>thead {
     background-color: #f0f0f0;
 }
 
 .lrn_qr.lrn_choicematrix .lrn_response_input>table>tbody>tr,
-.lrn_qr.lrn_choicematrix .lrn_response_input>table>tbody>tr>td {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table>tbody>tr>td,
+.lrn_qr.lrn_nclex .lrn_response_input>table>tbody>tr,
+.lrn_qr.lrn_nclex .lrn_response_input>table>tbody>tr>td {
     transition: background-color .25s ease;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choicematrix-column-title {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choicematrix-column-title,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-choicematrix-column-title {
     padding: 1em;
     font-weight: bold;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choicematrix-row-title {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choicematrix-row-title,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-choicematrix-row-title {
     padding: 1em;
     font-weight: bold;
     text-align: center;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn_choicematrix_cell {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn_choicematrix_cell,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn_choicematrix_cell {
     padding: 1em;
     vertical-align: middle;
     min-width: 6em;
     background-clip: padding-box;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table th.lrn_choicematrix_cell {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table th.lrn_choicematrix_cell,
+.lrn_qr.lrn_nclex .lrn_response_input>table th.lrn_choicematrix_cell {
     font-weight: normal;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table th.lrn_option_text {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table th.lrn_option_text,
+.lrn_qr.lrn_nclex .lrn_response_input>table th.lrn_option_text {
     text-align: center;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table th.lrn_option_text.lrn_option_text_multiline {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table th.lrn_option_text.lrn_option_text_multiline,
+.lrn_qr.lrn_nclex .lrn_response_input>table th.lrn_option_text.lrn_option_text_multiline {
     text-align: left;
 }
 
 .lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option input[type=radio],
-.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option input[type=checkbox] {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option input[type=checkbox],
+.lrn_qr.lrn_nclex .lrn_response_input>table td.lrn_option input[type=radio],
+.lrn_qr.lrn_nclex .lrn_response_input>table td.lrn_option input[type=checkbox] {
     margin: 4px auto;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option label {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option label,
+.lrn_qr.lrn_nclex .lrn_response_input>table td.lrn_option label {
     text-align: center;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choice-matrix-top-row {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choice-matrix-top-row,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-choice-matrix-top-row {
     border-top: 1px solid #d9d9d9;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-numeration {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-numeration,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-stem-numeration {
     color: dimgray;
     background-color: #f0f0f0;
     font-size: 20px;
@@ -39168,46 +39223,56 @@ img.lrn-loading-image-hidden {
     margin-right: .5em;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-text {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-text,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-stem-text {
     vertical-align: middle;
     display: table-cell;
     text-align: left;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-numeration+.lrn-stem-text {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-numeration+.lrn-stem-text,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-stem-numeration+.lrn-stem-text {
     padding-left: 1.0714285714em;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-border {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-stem-border,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-stem-border {
     border-right: 1px solid #d9d9d9;
     padding: .25em .5em .25em .5em;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choicematrix-stem-last>.lrn-stem-border {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choicematrix-stem-last>.lrn-stem-border,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-choicematrix-stem-last>.lrn-stem-border {
     padding-bottom: .5em;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choice-matrix-top-row>.lrn-stem-border {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .lrn-choice-matrix-top-row>.lrn-stem-border,
+.lrn_qr.lrn_nclex .lrn_response_input>table .lrn-choice-matrix-top-row>.lrn-stem-border {
     padding-top: .5em;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table .horizontal-line {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table .horizontal-line,
+.lrn_qr.lrn_nclex .lrn_response_input>table .horizontal-line {
     border-bottom: 1px solid #d9d9d9;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_enabled {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_enabled,
+.lrn_qr.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_enabled {
     cursor: pointer;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_enabled:hover {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_enabled:hover,
+.lrn_qr.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_enabled:hover {
     background-color: rgba(0, 0, 0, .05);
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_enabled.lrn_selected:hover {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_enabled.lrn_selected:hover,
+.lrn_qr.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_enabled.lrn_selected:hover {
     background-color: #fcfcd3;
 }
 
-.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_disabled {
+.lrn_qr.lrn_choicematrix .lrn_response_input>table td.lrn_option.lrn_disabled,
+.lrn_qr.lrn_nclex .lrn_response_input>table td.lrn_option.lrn_disabled {
     cursor: not-allowed;
 }
 
