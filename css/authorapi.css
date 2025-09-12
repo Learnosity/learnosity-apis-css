@@ -5058,6 +5058,15 @@ svg.react-flow__connectionline {
     pointer-events: none;
 }
 
+.lrn-author .lrn-author-ui .lrn-author-form-section-header {
+    font-weight: bold;
+    margin-bottom: .8571428571em;
+}
+
+.lrn-author .lrn-author-ui .lrn-author-form-section-header-not-first {
+    margin-top: 2em;
+}
+
 .lrn-author .lrn-author-ui .lrn-author-input-group {
     display: flex;
 }
