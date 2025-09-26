@@ -11629,11 +11629,11 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-enabled-camera .lrn-math-image-capture-webcam-container {
-    margin: 1.1428571429em auto;
+    margin: 1.1428571429em auto .5714285714em;
 }
 
 .lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-enabled-camera .lrn-math-image-capture-webcam-capture {
-    margin: 1.1428571429em 0;
+    margin: 1.1428571429em 0 .5714285714em;
     object-fit: contain;
 }
 
@@ -16819,6 +16819,10 @@ img.lrn-loading-image-hidden {
     padding-bottom: 10px !important;
 }
 
+.lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn-graphplotting-toolbar .lrn-graphplotting-toolbar-dropdown-option:not(.active) .lds-dropdown-item-trailing-icon {
+    display: none;
+}
+
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn-graphplotting-toolbar .lrn-graphplotting-toolbar-toggle-btn.active:focus-visible {
     background-color: #d9d9d9 !important;
 }
@@ -20067,6 +20071,10 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multiple-columns-content {
     display: flex;
     align-items: center;
+}
+
+.lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multi-column-wrapper>:last-child {
+    margin-bottom: 0;
 }
 
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-input[type=radio],
@@ -24371,27 +24379,6 @@ body.lrn-hidden-element-helper .lrn-hidden-element-shown {
     .lrn_widget {
         page-break-inside: avoid;
     }
-}
-
-:is(.lds#lds,body) .lds-nav-link:hover {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--blue-M900) rgba(0, 0, 0, 0) !important;
-}
-
-:is(.lds#lds,body) .lds-nav-link.active {
-    color: var(--lds-color--grey-D500);
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--grey-D500) rgba(0, 0, 0, 0) !important;
-}
-
-:is(.lds#lds,body) .lds-tabs--variant-boxed .lds-nav-link {
-    box-sizing: border-box;
-}
-
-:is(.lds#lds,body) .lds-tabs--variant-boxed .lds-nav-link:hover {
-    color: var(--lds-color--blue-M900);
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--lds-color--blue-M900) rgba(0, 0, 0, 0);
-    border-bottom-width: 3px;
-    padding-bottom: calc(var(--lds-space--1-x) - 2px);
-    cursor: pointer;
 }
 
 @-webkit-keyframes lrn-progress-bar-stripes {

@@ -1279,6 +1279,10 @@ svg.react-flow__connectionline {
     text-align: left;
 }
 
+.lrn-author-lds-tooltip {
+    pointer-events: none;
+}
+
 .lrn-author-layout--fixed-header {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -4354,19 +4358,31 @@ svg.react-flow__connectionline {
 .lrn-author.lrn-author .lrn-author-card__body {
     display: flex;
     flex-direction: column;
-    row-gap: var(--lds-space--three-quarter-x);
 }
 
 .lrn-author.lrn-author .lrn-author-card__title {
-    font-size: var(--lds-font-size--title-200);
+    color: var(--lds-color--grey-D500);
+    font-size: var(--lds-font-size--body-medium);
     font-weight: var(--lds-font-weight--normal);
+    height: var(--lds-space--3-and-a-half-x);
     line-height: var(--lds-font-line-height--500);
 }
 
-.lrn-author.lrn-author .lrn-author-card__text {
+.lrn-author.lrn-author .lrn-author-card__subtitle {
+    color: var(--lds-color--grey-D500);
     font-size: var(--lds-font-size--body-small);
+    height: var(--lds-space--3-and-a-half-x);
     line-height: var(--lds-font-line-height--400);
+}
+
+.lrn-author.lrn-author .lrn-author-card__text {
     color: var(--lds-color--grey-M900);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--lds-font-size--body-small);
+    height: var(--lds-space--2-and-a-half-x);
+    justify-content: center;
+    line-height: var(--lds-font-line-height--400);
 }
 
 :is(.lds#lds,body) .lrn-author.lrn-author .lds-modal {
