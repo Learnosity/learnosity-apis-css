@@ -11613,11 +11613,11 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-enabled-camera .lrn-math-image-capture-webcam-container {
-    margin: 1.1428571429em auto;
+    margin: 1.1428571429em auto .5714285714em;
 }
 
 .lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-enabled-camera .lrn-math-image-capture-webcam-capture {
-    margin: 1.1428571429em 0;
+    margin: 1.1428571429em 0 .5714285714em;
     object-fit: contain;
 }
 
@@ -20054,6 +20054,10 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multiple-columns-content {
     display: flex;
     align-items: center;
+}
+
+.lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multi-column-wrapper>:last-child {
+    margin-bottom: 0;
 }
 
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-input[type=radio],
