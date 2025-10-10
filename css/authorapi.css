@@ -6723,7 +6723,7 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author .lrn-author-ui .lrn-author-list-view-item-active {
-    z-index: 2;
+    z-index: 3;
     position: relative;
 }
 
@@ -11262,11 +11262,6 @@ svg.react-flow__connectionline {
     padding: var(--lds-space--1-x);
 }
 
-.lrn-author.lrn-author .lrn-author-branching-node-item .lrn-author-label-action,
-.lrn-author.lrn-author .lrn-author-branching-node-item .lrn-author-activity-info-label {
-    font-size: inherit;
-}
-
 .lrn-author.lrn-author .lrn-author-branching-node-item .lrn-author-label-action:hover,
 .lrn-author.lrn-author .lrn-author-branching-node-item .lrn-author-activity-info-label:hover {
     cursor: grab;
@@ -11277,19 +11272,11 @@ svg.react-flow__connectionline {
     cursor: grabbing;
 }
 
-.lrn-author.lrn-author .lrn-author-branching-node-item .lrn-author-list-view-item {
+.lrn-author.lrn-author .lrn-author-branching-node-item .lrn-author-branching-node-item-details {
     pointer-events: none;
     display: block;
     padding-left: var(--lds-space--1-x);
     padding-bottom: 12px;
-}
-
-.lrn-author.lrn-author .lrn-author-branching-node-item .lrn-author-list-view-heading {
-    transition: font-size 200ms ease-in-out, padding 200ms ease-in-out;
-    color: var(--lds-color--grey-M900);
-    font-size: inherit;
-    margin-right: 0;
-    padding: var(--lds-space--1-x) 0;
 }
 
 :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-branching-edge-button {
@@ -11461,8 +11448,48 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author .lrn-author-activity-edit-branching-marker-line-hovered {
-    stroke: var(--lds-color--blue-M900);
     stroke-width: 1;
+    stroke: var(--lds-color--blue-M900);
+}
+
+.lrn-author.lrn-author .lrn-author-branching-node-item-title {
+    color: var(--lds-color--grey-D500);
+    font-size: inherit;
+    line-height: 2;
+    margin-bottom: 0;
+    transition: font-size 200ms ease-in-out, padding 200ms ease-in-out;
+}
+
+.lrn-author.lrn-author .lrn-author-branching-node-item-reference {
+    color: var(--lds-color--grey-M900);
+    line-height: 2;
+    transition: font-size 200ms ease-in-out, padding 200ms ease-in-out;
+}
+
+.lrn-author.lrn-author .lrn-author-branching-node-item-details .lrn-author-btn-default-legacy {
+    background: #eaeaea;
+    border: 1px solid #eaeaea;
+}
+
+.lrn-author.lrn-author .lrn-author-branching-node-item-details .lrn-author-activity-info-labels {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: var(--lds-space--quarter-x);
+}
+
+.lrn-author.lrn-author .lrn-author-branching-node-item-details .lrn-author-activity-info-labels .lrn-author-activity-info-label {
+    border-color: #eaeaea;
+    border-style: solid;
+    border-width: 0 0 3px;
+    color: #333333;
+    cursor: default;
+    font-style: italic;
+    line-height: normal;
+    margin-right: .7142857143em;
+    margin-bottom: 0;
+    padding: .5em;
 }
 
 .lrn-author.lrn-author .lrn-author-branching-preview-container {
@@ -11523,6 +11550,15 @@ svg.react-flow__connectionline {
     .lrn-author.lrn-author .lrn-author-branching-preview-header-step-name {
         display: block;
     }
+}
+
+.lrn-author.lrn-author .lrn-author-random-item-by-tag-row .lrn-author-item-row-form-input {
+    margin-top: var(--lds-space--1-x);
+    margin-bottom: var(--lds-space--1-x);
+}
+
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-random-item-by-tag-row .lrn-author-item-row-form-input .lrn-author-item-row-form-control {
+    width: 80px;
 }
 
 :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-item-group-accordion-checked .lds-accordion-button {
