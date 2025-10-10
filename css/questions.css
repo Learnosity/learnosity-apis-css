@@ -19451,6 +19451,10 @@ img.lrn-loading-image-hidden {
     align-items: center;
 }
 
+.lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-multi-column-wrapper>:last-child {
+    margin-bottom: 0;
+}
+
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-input[type=radio],
 .lrn_widget.lrn_mcq .lrn_response .lrn_mcqgroup-block .lrn-input[type=checkbox] {
     position: absolute;
