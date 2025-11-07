@@ -13951,6 +13951,7 @@ img.lrn-loading-image-hidden {
     padding: .6em 1.2em;
     text-align: right;
     height: 100%;
+    cursor: pointer;
 }
 
 .lrn_widget.lrn_rating .lrn_response .lrn_ratingProgressBar .lrn_ratingProgress span {
@@ -14059,12 +14060,12 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_tooltip_position_top.lrn_rating_tooltip {
-    margin-top: -10px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .lrn_tooltip_position_top.lrn_rating_tooltip:before {
-    top: auto;
-    bottom: -28px;
+    top: calc(100% - 2px);
     border-bottom-color: rgba(0, 0, 0, 0);
     border-top-color: inherit;
 }
