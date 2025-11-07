@@ -14951,16 +14951,21 @@ img.lrn-loading-image-hidden {
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0);
     margin: 1px;
-    background-color: #3498db;
+    background-color: #1877b1;
 }
 
-.lrn_widget.lrn_fileupload .lrn-fileupload-input-wrapper:active .lrn-fileupload-btn-upload {
-    border-color: #ffffff;
-    box-shadow: 0 0 0 1px #1877b1;
+.lrn_widget.lrn_fileupload .lrn-fileupload-input-wrapper .lrn-fileupload-file-input:focus {
+    outline: 1px solid #ffffff;
+    opacity: inherit;
+    color: rgba(0, 0, 0, 0);
+}
+
+.lrn_widget.lrn_fileupload .lrn-fileupload-input-wrapper .lrn-fileupload-btn-upload.lrn_btn_blue:focus {
+    box-shadow: none;
 }
 
 .lrn_widget.lrn_fileupload .lrn-fileupload-input-wrapper:hover .lrn-fileupload-btn-upload {
-    background-color: #1877b1;
+    background-color: #0b5684;
 }
 
 .lrn_widget.lrn_fileupload .lrn-fileupload-file-input {
