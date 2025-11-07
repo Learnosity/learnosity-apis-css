@@ -1345,6 +1345,14 @@
     left: 0;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-i-math-ai {
+    background-image: url("../../img/sparkle-star-icon-22.svg");
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-i-undo .lrn-qe-i-redo,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-i-undo .lrn-qe-i-redo {
     font-size: 1em;
@@ -1380,6 +1388,7 @@
     margin: 0 .2857142857em;
 }
 
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-layout-math-ai-modal],
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-undo-redo],
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-global-help],
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-widget-source] {
@@ -1387,6 +1396,7 @@
     height: 32px;
 }
 
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-math-ai-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-undo-redo,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-help-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-embed-text {
@@ -1410,6 +1420,7 @@
     min-width: 80px;
 }
 
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-math-ai-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-undo-redo,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-help-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-embed-text {
@@ -1676,6 +1687,11 @@
     margin: 0 .7142857143em .2857142857em 0;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-form-label .lrn-qe-label-disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
 .lrn-qe .lrn-qe-ui [data-lrn-qe-section] label[data-lrn-qe-label$=".heading"] {
     position: relative;
 }
@@ -1853,6 +1869,16 @@
     text-align: center;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-switch .lrn-qe-input:disabled+.lrn-qe-switch-trigger {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-switch .lrn-qe-input:not(:disabled)+.lrn-qe-switch-trigger:hover,
+.lrn-qe .lrn-qe-ui .lrn-qe-switch .lrn-qe-input:not(:disabled)+.lrn-qe-switch-trigger:focus {
+    border-color: #333333;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-switch-trigger {
     display: inline-block;
     height: 1.4285714286em !important;
@@ -1867,11 +1893,6 @@
     transition-property: padding, background-position, text-indent;
     cursor: pointer;
     position: relative;
-}
-
-.lrn-qe .lrn-qe-ui .lrn-qe-switch-trigger:hover,
-.lrn-qe .lrn-qe-ui .lrn-qe-switch-trigger:focus {
-    border-color: #333333;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-switch-trigger::before,
