@@ -890,6 +890,14 @@ body .lrn-assess-spinner {
     content: none;
 }
 
+.lrn-assess .lrn-assess-dialogs {
+    pointer-events: none;
+}
+
+.lrn-assess .lrn-assess-dialogs * {
+    pointer-events: auto;
+}
+
 .lrn-assess .lrn-dialogs-spinner-status {
     margin-top: 10px;
     margin-bottom: 0;
