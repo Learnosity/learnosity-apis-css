@@ -10672,27 +10672,34 @@ img.lrn-loading-image-hidden {
     z-index: 2000;
 }
 
+@media (prefers-color-scheme: dark) {
+    .lrn_feature.lrn_imagetool .lrn_imagetool_content img {
+        filter: invert(1) brightness(1.1) contrast(.95);
+    }
+}
+
 .lrn_feature.lrn_imagetool .lrn_imagetool_content .rotate {
     touch-action: none;
     -ms-touch-action: none;
-    background: url("../../images/rotate-icon.png") no-repeat center center;
+    background: url("../../images/rotate-icon-dark.png") no-repeat center center;
     width: 19px;
-    height: 65px;
+    height: 55px;
     cursor: move;
     position: absolute;
-    bottom: -11px;
+    bottom: -7px;
     margin-left: -28px;
     background-size: 16px 59px;
     z-index: 2005;
 }
 
 .lrn_feature.lrn_imagetool .lrn_imagetool_content .rotate.protractor {
-    background: url("../../images/rotate-protractor.png") no-repeat center center;
+    background: url("../../images/rotate-icon-dark-large.png") no-repeat center center;
     width: 21px;
-    height: 79px;
-    bottom: -3px;
+    height: 80px;
+    bottom: 0;
     margin-left: -28px;
     background-size: 20px 72px;
+    transform: rotate(8deg);
 }
 
 .lrn_feature.lrn_imagetool .lrn_imagetool_content .rotate:hover {
@@ -10701,6 +10708,29 @@ img.lrn-loading-image-hidden {
 
 .lrn_feature.lrn_imagetool .lrn_imagetool_content .rotate:hover.protractor {
     background-size: 21px 79px;
+}
+
+.lrn_feature.lrn_imagetool .lrn_imagetool_content .lrn-imagetool-move-handle {
+    position: absolute;
+    right: -42px;
+    bottom: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.lrn_feature.lrn_imagetool .lrn_imagetool_content .lrn-imagetool-move-handle:hover {
+    cursor: move;
+}
+
+.lrn_feature.lrn_imagetool .lrn_imagetool_content .lrn-imagetool-move-handle:before {
+    content: "";
+    padding: 0;
+    font-size: 17.5px;
+    font-family: "LearnosityIconsRegular";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .lrn_audioplayer.lrn_disabled {
