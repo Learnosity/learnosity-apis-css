@@ -20007,6 +20007,15 @@ svg.react-flow__connectionline {
     pointer-events: none;
 }
 
+.lrn .lrn-author-ui .lrn-form-section-header {
+    font-weight: bold;
+    margin-bottom: .8571428571em;
+}
+
+.lrn .lrn-author-ui .lrn-form-section-header-not-first {
+    margin-top: 2em;
+}
+
 .lrn .lrn-author-ui .lrn-input-group {
     display: flex;
 }
