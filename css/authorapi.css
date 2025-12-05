@@ -1796,6 +1796,16 @@ svg.react-flow__connectionline {
     border-color: #939393;
 }
 
+.lrn-author.lrn-author .lrn-author-col-separator [class*=lrn-author-col-] {
+    border-left: .0714285714em solid var(--lds-color--grey-L500);
+    margin-left: -.0714285714em;
+}
+
+.lrn-author.lrn-author .lrn-author-col-separator [class*=lrn-author-col-]:first-child {
+    border-left: 0;
+    margin-left: 0;
+}
+
 .lrn-author.lrn-author .lrn-author-region-slider {
     width: 3px;
     margin-top: -1.0714285714em;
