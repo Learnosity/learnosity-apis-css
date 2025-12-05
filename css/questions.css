@@ -23483,6 +23483,11 @@ img.lrn-loading-image-hidden {
     color: #4d4d4d;
 }
 
+.lrn_widget .lrn_length_indicator .lrn-icon-warning {
+    color: red;
+    padding-right: .5714285714em;
+}
+
 .lrn_widget .lrn_word_count,
 .lrn_widget .lrn_character_count {
     margin-right: 2px;
@@ -23491,6 +23496,11 @@ img.lrn-loading-image-hidden {
 .lrn_widget .lrn_wordcount_warning_label,
 .lrn_widget .lrn_charactercount_warning_label {
     color: red;
+}
+
+.lrn_widget .lrn_wordcount_warning_label .lrn-icon-warning,
+.lrn_widget .lrn_charactercount_warning_label .lrn-icon-warning {
+    padding-right: .5714285714em;
 }
 
 .lrn_widget .lrn_charactermap {
