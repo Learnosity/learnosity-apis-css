@@ -1129,6 +1129,16 @@ svg.react-flow__connectionline {
     content: "";
 }
 
+.lrn-author-i-arrow-straight-next::before {
+    content: "";
+    transform: rotate(0deg);
+}
+
+.lrn-author-i-arrow-straight-previous::before {
+    content: "";
+    transform: rotate(180deg);
+}
+
 .lrn-author-i-tooltip::before {
     content: "";
 }
@@ -1535,9 +1545,19 @@ svg.react-flow__connectionline {
     display: none;
 }
 
+@container (0px <= width < 615px) {
+    .lrn-author.lrn-author .lrn-author-ui .lrn-author-col-xs-none {
+        display: none;
+    }
+}
+
 @container (615px <= width < 800px) {
     .lrn-author.lrn-author .lrn-author-ui .lrn-author-col-xs-none {
         display: inline;
+    }
+
+    .lrn-author.lrn-author .lrn-author-ui .lrn-author-col-sm-none {
+        display: none;
     }
 }
 
@@ -7825,6 +7845,27 @@ svg.react-flow__connectionline {
 
 .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-text-small {
     font-size: 1em;
+}
+
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-i-arrow-straight-previous,
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-i-arrow-straight-next,
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-i-dynamic-data {
+    margin-block: 3px;
+    font-size: 12px;
+    width: 18px;
+}
+
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-i-dynamic-data {
+    font-size: 14px;
+}
+
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-dynamic-data-button-group .lds-btn-group {
+    border: 0;
+}
+
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-dynamic-data-button-group .lds-btn:has(.lrn-author-i-dynamic-data):active,
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-dynamic-data-button-group .lds-btn:has(.lrn-author-i-dynamic-data):hover {
+    background-color: var(--lds-color--white);
 }
 
 .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls,
