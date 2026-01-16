@@ -1521,9 +1521,19 @@ svg.react-flow__connectionline {
     display: none;
 }
 
+@container (0px <= width < 615px) {
+    .lrn-author.lrn-author .lrn-author-ui .lrn-author-col-xs-none {
+        display: none;
+    }
+}
+
 @container (615px <= width < 800px) {
     .lrn-author.lrn-author .lrn-author-ui .lrn-author-col-xs-none {
         display: inline;
+    }
+
+    .lrn-author.lrn-author .lrn-author-ui .lrn-author-col-sm-none {
+        display: none;
     }
 }
 
