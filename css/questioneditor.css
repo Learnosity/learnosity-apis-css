@@ -5167,6 +5167,10 @@
     background-color: #41474f;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-activity-score-overrides-notice {
+    margin-top: 1.1428571429em;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-live-score-wrapper {
     display: inline-block;
     vertical-align: middle;
