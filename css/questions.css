@@ -9886,6 +9886,138 @@ img.lrn-loading-image-hidden {
     pointer-events: none;
 }
 
+:root {
+    --lds-slider-input-track-color--active: var(--lds-color--blue-M900);
+    --lds-slider-input-track-background: var(--lds-color--grey-L400);
+    --lds-slider-input-track-border-color: var(--lds-color--grey-M500);
+    --lds-slider-input-track-border-width: 1px;
+    --lds-slider-input-track-height: 8px;
+    --lds-slider-input-track-border-radius: var(--lds-border-radius--xs);
+    --lds-slider-input-track-border: var(--lds-slider-input-track-border-color) solid var(--lds-slider-input-track-border-width);
+    --lds-slider-input-track-wrapper-height: 24px;
+    --lds-slider-input-thumb-background: var(--lds-color--white);
+    --lds-slider-input-thumb-border: var(--lds-border-width--sm) solid var(--lds-color--grey-M500);
+    --lds-slider-input-thumb-shadow-width--active: 6px;
+    --lds-slider-input-thumb-height: 24px;
+    --lds-slider-input-thumb-width: 24px;
+    --lds-slider-input-thumb-box-shadow--focus: inset 0 0 0 2px var(--lds-color--white),
+                                                inset 0 0 0 4px var(--lds-color--blue-M900);
+    --lds-slider-input-thumb-border--focus: var(--lds-border-width--sm) solid var(--lds-color--blue-M900);
+    --lds-slider-input-thumb-border--active: var(--lds-border-width--sm) solid var(--lds-color--grey-M500);
+    --lds-slider-input-thumb-background-color--active: var(--lds-color--grey-L600);
+    --lds-slider-input-thumb-border--hover: var(--lds-border-width--sm) solid var(--lds-color--grey-M500);
+    --lds-slider-input-thumb-background-color--hover: var(--lds-color--grey-L400);
+    --lds-slider-input-thumb-background-color--pressed: var(--lds-color--grey-L600);
+    --lds-slider-input-thumb-border--pressed: var(--lds-border-width--sm) solid var(--lds-color--grey-M500);
+    --lds-slider-input-thumb-background-color--readonly: var(--lds-color--grey-L600);
+    --lds-slider-input-thumb-border--readonly: var(--lds-border-width--xs) solid var(--lds-color--grey-M600);
+    --lds-slider-input-thumb-border--disabled: var(--lds-border-width--sm) solid var(--lds-color--grey-L600);
+    --lds-slider-input-track-opacity--disabled: .5;
+    --lds-slider-input-track-background-color--disabled: var(--lds-color--blue-M900);
+}
+
+:is(#id,body) .lds-slider :global(.tooltip-arrow) {
+    border-style: unset;
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb {
+    border-radius: 100%;
+    background: var(--lds-slider-input-thumb-background);
+    border: var(--lds-slider-input-thumb-border);
+    height: var(--lds-slider-input-thumb-height);
+    width: var(--lds-slider-input-thumb-width);
+    outline: none;
+    inset: 0;
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb:not([aria-disabled=true]):focus,
+:is(#id,body) .lds-slider .lds-slider-thumb:not([aria-disabled=true]):focus-visible {
+    border: var(--lds-slider-input-thumb-border--focus);
+    box-shadow: var(--lds-slider-input-thumb-box-shadow--focus);
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb:not([aria-disabled=true]):active:not(:focus),
+:is(#id,body) .lds-slider .lds-slider-thumb:not([aria-disabled=true]):hover:not(:focus) {
+    box-shadow: var(--lds-slider-input-thumb-shadow-width--active);
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb:not([aria-disabled=true]):hover:not(:focus) {
+    background-color: var(--lds-slider-input-thumb-background-color--hover);
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb:not([aria-disabled=true]):active:not(:focus) {
+    background-color: var(--lds-slider-input-thumb-background-color--active);
+    border: var(--lds-slider-input-thumb-border--active);
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb:not([aria-disabled=true]):active:focus {
+    background-color: var(--lds-slider-input-thumb-background-color--pressed);
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb[aria-readonly=true] {
+    background-color: var(--lds-slider-input-thumb-background-color--readonly);
+    border: var(--lds-slider-input-thumb-border--readonly);
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb[aria-disabled=true]:not([aria-readonly=true]) {
+    border: var(--lds-slider-input-thumb-border--disabled);
+    pointer-events: none;
+    cursor: default;
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb .lds-tooltip-inner {
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+:is(#id,body) .lds-slider .lds-slider-thumb :global(.lds-tooltip.show) {
+    visibility: visible;
+}
+
+:is(#id,body) .lds-slider .lds-slider-track-wrapper {
+    position: relative;
+    width: 100%;
+    height: var(--lds-slider-input-track-wrapper-height);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    cursor: pointer;
+}
+
+:is(#id,body) .lds-slider .lds-slider-track-wrapper[aria-disabled=true]:not([aria-readonly=true]) {
+    cursor: default;
+}
+
+:is(#id,body) .lds-slider .lds-slider-track-wrapper .lds-slider-track {
+    width: auto;
+    height: var(--lds-slider-input-track-height);
+    border-radius: var(--lds-slider-input-track-border-radius);
+    align-self: center;
+    border-width: var(--lds-slider-input-track-border-width);
+    margin: 0 calc(var(--lds-slider-input-thumb-height)/2 + 2px);
+    color: var(--lds-slider-input-track-color--active);
+    border: var(--lds-slider-input-track-border);
+}
+
+:is(#id,body) .lds-slider .lds-slider-track-wrapper .lds-slider-track[aria-disabled=true]:not([aria-readonly=true]) {
+    background-color: var(--lds-slider-input-track-background-color--disabled);
+    opacity: var(--lds-slider-input-track-opacity--disabled);
+}
+
+:is(#id,body) .lds-slider.lds-slider--vertical {
+    height: 100%;
+}
+
+:is(#id,body) .lds-slider.lds-slider--vertical .lds-slider-track-wrapper {
+    height: 100%;
+    width: auto;
+}
+
+:is(#id,body) .lds-slider.lds-slider--vertical .lds-slider-track-wrapper .lds-slider-track {
+    height: 100%;
+    width: var(--lds-slider-input-track-height);
+}
+
 .lrn_widget.lrn_association,
 .lrn_widget.lrn_sortlist,
 .lrn_widget.lrn_orderlist,
@@ -24788,6 +24920,7 @@ body.lrn-hidden-element-helper .lrn-hidden-element-shown {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+    user-select: none;
 }
 
 .lrn p {

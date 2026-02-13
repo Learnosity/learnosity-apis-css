@@ -1909,7 +1909,7 @@
 }
 
 .learnosity-report .btn-group>.btn-lg+.dropdown-toggle,
-.learnosity-report .btn-group-lg.btn-group>.btn+.dropdown-toggle {
+.learnosity-report .btn-group.btn-group-lg>.btn+.dropdown-toggle {
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -2096,14 +2096,14 @@ fieldset[disabled] .learnosity-report .btn {
 .learnosity-report .btn-default:active,
 .learnosity-report .btn-default.active {
     color: #333333;
-    background-color: #ebebeb;
-    border-color: #adadad;
+    background-color: hsl(0, 0%, 92%);
+    border-color: hsl(0, 0%, 68%);
 }
 
 .open .learnosity-report .btn-default.dropdown-toggle {
     color: #333333;
-    background-color: #ebebeb;
-    border-color: #adadad;
+    background-color: hsl(0, 0%, 92%);
+    border-color: hsl(0, 0%, 68%);
 }
 
 .learnosity-report .btn-default:active,
@@ -2142,7 +2142,7 @@ fieldset[disabled] .learnosity-report .btn-default.active {
 .learnosity-report .btn-primary {
     color: #ffffff;
     background-color: #428bca;
-    border-color: #357ebd;
+    border-color: rgb(53.1095041322, 126.2603305785, 189.3904958678);
 }
 
 .learnosity-report .btn-primary:hover,
@@ -2150,14 +2150,14 @@ fieldset[disabled] .learnosity-report .btn-default.active {
 .learnosity-report .btn-primary:active,
 .learnosity-report .btn-primary.active {
     color: #ffffff;
-    background-color: #3276b1;
-    border-color: #285e8e;
+    background-color: rgb(49.758677686, 118.294214876, 177.441322314);
+    border-color: rgb(39.7061983471, 94.3958677686, 141.5938016529);
 }
 
 .open .learnosity-report .btn-primary.dropdown-toggle {
     color: #ffffff;
-    background-color: #3276b1;
-    border-color: #285e8e;
+    background-color: rgb(49.758677686, 118.294214876, 177.441322314);
+    border-color: rgb(39.7061983471, 94.3958677686, 141.5938016529);
 }
 
 .learnosity-report .btn-primary:active,
@@ -2185,7 +2185,7 @@ fieldset[disabled] .learnosity-report .btn-primary:focus,
 fieldset[disabled] .learnosity-report .btn-primary:active,
 fieldset[disabled] .learnosity-report .btn-primary.active {
     background-color: #428bca;
-    border-color: #357ebd;
+    border-color: rgb(53.1095041322, 126.2603305785, 189.3904958678);
 }
 
 .learnosity-report .btn-primary .badge {
@@ -2196,7 +2196,7 @@ fieldset[disabled] .learnosity-report .btn-primary.active {
 .learnosity-report .btn-success {
     color: #ffffff;
     background-color: #5cb85c;
-    border-color: #4cae4c;
+    border-color: hsl(120, 39.3162393162%, 49.1176470588%);
 }
 
 .learnosity-report .btn-success:hover,
@@ -2204,14 +2204,14 @@ fieldset[disabled] .learnosity-report .btn-primary.active {
 .learnosity-report .btn-success:active,
 .learnosity-report .btn-success.active {
     color: #ffffff;
-    background-color: #47a447;
-    border-color: #398439;
+    background-color: hsl(120, 39.3162393162%, 46.1176470588%);
+    border-color: hsl(120, 39.3162393162%, 37.1176470588%);
 }
 
 .open .learnosity-report .btn-success.dropdown-toggle {
     color: #ffffff;
-    background-color: #47a447;
-    border-color: #398439;
+    background-color: hsl(120, 39.3162393162%, 46.1176470588%);
+    border-color: hsl(120, 39.3162393162%, 37.1176470588%);
 }
 
 .learnosity-report .btn-success:active,
@@ -2239,7 +2239,7 @@ fieldset[disabled] .learnosity-report .btn-success:focus,
 fieldset[disabled] .learnosity-report .btn-success:active,
 fieldset[disabled] .learnosity-report .btn-success.active {
     background-color: #5cb85c;
-    border-color: #4cae4c;
+    border-color: hsl(120, 39.3162393162%, 49.1176470588%);
 }
 
 .learnosity-report .btn-success .badge {
@@ -2250,7 +2250,7 @@ fieldset[disabled] .learnosity-report .btn-success.active {
 .learnosity-report .btn-info {
     color: #ffffff;
     background-color: #5bc0de;
-    border-color: #46b8da;
+    border-color: rgb(69.7715736041, 183.845177665, 217.7284263959);
 }
 
 .learnosity-report .btn-info:hover,
@@ -2258,14 +2258,14 @@ fieldset[disabled] .learnosity-report .btn-success.active {
 .learnosity-report .btn-info:active,
 .learnosity-report .btn-info.active {
     color: #ffffff;
-    background-color: #39b3d7;
-    border-color: #269abc;
+    background-color: rgb(57.0345177665, 178.952284264, 215.1654822335);
+    border-color: rgb(37.9081218274, 153.9299492386, 188.3918781726);
 }
 
 .open .learnosity-report .btn-info.dropdown-toggle {
     color: #ffffff;
-    background-color: #39b3d7;
-    border-color: #269abc;
+    background-color: rgb(57.0345177665, 178.952284264, 215.1654822335);
+    border-color: rgb(37.9081218274, 153.9299492386, 188.3918781726);
 }
 
 .learnosity-report .btn-info:active,
@@ -2293,7 +2293,7 @@ fieldset[disabled] .learnosity-report .btn-info:focus,
 fieldset[disabled] .learnosity-report .btn-info:active,
 fieldset[disabled] .learnosity-report .btn-info.active {
     background-color: #5bc0de;
-    border-color: #46b8da;
+    border-color: rgb(69.7715736041, 183.845177665, 217.7284263959);
 }
 
 .learnosity-report .btn-info .badge {
@@ -2304,7 +2304,7 @@ fieldset[disabled] .learnosity-report .btn-info.active {
 .learnosity-report .btn-warning {
     color: #ffffff;
     background-color: #f0ad4e;
-    border-color: #eea236;
+    border-color: rgb(238.0078125, 162.109375, 54.4921875);
 }
 
 .learnosity-report .btn-warning:hover,
@@ -2312,14 +2312,14 @@ fieldset[disabled] .learnosity-report .btn-info.active {
 .learnosity-report .btn-warning:active,
 .learnosity-report .btn-warning.active {
     color: #ffffff;
-    background-color: #ed9c28;
-    border-color: #d58512;
+    background-color: rgb(236.8125, 155.575, 40.3875);
+    border-color: rgb(213.2296875, 132.515625, 18.0703125);
 }
 
 .open .learnosity-report .btn-warning.dropdown-toggle {
     color: #ffffff;
-    background-color: #ed9c28;
-    border-color: #d58512;
+    background-color: rgb(236.8125, 155.575, 40.3875);
+    border-color: rgb(213.2296875, 132.515625, 18.0703125);
 }
 
 .learnosity-report .btn-warning:active,
@@ -2347,7 +2347,7 @@ fieldset[disabled] .learnosity-report .btn-warning:focus,
 fieldset[disabled] .learnosity-report .btn-warning:active,
 fieldset[disabled] .learnosity-report .btn-warning.active {
     background-color: #f0ad4e;
-    border-color: #eea236;
+    border-color: rgb(238.0078125, 162.109375, 54.4921875);
 }
 
 .learnosity-report .btn-warning .badge {
@@ -2358,7 +2358,7 @@ fieldset[disabled] .learnosity-report .btn-warning.active {
 .learnosity-report .btn-danger {
     color: #ffffff;
     background-color: #d9534f;
-    border-color: #d43f3a;
+    border-color: rgb(212.4719626168, 62.5046728972, 58.0280373832);
 }
 
 .learnosity-report .btn-danger:hover,
@@ -2366,14 +2366,14 @@ fieldset[disabled] .learnosity-report .btn-warning.active {
 .learnosity-report .btn-danger:active,
 .learnosity-report .btn-danger.active {
     color: #ffffff;
-    background-color: #d2322d;
-    border-color: #ac2925;
+    background-color: rgb(209.7551401869, 50.2074766355, 45.4448598131);
+    border-color: rgb(172.1345794393, 41.0775700935, 37.1654205607);
 }
 
 .open .learnosity-report .btn-danger.dropdown-toggle {
     color: #ffffff;
-    background-color: #d2322d;
-    border-color: #ac2925;
+    background-color: rgb(209.7551401869, 50.2074766355, 45.4448598131);
+    border-color: rgb(172.1345794393, 41.0775700935, 37.1654205607);
 }
 
 .learnosity-report .btn-danger:active,
@@ -2401,7 +2401,7 @@ fieldset[disabled] .learnosity-report .btn-danger:focus,
 fieldset[disabled] .learnosity-report .btn-danger:active,
 fieldset[disabled] .learnosity-report .btn-danger.active {
     background-color: #d9534f;
-    border-color: #d43f3a;
+    border-color: rgb(212.4719626168, 62.5046728972, 58.0280373832);
 }
 
 .learnosity-report .btn-danger .badge {
@@ -2436,7 +2436,7 @@ fieldset[disabled] .learnosity-report .btn-link {
 
 .learnosity-report .btn-link:hover,
 .learnosity-report .btn-link:focus {
-    color: #2a6496;
+    color: rgb(41.9400826446, 99.7066115702, 149.5599173554);
     text-decoration: underline;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -2585,7 +2585,7 @@ fieldset[disabled] .learnosity-report .btn-link:focus {
 .learnosity-report .dropdown-menu>li>a:hover,
 .learnosity-report .dropdown-menu>li>a:focus {
     text-decoration: none;
-    color: #262626;
+    color: hsl(0, 0%, 15%);
     background-color: #f5f5f5;
 }
 
@@ -2745,7 +2745,7 @@ fieldset[disabled] .learnosity-report .btn-link:focus {
     padding-top: 7px;
     font-size: 14px;
     line-height: 1.428571429;
-    color: #555555;
+    color: hsl(0, 0%, 33.5%);
 }
 
 .learnosity-report .form-control {
@@ -2755,7 +2755,7 @@ fieldset[disabled] .learnosity-report .btn-link:focus {
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.428571429;
-    color: #555555;
+    color: hsl(0, 0%, 33.5%);
     background-color: #ffffff;
     background-image: none;
     border: 1px solid #cccccc;
@@ -2799,7 +2799,7 @@ fieldset[disabled] .learnosity-report .btn-link:focus {
 .learnosity-report .form-control[readonly],
 fieldset[disabled] .learnosity-report .form-control {
     cursor: not-allowed;
-    background-color: #eeeeee;
+    background-color: hsl(0, 0%, 93.5%);
     opacity: 1;
 }
 
@@ -2976,11 +2976,15 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .has-success .form-control:focus {
-    border-color: #2b542c;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
-    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
-    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+    border-color: rgb(42.808988764, 84.191011236, 43.5224719101);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                        0 0 6px rgb(102.5280898876, 177.4719101124, 103.8202247191);
+    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                    0 0 6px rgb(102.5280898876, 177.4719101124, 103.8202247191);
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                   0 0 6px rgb(102.5280898876, 177.4719101124, 103.8202247191);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                0 0 6px rgb(102.5280898876, 177.4719101124, 103.8202247191);
 }
 
 .learnosity-report .has-success .input-group-addon {
@@ -3011,11 +3015,15 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .has-warning .form-control:focus {
-    border-color: #66512c;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
-    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
-    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+    border-color: rgb(102.2741116751, 80.7817258883, 43.7258883249);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                        0 0 6px rgb(191.807106599, 160.7461928934, 107.192893401);
+    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                    0 0 6px rgb(191.807106599, 160.7461928934, 107.192893401);
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                   0 0 6px rgb(191.807106599, 160.7461928934, 107.192893401);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                0 0 6px rgb(191.807106599, 160.7461928934, 107.192893401);
 }
 
 .learnosity-report .has-warning .input-group-addon {
@@ -3046,11 +3054,15 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .has-error .form-control:focus {
-    border-color: #843534;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
-    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
-    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    border-color: hsl(1.1650485437, 43.829787234%, 36.0784313725%);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                        0 0 6px rgb(206.4127659574, 132.0595744681, 130.5872340426);
+    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                    0 0 6px rgb(206.4127659574, 132.0595744681, 130.5872340426);
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                   0 0 6px rgb(206.4127659574, 132.0595744681, 130.5872340426);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+                0 0 6px rgb(206.4127659574, 132.0595744681, 130.5872340426);
 }
 
 .learnosity-report .has-error .input-group-addon {
@@ -3071,7 +3083,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     display: block;
     margin-top: 5px;
     margin-bottom: 10px;
-    color: #737373;
+    color: hsl(0, 0%, 45%);
 }
 
 @media (min-width: 768px) {
@@ -3205,9 +3217,9 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     font-size: 14px;
     font-weight: normal;
     line-height: 1;
-    color: #555555;
+    color: hsl(0, 0%, 33.5%);
     text-align: center;
-    background-color: #eeeeee;
+    background-color: hsl(0, 0%, 93.5%);
     border: 1px solid #cccccc;
     border-radius: 4px;
 }
@@ -4705,7 +4717,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report a:hover,
 .learnosity-report a:focus {
-    color: #2a6496;
+    color: rgb(41.9400826446, 99.7066115702, 149.5599173554);
     text-decoration: underline;
 }
 
@@ -4754,7 +4766,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid hsl(0, 0%, 93.5%);
 }
 
 .learnosity-report .sr-only {
@@ -4775,8 +4787,8 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .learnosity-report .btn-warning,
 .learnosity-report .btn-danger {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(0, 0, 0, .075);
 }
 
 .learnosity-report .btn-default:active,
@@ -4801,137 +4813,137 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .btn-default {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0e0));
-    background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgb(224.4, 224.4, 224.4)));
+    background-image: linear-gradient(to bottom, #ffffff 0%, rgb(224.4, 224.4, 224.4) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFE0E0E0", GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
-    border-color: #dbdbdb;
+    border-color: hsl(0, 0%, 86%);
     text-shadow: 0 1px 0 #ffffff;
     border-color: #cccccc;
 }
 
 .learnosity-report .btn-default:hover,
 .learnosity-report .btn-default:focus {
-    background-color: #e0e0e0;
+    background-color: hsl(0, 0%, 88%);
     background-position: 0 -15px;
 }
 
 .learnosity-report .btn-default:active,
 .learnosity-report .btn-default.active {
-    background-color: #e0e0e0;
-    border-color: #dbdbdb;
+    background-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 86%);
 }
 
 .learnosity-report .btn-primary {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#2d6ca2));
-    background-image: linear-gradient(to bottom, #428bca 0%, #2d6ca2 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(rgb(45.2909090909, 107.6727272727, 161.5090909091)));
+    background-image: linear-gradient(to bottom, #428bca 0%, rgb(45.2909090909, 107.6727272727, 161.5090909091) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF428BCA", endColorstr="#FF2D6CA2", GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
-    border-color: #2b669a;
+    border-color: rgb(43.0570247934, 102.3619834711, 153.5429752066);
 }
 
 .learnosity-report .btn-primary:hover,
 .learnosity-report .btn-primary:focus {
-    background-color: #2d6ca2;
+    background-color: rgb(45.2909090909, 107.6727272727, 161.5090909091);
     background-position: 0 -15px;
 }
 
 .learnosity-report .btn-primary:active,
 .learnosity-report .btn-primary.active {
-    background-color: #2d6ca2;
-    border-color: #2b669a;
+    background-color: rgb(45.2909090909, 107.6727272727, 161.5090909091);
+    border-color: rgb(43.0570247934, 102.3619834711, 153.5429752066);
 }
 
 .learnosity-report .btn-success {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
-    background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(rgb(65.1743589744, 149.6256410256, 65.1743589744)));
+    background-image: linear-gradient(to bottom, #5cb85c 0%, rgb(65.1743589744, 149.6256410256, 65.1743589744) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF5CB85C", endColorstr="#FF419641", GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
-    border-color: #3e8f3e;
+    border-color: hsl(120, 39.3162393162%, 40.1176470588%);
 }
 
 .learnosity-report .btn-success:hover,
 .learnosity-report .btn-success:focus {
-    background-color: #419641;
+    background-color: hsl(120, 39.3162393162%, 42.1176470588%);
     background-position: 0 -15px;
 }
 
 .learnosity-report .btn-success:active,
 .learnosity-report .btn-success.active {
-    background-color: #419641;
-    border-color: #3e8f3e;
+    background-color: hsl(120, 39.3162393162%, 42.1176470588%);
+    border-color: hsl(120, 39.3162393162%, 40.1176470588%);
 }
 
 .learnosity-report .btn-info {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#2aabd2));
-    background-image: linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(rgb(42.1796954315, 171.2751269036, 209.6203045685)));
+    background-image: linear-gradient(to bottom, #5bc0de 0%, rgb(42.1796954315, 171.2751269036, 209.6203045685) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF5BC0DE", endColorstr="#FF2AABD2", GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
-    border-color: #28a4c9;
+    border-color: rgb(40.4710659898, 164.3370558376, 201.1289340102);
 }
 
 .learnosity-report .btn-info:hover,
 .learnosity-report .btn-info:focus {
-    background-color: #2aabd2;
+    background-color: rgb(42.1796954315, 171.2751269036, 209.6203045685);
     background-position: 0 -15px;
 }
 
 .learnosity-report .btn-info:active,
 .learnosity-report .btn-info.active {
-    background-color: #2aabd2;
-    border-color: #28a4c9;
+    background-color: rgb(42.1796954315, 171.2751269036, 209.6203045685);
+    border-color: rgb(40.4710659898, 164.3370558376, 201.1289340102);
 }
 
 .learnosity-report .btn-warning {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#eb9316));
-    background-image: linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(rgb(235.21875, 146.8625, 21.58125)));
+    background-image: linear-gradient(to bottom, #f0ad4e 0%, rgb(235.21875, 146.8625, 21.58125) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF0AD4E", endColorstr="#FFEB9316", GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
-    border-color: #e38d13;
+    border-color: rgb(227.334375, 141.28125, 19.265625);
 }
 
 .learnosity-report .btn-warning:hover,
 .learnosity-report .btn-warning:focus {
-    background-color: #eb9316;
+    background-color: rgb(235.21875, 146.8625, 21.58125);
     background-position: 0 -15px;
 }
 
 .learnosity-report .btn-warning:active,
 .learnosity-report .btn-warning.active {
-    background-color: #eb9316;
-    border-color: #e38d13;
+    background-color: rgb(235.21875, 146.8625, 21.58125);
+    border-color: rgb(227.334375, 141.28125, 19.265625);
 }
 
 .learnosity-report .btn-danger {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c12e2a));
-    background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(rgb(193.1065420561, 46.0822429907, 41.6934579439)));
+    background-image: linear-gradient(to bottom, #d9534f 0%, rgb(193.1065420561, 46.0822429907, 41.6934579439) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFD9534F", endColorstr="#FFC12E2A", GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
-    border-color: #b92c28;
+    border-color: rgb(184.7177570093, 44.0803738318, 39.8822429907);
 }
 
 .learnosity-report .btn-danger:hover,
 .learnosity-report .btn-danger:focus {
-    background-color: #c12e2a;
+    background-color: rgb(193.1065420561, 46.0822429907, 41.6934579439);
     background-position: 0 -15px;
 }
 
 .learnosity-report .btn-danger:active,
 .learnosity-report .btn-danger.active {
-    background-color: #c12e2a;
-    border-color: #b92c28;
+    background-color: rgb(193.1065420561, 46.0822429907, 41.6934579439);
+    border-color: rgb(184.7177570093, 44.0803738318, 39.8822429907);
 }
 
 .learnosity-report .thumbnail,
@@ -4942,21 +4954,21 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report .dropdown-menu>li>a:hover,
 .learnosity-report .dropdown-menu>li>a:focus {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
-    background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(rgb(232.25, 232.25, 232.25)));
+    background-image: linear-gradient(to bottom, #f5f5f5 0%, rgb(232.25, 232.25, 232.25) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF5F5F5", endColorstr="#FFE8E8E8", GradientType=0);
-    background-color: #e8e8e8;
+    background-color: hsl(0, 0%, 91.0784313725%);
 }
 
 .learnosity-report .dropdown-menu>.active>a,
 .learnosity-report .dropdown-menu>.active>a:hover,
 .learnosity-report .dropdown-menu>.active>a:focus {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#357ebd));
-    background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(rgb(53.1095041322, 126.2603305785, 189.3904958678)));
+    background-image: linear-gradient(to bottom, #428bca 0%, rgb(53.1095041322, 126.2603305785, 189.3904958678) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF428BCA", endColorstr="#FF357EBD", GradientType=0);
-    background-color: #357ebd;
+    background-color: rgb(53.1095041322, 126.2603305785, 189.3904958678);
 }
 
 .learnosity-report .navbar-default {
@@ -4966,13 +4978,13 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFF8F8F8", GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+    -webkit-box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 5px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 5px rgba(0, 0, 0, .075);
 }
 
 .learnosity-report .navbar-default .navbar-nav>.active>a {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#f3f3f3));
-    background-image: linear-gradient(to bottom, #ebebeb 0%, #f3f3f3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(235.25, 235.25, 235.25)), to(rgb(242.9, 242.9, 242.9)));
+    background-image: linear-gradient(to bottom, rgb(235.25, 235.25, 235.25) 0%, rgb(242.9, 242.9, 242.9) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFEBEBEB", endColorstr="#FFF3F3F3", GradientType=0);
     -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);
@@ -4981,20 +4993,20 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report .navbar-brand,
 .learnosity-report .navbar-nav>li>a {
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+    text-shadow: 0 1px 0 hsla(0, 0%, 100%, .25);
 }
 
 .learnosity-report .navbar-inverse {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222222));
-    background-image: linear-gradient(to bottom, #3c3c3c 0%, #222222 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(59.5, 59.5, 59.5)), to(#222222));
+    background-image: linear-gradient(to bottom, rgb(59.5, 59.5, 59.5) 0%, #222222 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF3C3C3C", endColorstr="#FF222222", GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
 .learnosity-report .navbar-inverse .navbar-nav>.active>a {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#282828));
-    background-image: linear-gradient(to bottom, #222222 0%, #282828 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(rgb(40.375, 40.375, 40.375)));
+    background-image: linear-gradient(to bottom, #222222 0%, rgb(40.375, 40.375, 40.375) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF222222", endColorstr="#FF282828", GradientType=0);
     -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
@@ -5013,81 +5025,81 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .alert {
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .2);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
+    text-shadow: 0 1px 0 hsla(0, 0%, 100%, .2);
+    -webkit-box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .25), 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .25), 0 1px 2px rgba(0, 0, 0, .05);
 }
 
 .learnosity-report .alert-success {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#c8e5bc));
-    background-image: linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(rgb(200.3333333333, 229.375, 188.375)));
+    background-image: linear-gradient(to bottom, #dff0d8 0%, rgb(200.3333333333, 229.375, 188.375) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFDFF0D8", endColorstr="#FFC8E5BC", GradientType=0);
-    border-color: #b2dba1;
+    border-color: rgb(177.6666666667, 218.75, 160.75);
 }
 
 .learnosity-report .alert-info {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#b9def0));
-    background-image: linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(rgb(185.402173913, 222.0326086957, 240.347826087)));
+    background-image: linear-gradient(to bottom, #d9edf7 0%, rgb(185.402173913, 222.0326086957, 240.347826087) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFD9EDF7", endColorstr="#FFB9DEF0", GradientType=0);
-    border-color: #9acfea;
+    border-color: hsl(200, 65.2173913043%, 75.9803921569%);
 }
 
 .learnosity-report .alert-warning {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#f8efc0));
-    background-image: linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(rgb(248.2983870968, 239.3629032258, 192.4516129032)));
+    background-image: linear-gradient(to bottom, #fcf8e3 0%, rgb(248.2983870968, 239.3629032258, 192.4516129032) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFCF8E3", endColorstr="#FFF8EFC0", GradientType=0);
-    border-color: #f5e79e;
+    border-color: hsl(50.4, 80.6451612903%, 78.9215686275%);
 }
 
 .learnosity-report .alert-danger {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#e7c3c3));
-    background-image: linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(rgb(231.1902173913, 194.5597826087, 194.5597826087)));
+    background-image: linear-gradient(to bottom, #f2dede 0%, rgb(231.1902173913, 194.5597826087, 194.5597826087) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF2DEDE", endColorstr="#FFE7C3C3", GradientType=0);
-    border-color: #dca7a7;
+    border-color: hsl(0, 43.4782608696%, 75.9803921569%);
 }
 
 .learnosity-report .progress {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#f5f5f5));
-    background-image: linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(234.8, 234.8, 234.8)), to(#f5f5f5));
+    background-image: linear-gradient(to bottom, rgb(234.8, 234.8, 234.8) 0%, #f5f5f5 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFEBEBEB", endColorstr="#FFF5F5F5", GradientType=0);
 }
 
 .learnosity-report .progress-bar {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#3071a9));
-    background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(rgb(47.5247933884, 112.9834710744, 169.4752066116)));
+    background-image: linear-gradient(to bottom, #428bca 0%, rgb(47.5247933884, 112.9834710744, 169.4752066116) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF428BCA", endColorstr="#FF3071A9", GradientType=0);
 }
 
 .learnosity-report .progress-bar-success {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#449d44));
-    background-image: linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(rgb(68.2692307692, 156.7307692308, 68.2692307692)));
+    background-image: linear-gradient(to bottom, #5cb85c 0%, rgb(68.2692307692, 156.7307692308, 68.2692307692) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF5CB85C", endColorstr="#FF449D44", GradientType=0);
 }
 
 .learnosity-report .progress-bar-info {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#31b0d5));
-    background-image: linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(rgb(48.5431472081, 175.6903553299, 213.4568527919)));
+    background-image: linear-gradient(to bottom, #5bc0de 0%, rgb(48.5431472081, 175.6903553299, 213.4568527919) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF5BC0DE", endColorstr="#FF31B0D5", GradientType=0);
 }
 
 .learnosity-report .progress-bar-warning {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#ec971f));
-    background-image: linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(rgb(236.015625, 151.21875, 30.984375)));
+    background-image: linear-gradient(to bottom, #f0ad4e 0%, rgb(236.015625, 151.21875, 30.984375) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF0AD4E", endColorstr="#FFEC971F", GradientType=0);
 }
 
 .learnosity-report .progress-bar-danger {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c9302c));
-    background-image: linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(rgb(201.4953271028, 48.0841121495, 43.5046728972)));
+    background-image: linear-gradient(to bottom, #d9534f 0%, rgb(201.4953271028, 48.0841121495, 43.5046728972) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFD9534F", endColorstr="#FFC9302C", GradientType=0);
 }
@@ -5101,12 +5113,12 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .learnosity-report .list-group-item.active,
 .learnosity-report .list-group-item.active:hover,
 .learnosity-report .list-group-item.active:focus {
-    text-shadow: 0 -1px 0 #3071a9;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#3278b3));
-    background-image: linear-gradient(to bottom, #428bca 0%, #3278b3 100%);
+    text-shadow: 0 -1px 0 rgb(47.5247933884, 112.9834710744, 169.4752066116);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(rgb(50.3171487603, 119.6219008264, 179.4328512397)));
+    background-image: linear-gradient(to bottom, #428bca 0%, rgb(50.3171487603, 119.6219008264, 179.4328512397) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF428BCA", endColorstr="#FF3278B3", GradientType=0);
-    border-color: #3278b3;
+    border-color: rgb(50.3171487603, 119.6219008264, 179.4328512397);
 }
 
 .learnosity-report .panel {
@@ -5115,55 +5127,55 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .panel-default>.panel-heading {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
-    background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(rgb(232.25, 232.25, 232.25)));
+    background-image: linear-gradient(to bottom, #f5f5f5 0%, rgb(232.25, 232.25, 232.25) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF5F5F5", endColorstr="#FFE8E8E8", GradientType=0);
 }
 
 .learnosity-report .panel-primary>.panel-heading {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#357ebd));
-    background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(rgb(53.1095041322, 126.2603305785, 189.3904958678)));
+    background-image: linear-gradient(to bottom, #428bca 0%, rgb(53.1095041322, 126.2603305785, 189.3904958678) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF428BCA", endColorstr="#FF357EBD", GradientType=0);
 }
 
 .learnosity-report .panel-success>.panel-heading {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#d0e9c6));
-    background-image: linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(rgb(207.8888888889, 232.9166666667, 197.5833333333)));
+    background-image: linear-gradient(to bottom, #dff0d8 0%, rgb(207.8888888889, 232.9166666667, 197.5833333333) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFDFF0D8", endColorstr="#FFD0E9C6", GradientType=0);
 }
 
 .learnosity-report .panel-info>.panel-heading {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#c4e3f3));
-    background-image: linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(rgb(195.9347826087, 227.0217391304, 242.5652173913)));
+    background-image: linear-gradient(to bottom, #d9edf7 0%, rgb(195.9347826087, 227.0217391304, 242.5652173913) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFD9EDF7", endColorstr="#FFC4E3F3", GradientType=0);
 }
 
 .learnosity-report .panel-warning>.panel-heading {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#faf2cc));
-    background-image: linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(rgb(249.5322580645, 242.2419354839, 203.9677419355)));
+    background-image: linear-gradient(to bottom, #fcf8e3 0%, rgb(249.5322580645, 242.2419354839, 203.9677419355) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFCF8E3", endColorstr="#FFFAF2CC", GradientType=0);
 }
 
 .learnosity-report .panel-danger>.panel-heading {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#ebcccc));
-    background-image: linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(rgb(234.7934782609, 203.7065217391, 203.7065217391)));
+    background-image: linear-gradient(to bottom, #f2dede 0%, rgb(234.7934782609, 203.7065217391, 203.7065217391) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF2DEDE", endColorstr="#FFEBCCCC", GradientType=0);
 }
 
 .learnosity-report .well {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#f5f5f5));
-    background-image: linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(232.25, 232.25, 232.25)), to(#f5f5f5));
+    background-image: linear-gradient(to bottom, rgb(232.25, 232.25, 232.25) 0%, #f5f5f5 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFE8E8E8", endColorstr="#FFF5F5F5", GradientType=0);
-    border-color: #dcdcdc;
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+    border-color: rgb(219.5, 219.5, 219.5);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 hsla(0, 0%, 100%, .1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 hsla(0, 0%, 100%, .1);
 }
 
 .learnosity-report .clearfix:before,
@@ -5935,7 +5947,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .lrn-activity-status-group:active {
-    background-color: #e8e8e8;
+    background-color: hsl(0, 0%, 91.0784313725%);
     text-decoration: none;
 }
 
@@ -6218,7 +6230,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .learnosity-report .table-hover>tbody>tr>th.active:hover,
 .learnosity-report .table-hover>tbody>tr.active:hover>td,
 .learnosity-report .table-hover>tbody>tr.active:hover>th {
-    background-color: #e8e8e8;
+    background-color: hsl(0, 0%, 91.0784313725%);
 }
 
 .learnosity-report .table>thead>tr>td.success,
@@ -6240,7 +6252,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .learnosity-report .table-hover>tbody>tr>th.success:hover,
 .learnosity-report .table-hover>tbody>tr.success:hover>td,
 .learnosity-report .table-hover>tbody>tr.success:hover>th {
-    background-color: #d0e9c6;
+    background-color: hsl(102.5, 44.4444444444%, 84.4117647059%);
 }
 
 .learnosity-report .table>thead>tr>td.info,
@@ -6262,7 +6274,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .learnosity-report .table-hover>tbody>tr>th.info:hover,
 .learnosity-report .table-hover>tbody>tr.info:hover>td,
 .learnosity-report .table-hover>tbody>tr.info:hover>th {
-    background-color: #c4e3f3;
+    background-color: hsl(200, 65.2173913043%, 85.9803921569%);
 }
 
 .learnosity-report .table>thead>tr>td.warning,
@@ -6284,7 +6296,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .learnosity-report .table-hover>tbody>tr>th.warning:hover,
 .learnosity-report .table-hover>tbody>tr.warning:hover>td,
 .learnosity-report .table-hover>tbody>tr.warning:hover>th {
-    background-color: #faf2cc;
+    background-color: hsl(50.4, 80.6451612903%, 88.9215686275%);
 }
 
 .learnosity-report .table>thead>tr>td.danger,
@@ -6306,7 +6318,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .learnosity-report .table-hover>tbody>tr>th.danger:hover,
 .learnosity-report .table-hover>tbody>tr.danger:hover>td,
 .learnosity-report .table-hover>tbody>tr.danger:hover>th {
-    background-color: #ebcccc;
+    background-color: hsl(0, 43.4782608696%, 85.9803921569%);
 }
 
 @media (max-width: 767px) {
