@@ -11923,22 +11923,26 @@ svg.react-flow__connectionline {
     gap: var(--lds-space--1-and-a-half-x);
 }
 
-.lrn-author.lrn-author .lrn-author-activity-scoring-group-create-alert {
+.lrn-author.lrn-author .lrn-author-activity-scoring-group-create-alert,
+.lrn-author.lrn-author .lrn-author-activity-scoring-group-remove-alert {
     align-items: center;
     display: flex;
     flex-grow: 1;
 }
 
-:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-create-alert {
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-create-alert,
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-remove-alert {
     margin-bottom: 0;
     padding-block: var(--lds-space--1-x);
 }
 
-:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-create-alert .lds-icon {
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-create-alert .lds-icon,
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-remove-alert .lds-icon {
     display: flex;
 }
 
-:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-create-alert .lds-alert-content {
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-create-alert .lds-alert-content,
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-remove-alert .lds-alert-content {
     padding-top: 0;
 }
 
@@ -12042,22 +12046,19 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author .lrn-author-scoring-group-fields-row {
-    display: flex;
+    display: grid;
     gap: var(--lds-space--3-x);
+    grid-template-columns: 1fr 1fr;
 }
 
 @container (0px <= width < 615px) {
     .lrn-author.lrn-author .lrn-author-scoring-group-fields-row {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .lrn-author.lrn-author .lrn-author-scoring-group-fields-row .lrn-author-activity-reporting-benchmark-input {
         max-width: 100%;
     }
-}
-
-.lrn-author.lrn-author .lrn-author-scoring-group-fields-row-input {
-    flex-grow: 1;
 }
 
 :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-item-group-accordion-checked .lds-accordion-button {

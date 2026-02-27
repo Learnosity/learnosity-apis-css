@@ -273,6 +273,8 @@
     bottom: 0;
     right: 0;
     z-index: 10;
+    background-color: #ffffff;
+    opacity: .8;
 }
 
 .lrn-qe-spinner {
@@ -1019,7 +1021,10 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-tabs .lrn-qe-tab-header {
     position: relative;
     bottom: -1px;
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 30px;
     padding: 0;
 }
 
@@ -1032,10 +1037,13 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-tabs .lrn-qe-tab-trigger {
     height: 2.2142857143em;
-    padding: 0 .7142857143em;
     background: #ffffff;
     border: 1px solid #cccccc;
     border-bottom-color: #d9d9d9;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-tabs .lrn-qe-tab-trigger:not(:has(.lrn-qe-tab-trigger-btn)) {
+    padding: 0 .7142857143em;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-tabs .lrn-qe-tab-trigger.lrn-qe-tab-with-remove {
@@ -1070,6 +1078,17 @@
     background: #eaeaea;
     border: 1px solid #d9d9d9;
     border-bottom-color: #eaeaea;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-tabs .lrn-qe-tab-trigger .lrn-qe-tab-trigger-btn {
+    background: inherit;
+    border: 0;
+    height: calc(100% - 2px);
+    padding: 0 .7142857143em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-tabs .lrn-qe-tab-trigger .lrn-qe-tab-trigger-btn.lrn-qe-btn-default:focus {
+    outline-color: #1877b1;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-tabs .lrn-qe-tab-sub-content {
