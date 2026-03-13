@@ -12061,6 +12061,95 @@ svg.react-flow__connectionline {
     }
 }
 
+.lrn-author.lrn-author .lrn-author-scoring-group-tag-search-count-header {
+    color: var(--lds-color-text--subtitle-default);
+    font-size: var(--lds-font-size--body-normal);
+    font-style: italic;
+    font-weight: var(--lds-font-weight--subtitle);
+}
+
+.lrn-author.lrn-author .lrn-author-scoring-group-tag-search-count {
+    color: var(--lds-color-text--subtitle-default);
+    font-size: var(--lds-font-size--body-normal);
+    font-weight: var(--lds-font-weight--normal);
+}
+
+.lrn-author.lrn-author .lrn-author-scoring-group-tag-search-suggestion:hover .lrn-author-scoring-group-tag-search-count {
+    color: var(--lds-color-text--primary-default);
+}
+
+.lrn-author.lrn-author .lrn-author-scoring-group-tag-search-title,
+.lrn-author.lrn-author .lrn-author-scoring-group-tag-search-suggestion .lrn-author-tag-suggestion-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-row {
+    background-color: #d9d9d9;
+    height: 48px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-row .lrn-author-list-view-col {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-row .lrn-author-row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-label {
+    font-size: var(--body-x-large, 20px);
+    font-style: normal;
+    font-weight: var(--lds-font-weight--bold);
+    line-height: var(--line-height-font-size-xlarge-400, 28px);
+    letter-spacing: var(--lds-font-letter-spacing--200);
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-item .lrn-author-list-view-item.lrn-author-list-view-item {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-item .lrn-author-activity-edit-section-row.lrn-author-activity-edit-section-row {
+    background-color: var(--lds-color--grey-L200);
+    height: 48px;
+    gap: 8px;
+    border: none;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-item .lrn-author-activity-edit-section-heading.lrn-author-activity-edit-section-heading {
+    padding: 10px;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-item .lrn-author-activity-edit-section-drag-handle.lrn-author-activity-edit-section-drag-handle {
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: move;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-edit-section-item .lrn-author-list-view-col-first {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-item-group-accordion-checked .lds-accordion-button {
     background-color: var(--lds-color--blue-L300);
 }
