@@ -9892,3 +9892,71 @@ body.lrn_disabled_imagetool_feature .lrn_imagetool {
     opacity: 0;
     visibility: hidden;
 }
+
+.lrn-ra-pagination-footer {
+    margin-top: 20px;
+    background-color: var(--lds-color--white);
+    width: 100%;
+}
+
+.lrn-ra-pagination-content {
+    padding: 20px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: var(--lds-data-grid-pagination-layout-display);
+    -webkit-box-pack: var(--lds-data-grid-pagination-layout-justify-content);
+    -webkit-justify-content: var(--lds-data-grid-pagination-layout-justify-content);
+    -ms-flex-pack: var(--lds-data-grid-pagination-layout-justify-content);
+    justify-content: var(--lds-data-grid-pagination-layout-justify-content);
+    -webkit-box-align: var(--lds-data-grid-pagination-layout-align-items);
+    -webkit-align-items: var(--lds-data-grid-pagination-layout-align-items);
+    -ms-flex-align: var(--lds-data-grid-pagination-layout-align-items);
+    align-items: var(--lds-data-grid-pagination-layout-align-items);
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: var(--lds-space--2-x);
+    position: var(--lds-data-grid-content--pagination-position);
+    width: var(--lds-data-grid-size--pagination-width);
+}
+
+@media (min-width: 768px) {
+    .lrn-ra-pagination-content {
+        position: var(--lds-data-grid-content--pagination-position);
+        max-width: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .lrn-ra-pagination-item-counter {
+        position: var(--lds-data-grid-content--item-counter-position);
+        right: var(--lds-data-grid-content--item-counter-right);
+        top: var(--lds-data-grid-content--item-counter-top);
+        -webkit-transform: var(--lds-data-grid-content--item-counter-transform);
+        transform: var(--lds-data-grid-content--item-counter-transform);
+        padding-right: var(--lds-space--2-x);
+    }
+}
+
+.lrn-ra-pagination-item-counter-text {
+    font-family: var(--lds-data-grid-item-counter-font-stack);
+    font-size: var(--lds-data-grid-item-counter-font-size);
+    color: var(--lds-data-grid-item-counter-color-text);
+}
+
+.lrn-ra-pagination-content [role=status].visually-hidden {
+    display: none !important;
+}
+
+.lrn-ra-with-pagination .lrn-response_analysis {
+    min-height: auto;
+    height: auto;
+}
+
+.lrn-ra-with-pagination .lrn-ra-main {
+    height: auto;
+}
+
+.lrn-ra-with-pagination .lrn-ra-main-inner {
+    min-height: auto;
+}

@@ -2915,6 +2915,10 @@ svg.react-flow__connectionline {
     opacity: .4;
 }
 
+.lrn-author.lrn-author .lrn-author-tool-panel-search .lrn-author-search-small-inline {
+    display: inline;
+}
+
 .lrn-author.lrn-author .lrn-author-tool-panel-search .lrn-author-checkbox-container {
     margin-left: 0;
     margin-top: 8px;
@@ -8664,7 +8668,8 @@ svg.react-flow__connectionline {
     cursor: default;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-search-small .lrn-author-activity-button .lrn-author-i {
+.lrn-author .lrn-author-ui .lrn-author-search-small .lrn-author-activity-button .lrn-author-i,
+.lrn-author .lrn-author-ui .lrn-author-search-small-inline .lrn-author-activity-button .lrn-author-i {
     left: 50%;
     padding-right: 0;
     top: 50%;
@@ -11190,6 +11195,12 @@ svg.react-flow__connectionline {
     margin-bottom: 0;
 }
 
+.lrn-author.lrn-author .lrn-author-activity-limit-error-list {
+    list-style-type: disc;
+    padding-inline-start: var(--lds-space--5-x);
+    margin-block-start: var(--lds-space--2-x);
+}
+
 .lrn-author.lrn-author [data-tab-content=branching].lrn-author-tab-pane {
     padding-inline-end: 0;
 }
@@ -12130,7 +12141,7 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author .lrn-author-activity-edit-section-item .lrn-author-activity-edit-section-heading.lrn-author-activity-edit-section-heading {
-    padding: 10px;
+    padding: 10px 10px 10px 0;
 }
 
 .lrn-author.lrn-author .lrn-author-activity-edit-section-item .lrn-author-activity-edit-section-drag-handle.lrn-author-activity-edit-section-drag-handle {
@@ -12148,6 +12159,22 @@ svg.react-flow__connectionline {
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.lrn-author.lrn-author .lrn-author-section-activity-alert {
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--lds-space--2-x);
+}
+
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-section-activity-alert .lds-alert {
+    margin-bottom: 0;
+}
+
+@container (0px <= width < 615px) {
+    :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-tab-content .lrn-author-add-section-button {
+        top: 60%;
+    }
 }
 
 :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-item-group-accordion-checked .lds-accordion-button {
