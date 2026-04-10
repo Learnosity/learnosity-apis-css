@@ -10798,6 +10798,21 @@ img.lrn-loading-image-hidden {
     font-size: 22px;
 }
 
+.lrn_videoplayer .mejs__captions-selector-list,
+.lrn_videoplayer .mejs__chapters-selector-list {
+    padding: 0 !important;
+}
+
+.lrn_videoplayer .mejs__captions-selector-list-item,
+.lrn_videoplayer .mejs__chapters-selector-list-item {
+    padding: 0 .625rem;
+}
+
+.lrn_videoplayer .mejs__captions-selector-label,
+.lrn_videoplayer .mejs__chapters-selector-label {
+    padding: .25rem 0 0;
+}
+
 .learnosity-feature[data-type=scrollablepassage] {
     height: auto;
 }
