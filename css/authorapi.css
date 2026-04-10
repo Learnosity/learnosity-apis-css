@@ -12171,10 +12171,24 @@ svg.react-flow__connectionline {
     margin-bottom: 0;
 }
 
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-section-activity-alert .lds-alert ul {
+    margin: 8px 0 0 0;
+    padding: 0 0 0 16px;
+}
+
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-section-activity-alert .lds-alert li {
+    margin-bottom: 4px;
+    list-style: disc;
+}
+
 @container (0px <= width < 615px) {
     :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-tab-content .lrn-author-add-section-button {
         top: 60%;
     }
+}
+
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-list-selected-activity .lrn-author-list-details {
+    background-color: var(--lds-color--grey-L300);
 }
 
 :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-item-group-accordion-checked .lds-accordion-button {
