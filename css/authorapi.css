@@ -4435,6 +4435,15 @@ svg.react-flow__connectionline {
     display: flex !important;
 }
 
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-scoring-group-reset-modal .lds-modal-body {
+    font-family: var(--lds-font-stack--base);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: var(--lds-font-weight--normal);
+    line-height: var(--lds-font-line-height--500);
+    letter-spacing: var(--lds-font-letter-spacing--200);
+}
+
 .lrn-author .lrn-author-ui-no-preview h1,
 .lrn-author .lrn-author-ui-no-preview h2,
 .lrn-author .lrn-author-ui-no-preview h3,
@@ -8014,6 +8023,11 @@ svg.react-flow__connectionline {
     gap: var(--lds-space--1-x);
 }
 
+.lrn-author .lrn-author-ui .lrn-author-custom-points-info-tooltip {
+    display: flex;
+    flex-direction: column;
+}
+
 .lrn-author .lrn-author-ui .lrn-author-custom-points-input {
     text-align: end;
 }
@@ -8397,7 +8411,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper {
     display: inline-block;
     text-align: center;
     padding-left: 0;
@@ -8408,7 +8423,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper .lrn-author-check-box-span,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper .lrn-author-check-box-span,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper .lrn-author-check-box-span,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper .lrn-author-check-box-span {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper .lrn-author-check-box-span,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-item-for-activity-list .lrn-author-check-box-wrapper .lrn-author-check-box-span {
     padding: 0;
 }
 
@@ -8416,7 +8432,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-inline,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-inline,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-inline,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-inline {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-inline,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-inline {
     display: inline-block;
 }
 
@@ -8424,7 +8441,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-spinner-save,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-spinner-save,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-spinner-save,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-spinner-save {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-spinner-save,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-spinner-save {
     border: 2px solid #41474f;
     border-right-color: rgba(0, 0, 0, 0);
     width: 14px;
@@ -8435,7 +8453,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-i-drag,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-i-drag,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-i-drag,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-i-drag {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-i-drag,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-i-drag {
     cursor: move;
 }
 
@@ -8443,7 +8462,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-activity-small-text,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-activity-small-text,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-activity-small-text,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-activity-small-text {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-activity-small-text,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-activity-small-text {
     font-size: 10pt;
 }
 
@@ -8451,7 +8471,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] div[contenteditable],
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] div[contenteditable],
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] div[contenteditable],
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] div[contenteditable] {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] div[contenteditable],
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] div[contenteditable] {
     min-height: 5.7142857143em;
     max-height: 14.2857142857em;
     overflow: auto;
@@ -8462,7 +8483,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] div[contenteditable]:empty:before,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] div[contenteditable]:empty:before,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] div[contenteditable]:empty:before,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] div[contenteditable]:empty:before {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] div[contenteditable]:empty:before,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] div[contenteditable]:empty:before {
     content: attr(placeholder);
     color: #939393;
 }
@@ -8471,7 +8493,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-view-col-first,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-view-col-first,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-view-col-first,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-col-first {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-col-first,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-view-col-first {
     border: 0;
     padding: 0;
 }
@@ -8480,7 +8503,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-view-col:first-child,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-view-col:first-child,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-view-col:first-child,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-col:first-child {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-col:first-child,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-view-col:first-child {
     padding-left: 15px;
 }
 
@@ -8488,7 +8512,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-view-col.lrn-author-list-view-col-number,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-view-col.lrn-author-list-view-col-number,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-view-col.lrn-author-list-view-col-number,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-col.lrn-author-list-view-col-number {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-col.lrn-author-list-view-col-number,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-view-col.lrn-author-list-view-col-number {
     padding-left: 0;
 }
 
@@ -8496,7 +8521,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-divider>li,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-divider>li,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-divider>li,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-divider>li {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-divider>li,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-divider>li {
     border: 0;
     margin-bottom: 6px;
 }
@@ -8505,7 +8531,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-view-col-number,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-view-col-number,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-view-col-number,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-col-number {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-col-number,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-view-col-number {
     padding-right: 0;
     display: inline-block;
     text-align: right;
@@ -8515,7 +8542,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-details,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-details,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-details,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-details {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-details,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-details {
     background-color: var(--lds-color--white);
     border: 1px solid #939393;
     position: relative;
@@ -8530,7 +8558,9 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-toolbar-button,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-toggle-part,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-toolbar-button,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-toggle-part {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-toggle-part,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-toolbar-button,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-toggle-part {
     max-width: 100%;
     height: 34px;
     font-size: 14px;
@@ -8541,7 +8571,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-toolbar-button,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-toolbar-button,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-toolbar-button,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-toolbar-button {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-toolbar-button,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-toolbar-button {
     border: 1px solid #939393;
     border-radius: 2px;
 }
@@ -8550,7 +8581,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-toolbar-button .lrn-author-i,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-toolbar-button .lrn-author-i,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-toolbar-button .lrn-author-i,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-toolbar-button .lrn-author-i {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-toolbar-button .lrn-author-i,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-toolbar-button .lrn-author-i {
     top: 6px;
 }
 
@@ -8558,7 +8590,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-selected-activity .lrn-author-list-details,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-selected-activity .lrn-author-list-details,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-selected-activity .lrn-author-list-details,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-selected-activity .lrn-author-list-details {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-selected-activity .lrn-author-list-details,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-selected-activity .lrn-author-list-details {
     background-color: #f7f7f7;
 }
 
@@ -8566,7 +8599,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-selected-activity .lrn-author-list-details .lrn-author-item-flag,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-selected-activity .lrn-author-list-details .lrn-author-item-flag,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-selected-activity .lrn-author-list-details .lrn-author-item-flag,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-selected-activity .lrn-author-list-details .lrn-author-item-flag {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-selected-activity .lrn-author-list-details .lrn-author-item-flag,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-selected-activity .lrn-author-list-details .lrn-author-item-flag {
     border-left: 35px solid #f7f7f7;
 }
 
@@ -8574,7 +8608,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-view-contracted,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-view-contracted,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-view-contracted,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-contracted {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-contracted,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-view-contracted {
     float: left;
 }
 
@@ -8582,7 +8617,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .lrn-author-list-view-extended,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .lrn-author-list-view-extended,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-view-extended,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-extended {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-extended,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-view-extended {
     padding-top: 0;
     padding-bottom: 0;
     transition: opacity .5s .1s, height .5s, padding .5s;
@@ -8597,7 +8633,9 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-view-extended .lrn-author-col-xs-12,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .lrn-author-list-view-extended .lrn-author-col-lg-12,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-extended .lrn-author-col-xs-12,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-extended .lrn-author-col-lg-12 {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .lrn-author-list-view-extended .lrn-author-col-lg-12,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-view-extended .lrn-author-col-xs-12,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .lrn-author-list-view-extended .lrn-author-col-lg-12 {
     margin-left: 70px;
 }
 
@@ -8605,7 +8643,8 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=items] .gu-mirror .lrn-author-list-view-col-first>.lrn-author-list-view-col,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=itemGroups] .gu-mirror .lrn-author-list-view-col-first>.lrn-author-list-view-col,
 .lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=templateDragAndDrop] .gu-mirror .lrn-author-list-view-col-first>.lrn-author-list-view-col,
-.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .gu-mirror .lrn-author-list-view-col-first>.lrn-author-list-view-col {
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=details] .gu-mirror .lrn-author-list-view-col-first>.lrn-author-list-view-col,
+.lrn-author .lrn-author-ui .lrn-author-activity-edit [data-tab-content=reporting] .gu-mirror .lrn-author-list-view-col-first>.lrn-author-list-view-col {
     display: none;
 }
 
@@ -11196,9 +11235,12 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author .lrn-author-activity-limit-error-list {
-    list-style-type: disc;
     padding-inline-start: var(--lds-space--5-x);
     margin-block-start: var(--lds-space--2-x);
+}
+
+.lrn-author.lrn-author .lrn-author-activity-limit-error-list li {
+    list-style: disc;
 }
 
 .lrn-author.lrn-author [data-tab-content=branching].lrn-author-tab-pane {
@@ -12159,6 +12201,10 @@ svg.react-flow__connectionline {
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.lrn-author.lrn-author .lrn-author-section-hidden {
+    visibility: hidden;
 }
 
 .lrn-author.lrn-author .lrn-author-section-activity-alert {

@@ -995,7 +995,7 @@
 }
 
 :is(#id,body) .lrn-annotations-c-popover .lrn-annotations-c-button {
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 2px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1011,7 +1011,7 @@
 }
 
 :is(#id,body) .lrn-annotations-c-popover .lrn-annotations-c-button:focus {
-    border: 1px solid var(--lds-color--blue-M900);
+    border: 2px solid var(--lds-color--blue-M900);
     outline: none;
 }
 
@@ -1140,16 +1140,6 @@
     z-index: 1;
 }
 
-:is(#id,body) .lrn-annotations-c-popover__paletteWrapper--active,
-:is(#id,body) .lrn-annotations-c-popover__paletteWrapper:hover {
-    background-color: var(--lds-color--grey-L600);
-}
-
-:is(#id,body) .lrn-annotations-c-popover__paletteWrapper--active>.lrn-annotations-c-button:not(.lrn-annotations-color),
-:is(#id,body) .lrn-annotations-c-popover__paletteWrapper:hover>.lrn-annotations-c-button:not(.lrn-annotations-color) {
-    background-color: var(--lds-color--grey-L500);
-}
-
 :is(#id,body) .lrn-annotations-c-popover__paletteWrapper--active .lrn-annotations-c-button--togglePalette .lrn-annotations-icon {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -1216,6 +1206,10 @@
     background-color: aqua;
 }
 
+:is(#id,body) .lrn-annotations-texthighlight-marking:focus {
+    outline: 1px solid var(--lds-color--grey-D500);
+}
+
 :is(#id,body) .lrn-annotations-texthighlight-marking--active,
 :is(#id,body) .lrn-annotations-texthighlight-marking--hover {
     cursor: pointer;
@@ -1244,6 +1238,10 @@
 :is(#id,body) .lrn-annotations-texthighlight-marking--hidden {
     pointer-events: none;
     background-color: rgba(0, 0, 0, 0);
+}
+
+:is(#id,body) .lrn-highlight-area:focus {
+    outline: 2px solid var(--lds-color--blue-M900);
 }
 
 :is(#id,body) .lrn-annotations-c-modal--stickynote {

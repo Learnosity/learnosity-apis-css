@@ -6908,6 +6908,60 @@
     max-height: 32.8571428571em;
 }
 
+.lrn-qe .lrn-qe-rollover-slide-pane-wrapper .lrn-qe-modal-dialog-inner::after {
+    content: "";
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1.0714285714em;
+    left: -1.4285714286em;
+    right: -1.4285714286em;
+    bottom: -1.4285714286em;
+    z-index: 15;
+    background: rgba(255, 255, 255, .45);
+    transition: all 300ms ease-in;
+}
+
+.lrn-qe .lrn-qe-rollover-slide-pane-wrapper .lrn-qe-slide-pane {
+    visibility: hidden;
+    opacity: 0;
+    padding: 1.0714285714em;
+    position: absolute;
+    top: -1.0714285714em;
+    bottom: -1.4285714286em;
+    right: -100%;
+    width: 90%;
+    z-index: 16;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .29);
+    transition: all 300ms ease-in;
+}
+
+.lrn-qe .lrn-qe-rollover-slide-pane-wrapper .lrn-qe-slide-pane .lrn-author-ui {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.lrn-qe .lrn-qe-rollover-slide-pane-wrapper.lrn-qe-active .lrn-qe-modal-dialog-inner {
+    overflow: visible;
+}
+
+.lrn-qe .lrn-qe-rollover-slide-pane-wrapper.lrn-qe-active .lrn-qe-modal-dialog-inner::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lrn-qe .lrn-qe-rollover-slide-pane-wrapper.lrn-qe-active .lrn-qe-slide-pane {
+    visibility: visible;
+    opacity: 1;
+    right: -1.4285714286em;
+}
+
+.lrn-qe .lrn-qe-rollover-slide-pane-wrapper.lrn-qe-active .lrn-qe-slide-pane .lrn-modal-body {
+    overflow: auto;
+    max-height: 32.8571428571em;
+}
+
 .lrn-qe .lrn-qe-modal-warning {
     display: none;
     position: absolute;
@@ -7101,6 +7155,69 @@
 
 .lrn-qe .lrn-qe-wysi-source-modal [data-lrn-qe-modal-input=source] {
     height: 27.8571428571em;
+}
+
+.lrn-qe.lrn-qe-modal-rollover-content {
+    z-index: 11;
+}
+
+.lrn-qe.lrn-qe-modal-rollover-content .lrn-qe-slide-pane {
+    height: calc(100% + 2.5em);
+}
+
+.lrn-qe.lrn-qe-modal-rollover-content .lrn-qe-slide-pane .lrn-author-ui {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.lrn-qe.lrn-qe-modal-rollover-content .lrn-qe-slide-pane .lrn-modal-body {
+    overflow: auto;
+    max-height: 35.7142857143em;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover {
+    max-height: 45em;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-rollover-content .lrn-qe-form-label {
+    margin-bottom: 8px;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-rollover-content .lrn-qe-form-subheading {
+    color: dimgray;
+    margin-bottom: 8px;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-rollover-content .lrn-qe-form-control-ckeditor {
+    border-radius: 4px;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-rollover-content .lrn-qe-form-control-ckeditor .lrn-qe-rollover-content-modal-display-text-input,
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-rollover-content .lrn-qe-form-control-ckeditor .lrn-qe-rollover-content-modal-content-input,
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-rollover-content .lrn-qe-form-control-ckeditor .cke_editable_inline {
+    min-height: 120px;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-modal-footer-rollover .lrn-qe-btn {
+    border-radius: 4px;
+    padding: 8px 16px;
+    min-width: 80px;
+    font-size: 16px;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-modal-footer-rollover .lrn-qe-btn-default {
+    border: 1px solid #939393;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-ckeditor-toolbar {
+    position: relative !important;
+    visibility: visible !important;
+    min-height: 69px;
+}
+
+.lrn-qe .lrn-qe-modal-content--rollover .lrn-qe-ckeditor-toolbar .cke_combopanel {
+    max-height: 120px;
 }
 
 .lrn-qe.lrn-qe-simple-feature {
