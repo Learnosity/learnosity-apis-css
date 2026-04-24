@@ -8010,6 +8010,11 @@ svg.react-flow__connectionline {
     gap: var(--lds-space--1-x);
 }
 
+.lrn-author .lrn-author-ui .lrn-author-custom-points-info-tooltip {
+    display: flex;
+    flex-direction: column;
+}
+
 .lrn-author .lrn-author-ui .lrn-author-custom-points-input {
     text-align: end;
 }
