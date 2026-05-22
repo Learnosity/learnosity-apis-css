@@ -11858,6 +11858,17 @@ img.lrn-loading-image-hidden {
     flex-grow: 1;
 }
 
+.lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-enabled-camera.lrn-math-image-capture-native-input {
+    justify-content: center;
+    align-items: center;
+}
+
+.lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-enabled-camera.lrn-math-image-capture-native-input .lrn-math-image-capture-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lrn-math-image-capture-tab .lrn-math-image-capture-container-react .lrn-math-image-capture-heading {
     font-weight: 700;
     font-size: 1.1428571429em;

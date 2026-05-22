@@ -127,7 +127,9 @@
 .lrn-qe .lrn-qe-modal-footer .lrn-qe-btn.lrn-qe-btn-primary:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-add-array-multiple:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-primary:focus,
-.cke_dialog_container_qe .cke_dialog_ui_button_ok:focus {
+.cke_dialog_container_qe .cke_dialog_ui_button_ok:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]:focus {
     outline: #1877b1 solid .1428571429em;
     outline-offset: .1428571429em;
     border-radius: .1428571429em;
@@ -1227,6 +1229,18 @@
     left: 0;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal] {
+    border: 1px solid #1877b1;
+    color: #1877b1;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]:hover,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]:hover {
+    color: #ffffff;
+    background-color: #1877b1;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle {
     font-size: 12px;
@@ -1370,10 +1384,14 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-i-math-ai,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-i-math-ai {
-    background-image: url("../../img/sparkle-star-icon-22.svg");
+    -webkit-mask-image: url("../../img/sparkle-star-icon-22.svg");
+    mask-image: url("../../img/sparkle-star-icon-22.svg");
     width: 22px;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: bottom;
+    mask-position: bottom;
+    background-color: currentColor;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-i-undo .lrn-qe-i-redo,
@@ -1439,14 +1457,14 @@
     font-size: .7em;
 }
 
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button {
     min-width: 80px;
 }
 
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-math-ai-text,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-undo-redo,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-help-text,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-toolbar-button .lrn-qe-i-embed-text {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-math-ai-text,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-undo-redo,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-help-text,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-embed-text {
     display: inline;
 }
 
@@ -4700,6 +4718,10 @@
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
     z-index: 9999;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-clickabledropdown .lrn-clickabledropdown-content.show {
+    display: block;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-clickabledropdown .lrn-clickabledropdown-content .lrn-clickabledropdown-row {

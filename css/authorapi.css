@@ -3060,6 +3060,7 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author.lrn-author .lrn-author-item-old,
+.lrn-author.lrn-author.lrn-author .lrn-author-item-list-toolbar-btn span,
 .lrn-author.lrn-author.lrn-author .lrn-author-search-txt,
 .lrn-author.lrn-author.lrn-author .lrn-author-search-medium,
 .lrn-author.lrn-author.lrn-author .lrn-author-search-large,
@@ -3070,6 +3071,11 @@ svg.react-flow__connectionline {
 .lrn-author.lrn-author.lrn-author .lrn-author-col-lg-only,
 .lrn-author.lrn-author.lrn-author .lrn-author-tool-panel-new-md-extended {
     display: none;
+}
+
+.lrn-author.lrn-author.lrn-author .lds-btn-icon {
+    margin-inline: var(--lds-button-icon-space-inset-inline-large);
+    margin-block: var(--lds-button-icon-space-inset-block-large);
 }
 
 .lrn-author.lrn-author.lrn-author .lrn-author-tab-link .lrn-author-tab-header {
@@ -3156,6 +3162,7 @@ svg.react-flow__connectionline {
     }
 
     .lrn-author.lrn-author.lrn-author .lrn-author-item-old,
+    .lrn-author.lrn-author.lrn-author .lrn-author-item-list-toolbar-btn span,
     .lrn-author.lrn-author.lrn-author .lrn-author-search-txt,
     .lrn-author.lrn-author.lrn-author .lrn-author-search-large,
     .lrn-author.lrn-author.lrn-author .lrn-author-search-small,
@@ -3165,6 +3172,11 @@ svg.react-flow__connectionline {
     .lrn-author.lrn-author.lrn-author .lrn-author-tool-panel-new-sm,
     .lrn-author.lrn-author.lrn-author .lrn-author-tool-panel-new-xs-extended {
         display: none;
+    }
+
+    .lrn-author.lrn-author.lrn-author .lds-btn-icon {
+        margin-inline: var(--lds-button-icon-space-inset-inline-large);
+        margin-block: var(--lds-button-icon-space-inset-block-large);
     }
 
     .lrn-author.lrn-author.lrn-author .lrn-author-tab-link .lrn-author-tab-header {
@@ -3259,6 +3271,7 @@ svg.react-flow__connectionline {
     }
 
     .lrn-author.lrn-author.lrn-author .lrn-author-item-old,
+    .lrn-author.lrn-author.lrn-author .lrn-author-item-list-toolbar-btn span,
     .lrn-author.lrn-author.lrn-author .lrn-author-search-txt {
         display: inline;
     }
@@ -4381,7 +4394,7 @@ svg.react-flow__connectionline {
     opacity: 1;
 }
 
-:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-author-aide-btn {
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-item-list-toolbar-btn {
     padding: var(--lds-space--1-and-a-half-x) var(--lds-space--2-and-a-half-x);
     border-radius: var(--lds-border-radius--xs);
 }
@@ -10452,18 +10465,10 @@ svg.react-flow__connectionline {
     border-bottom: 1px #cccccc solid;
 }
 
-.lrn-author.lrn-author .lrn-author-message-overlay-buttons-wrapper .lrn-author-btn-lg {
-    width: 100px;
-    font-size: 1em;
-    padding: 1em 0;
-}
-
-.lrn-author.lrn-author .lrn-author-message-overlay-buttons-wrapper .lrn-author-btn-default {
-    width: 100px;
-}
-
-.lrn-author.lrn-author .lrn-author-message-overlay-buttons-wrapper .lrn-author-btn:not(:first-child) {
-    margin-left: 10px;
+.lrn-author.lrn-author .lrn-author-message-overlay-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: var(--lds-space--1-and-a-quarter-x);
 }
 
 .lrn-author.lrn-author .lrn-author-message-overlay-content-wrapper,
@@ -11227,11 +11232,15 @@ svg.react-flow__connectionline {
 .lrn-author.lrn-author .lrn-author-random-activity-alert {
     display: flex;
     flex-direction: row;
-    margin-top: var(--lds-space--2-x);
+    margin-top: var(--lds-space--1-x);
 }
 
 :is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-random-activity-alert .lds-alert {
     margin-bottom: 0;
+}
+
+.lrn-author.lrn-author .lrn-author-random-activity-alert:nth-child(1 of .lrn-author-random-activity-alert) {
+    margin-top: var(--lds-space--1-and-a-quarter-x);
 }
 
 .lrn-author.lrn-author .lrn-author-activity-limit-error-list {
@@ -11928,6 +11937,14 @@ svg.react-flow__connectionline {
     }
 }
 
+.lrn-author.lrn-author .lrn-author-activity-reporting-intro-wrapper {
+    margin-bottom: var(--lds-space--4-x);
+}
+
+.lrn-author.lrn-author .lrn-author-activity-reporting-intro-wrapper:has(+.lrn-author-activity-scoring-group-error-alert-wrapper) {
+    margin-bottom: var(--lds-space--2-and-a-half-x);
+}
+
 .lrn-author.lrn-author .lrn-author-activity-reporting-title {
     font-size: var(--lds-font-size--title-500);
     line-height: var(--lds-font-line-height--500);
@@ -11966,7 +11983,6 @@ svg.react-flow__connectionline {
 .lrn-author.lrn-author .lrn-author-activity-scoring-groups-description {
     font-size: var(--lds-font-size--body-medium);
     line-height: var(--lds-font-line-height--normal);
-    margin-bottom: var(--lds-space--4-x);
 }
 
 .lrn-author.lrn-author .lrn-author-activity-scoring-group-actions {
@@ -12081,6 +12097,10 @@ svg.react-flow__connectionline {
     transition: opacity .2s;
 }
 
+.lrn-author.lrn-author .lrn-author-scoring-group-input-validation {
+    font-weight: var(--lds-font-weight--normal);
+}
+
 .lrn-author.lrn-author .lrn-author-scoring-group-item-count {
     display: flex;
     font-size: var(--lds-font-size--body-small);
@@ -12135,6 +12155,18 @@ svg.react-flow__connectionline {
 .lrn-author.lrn-author .lrn-author-scoring-group-tag-search-suggestion .lrn-author-tag-suggestion-button {
     display: flex;
     justify-content: space-between;
+}
+
+.lrn-author.lrn-author .lrn-author-activity-scoring-group-error-alert-wrapper {
+    margin-bottom: var(--lds-space--3-x);
+}
+
+:is(.lds#lds,body) .lrn-author.lrn-author .lrn-author-activity-scoring-group-error-alert {
+    margin-bottom: var(--lds-space--none);
+}
+
+.lrn-author.lrn-author .lrn-author-scoring-group-item-picker-add-button-wrapper {
+    flex-shrink: 0;
 }
 
 .lrn-author.lrn-author .lrn-author-activity-edit-section-row {
@@ -15556,10 +15588,6 @@ svg.react-flow__connectionline {
     .lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-workflow-takeover .lrn-author-takeover-title {
         text-align: center;
     }
-}
-
-.lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-workflow-takeover .lrn-author-takeover-actions {
-    margin-top: 20px;
 }
 
 .lrn-author.lrn-author .lrn-author-api-react-container .lrn-author-workflow-takeover .lrn-author-takeover-body {
