@@ -4573,6 +4573,10 @@
     z-index: 9999;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-clickabledropdown .lrn-clickabledropdown-content.show {
+    display: block;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-clickabledropdown .lrn-clickabledropdown-content .lrn-clickabledropdown-row {
     background-color: #ffffff;
     border-bottom: 1px solid #cccccc;
