@@ -10844,12 +10844,6 @@ img.lrn-loading-image-hidden {
     z-index: 2000;
 }
 
-@media (prefers-color-scheme: dark) {
-    .lrn_feature.lrn_imagetool .lrn_imagetool_content img {
-        filter: invert(1) brightness(1.1) contrast(.95);
-    }
-}
-
 .lrn_feature.lrn_imagetool .lrn_imagetool_content .rotate {
     touch-action: none;
     -ms-touch-action: none;
@@ -22476,6 +22470,7 @@ img.lrn-loading-image-hidden {
     left: 0;
     background: rgba(51, 51, 51, .9);
     border-radius: 2px 2px 0 0;
+    transform: none;
 }
 
 .lrn_qr.lrn_video .mejs__volume-button .mejs__volume-total {
@@ -22489,10 +22484,10 @@ img.lrn-loading-image-hidden {
     border-radius: 2px;
     top: 2em;
     bottom: 2em;
+    transform: none;
 }
 
 .lrn_qr.lrn_video .mejs__volume-button .mejs__volume-handle {
-    left: .386em;
     width: 10px;
     height: 4px;
     border-radius: 2px;
@@ -22513,6 +22508,10 @@ img.lrn-loading-image-hidden {
     overflow: inherit;
     margin: 0;
     font-size: 2em;
+}
+
+.lrn_qr.lrn_video .mejs__volume-button>button>svg {
+    display: none;
 }
 
 .lrn_qr.lrn_video .mejs__volume-button>button:before {
