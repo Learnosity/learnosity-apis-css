@@ -24,12 +24,8 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn span::before,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn span::before,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span::before,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span::before,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button {
     border: 1px solid #939393;
@@ -38,8 +34,6 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button {
     font-size: 12px;
@@ -48,25 +42,13 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-custom-dropdown .lrn-qe-custom-dropdown-toggle,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn span,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn span,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-left:focus,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-right:focus,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-left:focus,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-right:focus {
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn span {
     outline: none;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-custom-dropdown .lrn-qe-custom-dropdown-toggle::after,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn span::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn span::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span::after,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-left:focus::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-right:focus::after,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-left:focus::after,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-right:focus::after {
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn span::after {
     content: "";
     position: absolute;
     top: 1px;
@@ -77,23 +59,9 @@
     transition: border-color .1s ease;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-custom-dropdown .lrn-qe-custom-dropdown-toggle:focus::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn span:focus::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn span:focus::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span:focus::after,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span:focus::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-left:focus::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-right:focus::after,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-left:focus::after,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-right:focus::after {
-    border-color: #1877b1;
-}
-
 .lrn-qe .lrn-qe-ui .lrn-qe-custom-dropdown .lrn-qe-custom-dropdown-toggle,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn span,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn span,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button {
     position: relative;
@@ -103,8 +71,6 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-custom-dropdown .lrn-qe-custom-dropdown-toggle:hover:enabled,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn span:hover:enabled,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span:hover:enabled,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span:hover:enabled,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button:hover:enabled,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button:hover:enabled {
     background-color: #eaeaea;
@@ -117,8 +83,21 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-remove.lrn-qe-btn-default:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-default:focus,
 .cke_dialog_container_qe .cke_dialog_ui_button_cancel:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help]:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source]:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help]:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source]:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button:focus,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button:focus {
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar button[data-lrn-qe-change-question]:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar button[data-lrn-qe-change-question]:focus {
     outline: #333333 solid .1428571429em;
     outline-offset: .1428571429em;
     border-radius: .1428571429em;
@@ -144,8 +123,6 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn span,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn span,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control {
     -webkit-user-select: none;
@@ -1176,11 +1153,43 @@
     align-items: center;
     border-bottom: 1px solid #d9d9d9;
     min-height: 60px;
+    padding: 5px 0 5px 0;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar button,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar button {
     color: #333333;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar button[data-lrn-qe-change-question],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar button[data-lrn-qe-change-question] {
+    border: 1px solid #939393;
+    border-radius: .1428571429em;
+    color: #333333;
+    font-weight: 400;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar button[data-lrn-qe-change-question]>span,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar button[data-lrn-qe-change-question]>span {
+    flex-shrink: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar button[data-lrn-qe-change-question] .lrn-qe-i-change,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar button[data-lrn-qe-change-question] .lrn-qe-i-change {
+    width: auto;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar button[data-lrn-qe-change-question] .lrn-qe-i-change::before,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar button[data-lrn-qe-change-question] .lrn-qe-i-change::before {
+    position: static;
+    top: auto;
+    font-size: inherit;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar button[data-lrn-qe-change-question]:hover,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar button[data-lrn-qe-change-question]:hover {
+    color: #333333;
+    background-color: #eaeaea;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button-parent,
@@ -1230,6 +1239,96 @@
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal],
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo],
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help],
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source] {
+    display: inline-flex;
+    align-items: center;
+    gap: .2857142857em;
+    white-space: nowrap;
+    width: auto;
+    height: auto;
+    padding: .4285714286em .8571428571em;
+    border: 1px solid #939393;
+    border-radius: .1428571429em;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]>span,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]>label,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]>span,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]>label,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help]>span,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help]>label,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source]>span,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source]>label,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]>span,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]>label,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]>span,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]>label,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help]>span,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help]>label,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source]>span,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source]>label {
+    flex-shrink: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal] .lrn-qe-i-help,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-help,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help] .lrn-qe-i-help,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source] .lrn-qe-i-help,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal] .lrn-qe-i-help,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-help,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help] .lrn-qe-i-help,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source] .lrn-qe-i-help {
+    display: flex;
+    justify-content: center;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal] .lrn-qe-i-help::before,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-help::before,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help] .lrn-qe-i-help::before,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source] .lrn-qe-i-help::before,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal] .lrn-qe-i-help::before,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-help::before,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help] .lrn-qe-i-help::before,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source] .lrn-qe-i-help::before {
+    position: static;
+    top: auto;
+    font-size: inherit;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal] .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help] .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source] .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal] .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help] .lrn-qe-i-math-ai,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source] .lrn-qe-i-math-ai {
+    height: 22px;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]:hover,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:hover,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help]:hover,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source]:hover,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal]:hover,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:hover,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help]:hover,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-widget-source]:hover {
+    color: #333333;
+    background-color: #eaeaea;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal],
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-layout-math-ai-modal] {
     border: 1px solid #1877b1;
     color: #1877b1;
@@ -1241,92 +1340,193 @@
     background-color: #1877b1;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] {
+    padding-left: .4285714286em;
+    padding-right: .4285714286em;
+    justify-content: center;
+    min-width: 46px;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-undo,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-redo,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-undo,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-redo {
+    font-size: inherit;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-undo-redo,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo] .lrn-qe-i-undo-redo {
+    display: none;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:disabled,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:disabled {
+    color: #939393;
+    border-color: #d9d9d9;
+    cursor: not-allowed;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:disabled:hover,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:disabled:hover {
+    color: #939393;
+    background-color: transparent;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=undo],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=undo] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=redo],
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=redo] {
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle {
-    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: .1428571429em;
     margin-left: .7142857143em;
     margin-bottom: 0;
-    min-width: 8.8571428571em;
+    padding: .2857142857em;
+    border: 1px solid #939393;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control {
-    display: inline-block;
-    padding: .5714285714em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    transition: color .1s;
+    padding: .4285714286em .8571428571em;
+    border: 1px solid transparent;
+    border-radius: .2857142857em;
+    background-color: transparent;
+    color: #333333;
+    line-height: 1.5;
+    transition: background-color .1s, border-color .1s, color .1s;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control:hover:enabled,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control:hover:enabled {
     background-color: #eaeaea;
+    border-color: #eaeaea;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-left,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-left {
-    border-right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-right,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-right {
-    border-left: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control:focus {
+    outline-offset: .2142857143em;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-active,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-active {
     background-color: #eaeaea;
-    color: #0b5684;
+    border-color: #939393;
+    color: #333333;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span {
-    display: block;
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-active:hover:enabled,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toggle-active:hover:enabled {
+    border-color: #939393;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate {
+    display: inline-flex;
+    align-items: center;
+    gap: .2857142857em;
+    width: auto;
+    height: auto;
+    padding: .2857142857em .5714285714em;
+    background: transparent;
+    border: 0;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate:hover,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate:hover,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate:focus {
+    background: transparent;
+    outline: none;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate:focus-visible .lrn-qe-toggle-switch-track,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate:focus-visible .lrn-qe-toggle-switch-track {
+    outline: #1877b1 solid .1428571429em;
+    outline-offset: .1428571429em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate .lrn-qe-toggle-switch-track,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate .lrn-qe-toggle-switch-track {
     position: relative;
-    line-height: 1.4;
-    padding-left: 2.5714285714em;
-    margin-right: 1px;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 2.5714285714em;
+    height: 1.4285714286em;
+    border: 1px solid #939393;
+    border-radius: .7142857143em;
+    background-color: #939393;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span::before,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate span::before {
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate .lrn-qe-toggle-switch-thumb,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate .lrn-qe-toggle-switch-thumb {
+    position: absolute;
+    top: 50%;
+    left: .1428571429em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transform: translateY(-50%);
+    transition: left .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate .lrn-qe-toggle-switch-thumb::before,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate .lrn-qe-toggle-switch-thumb::before {
     content: "";
     font-family: "learnosity-qe-icons";
-    speak: none;
+    font-size: .5714285714em;
     color: transparent;
-    position: absolute;
-    top: .5714285714em;
-    left: .7142857143em;
-    width: 1.3571428571em;
-    height: 1.2857142857em;
-    line-height: 1.2;
-    background-color: #ffffff;
-    text-indent: 0;
-    text-align: center;
+    transition: color .15s ease-in-out;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked:focus span::after,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked:focus span::after {
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate .lrn-qe-toggle-switch-label,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate .lrn-qe-toggle-switch-label {
+    flex-shrink: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked .lrn-qe-toggle-switch-track,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked .lrn-qe-toggle-switch-track {
+    background-color: #1877b1;
     border-color: #1877b1;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked span,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked span {
-    color: #1877b1;
-    background: #eaeaea;
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked .lrn-qe-toggle-switch-thumb,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked .lrn-qe-toggle-switch-thumb {
+    left: 1.4285714286em;
+    background-color: #ffffff;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked span::before,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked span::before {
-    color: #1877b1;
-}
-
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked span:hover,
-.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked span:hover {
-    background: #d9d9d9;
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked .lrn-qe-toggle-switch-thumb::before,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-checkbox-validate.checked .lrn-qe-toggle-switch-thumb::before {
+    color: #0b5684;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-viewstack-item>div,
@@ -1432,7 +1632,8 @@
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-layout-math-ai-modal],
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-undo-redo],
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-global-help],
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-widget-source] {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-widget-source],
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button[data-lrn-qe-change-question] {
     width: 32px;
     height: 32px;
 }
@@ -1440,7 +1641,8 @@
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-math-ai-text,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-undo-redo,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-help-text,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-embed-text {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-embed-text,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs button .lrn-qe-i-change-text {
     display: none;
 }
 
@@ -1462,27 +1664,44 @@
 }
 
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-math-ai-text,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-undo-redo,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-help-text,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-embed-text {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-embed-text,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-toolbar-button .lrn-qe-i-change-text {
     display: inline;
+}
+
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar),
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) {
+    flex-wrap: wrap;
+    min-height: 0;
+    padding-top: 10px;
+}
+
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-sect-heading,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-sect-heading {
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-right,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-right {
+    flex-basis: 100%;
+    margin-left: -10px;
+}
+
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-controls,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-controls {
+    padding-left: 0;
 }
 
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn .lrn-qe-btn-label,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn .lrn-qe-btn-label {
-    display: none;
+    display: block;
 }
 
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn i,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn i {
-    display: inline-block;
-    padding-top: .5714285714em;
-    padding-bottom: .5714285714em;
-}
-
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn.checked i,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn.checked i {
-    color: #1877b1;
+    display: none;
 }
 
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup,
@@ -1511,28 +1730,60 @@
     margin-bottom: 0;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn:focus {
-    outline: none;
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn {
+    display: inline-flex;
+    align-items: center;
+    padding-top: .4285714286em;
+    padding-bottom: .4285714286em;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn:focus .lrn-qe-i-distractor-rationale::before {
-    margin: -0.2142857143em -0.3571428571em -0.3571428571em;
-    outline: 1px solid #1877b1;
-    padding: .2142857143em .3571428571em .3571428571em;
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn .lrn-qe-btn-label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn:focus .lrn-qe-btn-label span::after {
-    border-color: #1877b1;
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn .lrn-qe-btn-label>span {
+    display: inline-flex;
+    align-items: center;
+    line-height: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn.checked .lrn-qe-btn-label span {
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn .lrn-qe-btn-label>span::before {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn .lrn-qe-i-distractor-rationale {
+    font-size: inherit;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn.checked {
+    color: #0b5684;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn.checked .lrn-qe-btn-label>span {
+    color: #0b5684;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn.checked .lrn-qe-btn-label>span::before {
+    color: #0b5684;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn.checked .lrn-qe-btn-label span {
     background: none;
     white-space: nowrap;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle:hover,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn.checked {
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle:hover,
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn.checked {
     background-color: #eaeaea;
 }
 
@@ -1563,6 +1814,14 @@
     font-size: .5833333333em;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-sect-heading .lrn-question-type-name {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-sect-header-btn-group {
     margin-top: -1px;
     float: right;
@@ -1575,10 +1834,6 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-sect-header-btn-group .form-control {
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-question-type-name {
-    font-size: 24px;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-distractors-attached {
@@ -5196,11 +5451,6 @@
     text-align: center;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn.checked:focus span::after,
-.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn.checked:focus span::after {
-    border-color: #1877b1;
-}
-
 .lrn-qe .lrn-qe-ui .lrn-qe-btn.lrn-qe-checkbox-btn.checked span,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-btn.lrn-qe-checkbox-btn.checked span {
     color: #1877b1;
@@ -5317,19 +5567,21 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-live-score {
     display: inline-block;
-    padding: .5em;
-    min-width: 27px;
+    padding: 6px;
+    background-color: #eaeaea;
+    color: #333333;
+    font-size: 1.1428571429em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    vertical-align: baseline;
     white-space: nowrap;
-    font-size: 10px;
-    letter-spacing: -1px;
-    border: 1px solid #939393;
-    border-radius: 20px;
+    border-radius: 10rem;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-live-score.lrn-live-score-full {
-    color: #ffffff;
-    border-color: #65a00d;
-    background: #65a00d;
+.lrn-qe .lrn-qe-ui .lrn-live-score-full {
+    background-color: var(--lds-badge-color-background--success);
+    color: var(--lds-badge-color-text--success);
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-tiles-container {

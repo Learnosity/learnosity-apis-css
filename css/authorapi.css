@@ -1752,7 +1752,10 @@ svg.react-flow__connectionline {
 
 .lrn-author.lrn-author-root .lrn-author-item-nav {
     display: flex;
-    background: #d9d9d9;
+    background: var(--lds-color--grey-L200);
+    padding-top: var(--lds-space--1-and-a-quarter-x);
+    padding-bottom: var(--lds-space--1-and-a-quarter-x);
+    border-bottom: var(--lds-border-width--xs) solid var(--lds-color--grey-L400);
 }
 
 .lrn-author.lrn-author-root .lrn-author-item-nav .lrn-author-btn-old-legacy,
@@ -1770,13 +1773,9 @@ svg.react-flow__connectionline {
     margin-bottom: 1.0714285714em;
 }
 
-.lrn-author.lrn-author-root .lrn-author-item-nav-left,
-.lrn-author.lrn-author-root .lrn-author-item-nav-right {
-    display: flex;
-}
-
 .lrn-author.lrn-author-root .lrn-author-item-nav-left {
-    margin-left: 30px;
+    margin-left: var(--lds-space--three-quarter-x);
+    margin-top: 12px;
 }
 
 .lrn-author.lrn-author-root .lrn-author-item-nav-right {
@@ -1922,7 +1921,7 @@ svg.react-flow__connectionline {
 
 .lrn-author.lrn-author-root .lrn-author-region-sidebar,
 .lrn-author.lrn-author-root .lrn-author-widget-sidebar {
-    background: #eaeaea;
+    background: var(--lds-color--grey-L400);
     border-left: 1px solid #d9d9d9;
     transform: translateX(100%);
     transition: .5s transform;
@@ -2964,7 +2963,10 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author-root .lrn-author-tool-panel-search .lrn-author-badge-round {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
     width: 1.4285714286em;
     height: 1.4285714286em;
     border-radius: 100%;
@@ -2978,6 +2980,11 @@ svg.react-flow__connectionline {
     left: 3px;
     font-size: 15px;
     top: 2px;
+}
+
+.lrn-author.lrn-author-root .lrn-author-tool-panel-search .lrn-author-badge-round svg {
+    width: 1.0714285714em;
+    height: 1.0714285714em;
 }
 
 .lrn-author.lrn-author-root .lrn-author-tool-panel-search .lrn-author-i-help:before {
@@ -5611,13 +5618,20 @@ svg.react-flow__connectionline {
     padding-right: 0;
     padding-bottom: 0;
     padding-left: .2142857143em;
+    color: var(--lds-color--grey-D500);
+    font-size: var(--lds-font-size--body-large);
+    font-weight: var(--lds-font-weight--normal);
+    line-height: var(--lds-font-line-height--500);
+    letter-spacing: var(--lds-font-letter-spacing--200);
 }
 
 .lrn-author .lrn-author-ui .lrn-author-name-edit .lrn-author-name-label {
     padding-right: .6428571429em;
-    font-size: .8571428571em;
-    font-weight: 500;
-    color: dimgray;
+    color: var(--lds-color--grey-D500);
+    font-size: var(--lds-font-size--body-large);
+    font-weight: var(--lds-font-weight--500);
+    line-height: var(--lds-font-line-height--700);
+    letter-spacing: var(--lds-font-letter-spacing--200);
 }
 
 .lrn-author .lrn-author-ui .lrn-author-name-edit .lrn-author-name-wrapper {
@@ -6089,12 +6103,8 @@ svg.react-flow__connectionline {
     background: #96b7cb;
 }
 
-:is(.lds#lds,body) .lrn-author .lrn-author-ui .lds-btn-group {
-    border: none;
-}
-
-:is(.lds#lds,body) .lrn-author .lrn-author-ui .lds-btn-group .lds-btn:hover {
-    background-color: var(--lds-color-background--outline-secondary-hover);
+.lrn-author .lrn-author-ui .lrn-author-save-button-group {
+    margin: var(--lds-space--1-and-a-half-x) var(--lds-space--1-and-a-half-x) 0 0;
 }
 
 :is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-save-button-group.lrn-author-btn-save-dropdown-inactive .lrn-author-btn-save {
@@ -6169,11 +6179,20 @@ svg.react-flow__connectionline {
     border-radius: 0;
 }
 
-:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-btn-back {
-    border-radius: 0;
-    text-transform: uppercase;
-    padding-top: var(--lds-space--2-x);
-    padding-bottom: var(--lds-space--2-x);
+.lrn-author .lrn-author-ui .lrn-author-save-button-group [data-authorapi-selector=duplicate] {
+    margin: 0 var(--lds-space--1-x) 0 0;
+}
+
+.lrn-author .lrn-author-ui .lrn-author-edit-preview-button-group {
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    border: 1px solid var(--lds-color-border--secondary-default);
+    border-radius: 10px;
+    padding: 4px;
+    gap: 4px;
+    background-color: var(--lds-color--white);
+    margin: 0 var(--lds-space--1-and-a-half-x) 0 0;
 }
 
 :is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-btn-preview-spinner {
@@ -7720,8 +7739,8 @@ svg.react-flow__connectionline {
     display: flex;
     align-items: center;
     margin-bottom: 1.0714285714em;
-    border-bottom: 1px solid #eaeaea;
-    padding: 0 .8571428571em 0 1.0714285714em;
+    border-bottom: 1px solid var(--lds-color--grey-M100);
+    padding: var(--lds-space--1-and-a-quarter-x) 0 var(--lds-space--1-and-a-quarter-x) 1.0714285714em;
 }
 
 .lrn-author .lrn-author-ui .lrn-author-item-toolbar .lrn-author-data-button,
@@ -7736,6 +7755,49 @@ svg.react-flow__connectionline {
     display: flex;
     margin-inline-start: auto;
     padding-inline-end: .1428571429em;
+}
+
+@container (width < 1170px) {
+    .lrn-author .lrn-author-ui .lrn-author-item-toolbar .lrn-author-item-toolbar-controls {
+        width: auto;
+        height: auto;
+        min-height: 0;
+        flex-wrap: nowrap;
+    }
+
+    .lrn-author .lrn-author-ui .lrn-author-item-toolbar .lrn-author-name-controls>li {
+        min-width: 0;
+    }
+
+    .lrn-author .lrn-author-ui .lrn-author-btn-wrapper-md-down {
+        display: inline;
+    }
+
+    .lrn-author .lrn-author-ui .lrn-author-btn-wrapper-lg-up {
+        display: none;
+    }
+}
+
+@container (width >= 1170px) {
+    .lrn-author .lrn-author-ui .lrn-author-btn-wrapper-md-down {
+        display: none;
+    }
+
+    .lrn-author .lrn-author-ui .lrn-author-btn-wrapper-lg-up {
+        display: inline;
+    }
+}
+
+@container (width < 800px) {
+    .lrn-author .lrn-author-ui .lrn-author-item-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .lrn-author .lrn-author-ui .lrn-author-item-toolbar-right {
+        margin-inline-start: 0;
+    }
 }
 
 .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls {
@@ -7762,9 +7824,8 @@ svg.react-flow__connectionline {
     border: 0;
 }
 
-:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-dynamic-data-button-group .lds-btn:has(.lrn-author-i-dynamic-data):active,
-:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lrn-author-dynamic-data-button-group .lds-btn:has(.lrn-author-i-dynamic-data):hover {
-    background-color: var(--lds-color--white);
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lds-badge-light {
+    font-size: var(--lds-font-size--150);
 }
 
 .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls,
@@ -7851,12 +7912,7 @@ svg.react-flow__connectionline {
     }
 }
 
-:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar .lrn-author-activity-toolbar-controls-custom-points .lds-form-check,
-:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-activity-toolbar .lrn-author-activity-toolbar-controls-custom-points .lds-form-check {
-    flex-wrap: nowrap;
-}
-
-@container (width < 1170px) {
+@container (width < 800px) {
     .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls,
     .lrn-author .lrn-author-ui .lrn-author-activity-toolbar-controls {
         flex-wrap: wrap;
@@ -7909,88 +7965,6 @@ svg.react-flow__connectionline {
 :is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-custom-points-input {
     width: 6ch;
     min-width: 6ch;
-}
-
-.lrn-author .lrn-author-ui .lrn-author-live-score {
-    display: none;
-    font-size: 10px;
-    letter-spacing: -1px;
-    border-radius: 20px;
-    border: 1px solid #939393;
-    padding: .9285714286em .5em .5em .2857142857em;
-    min-width: 32px;
-    min-height: 32px;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.lrn-author .lrn-author-ui .lrn-author-live-score.lrn-author-live-score-full {
-    color: #ffffff;
-    border-color: var(--lds-color--green-D400);
-    background: var(--lds-color--green-D400);
-}
-
-.lrn-author .lrn-author-ui .lrn-author-validate-questions-toggle {
-    font-size: 12px;
-    width: 10.3571428571em;
-    display: none;
-    padding: .5714285714em .8571428571em;
-    background-color: #ffffff;
-    border: 1px solid #939393;
-    border-radius: 2px;
-    user-select: none;
-    position: relative;
-    transition: color .1s;
-    line-height: 1.4;
-}
-
-.lrn-author .lrn-author-ui .lrn-author-validate-questions-toggle:hover {
-    background-color: #eaeaea;
-}
-
-.lrn-author .lrn-author-ui .lrn-author-validate-questions-toggle span {
-    padding-left: 1.7857142857em;
-}
-
-.lrn-author .lrn-author-ui .lrn-author-validate-questions-toggle span::before {
-    content: "";
-    font-family: "Learnosity Author Icon";
-    color: var(--lds-color--blue-D400);
-    position: absolute;
-    top: .5714285714em;
-    left: .7142857143em;
-    width: 1.3571428571em;
-    height: 1.2857142857em;
-    line-height: 1.2;
-    background-color: #ffffff;
-    text-indent: 0;
-    text-align: center;
-    border: 1px solid #d9d9d9;
-    border-radius: 2px;
-}
-
-.lrn-author .lrn-author-ui .lrn-author-validate-questions-toggle span::after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    bottom: 1px;
-    left: 1px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    transition: border-color .1s ease;
-}
-
-.lrn-author .lrn-author-ui .lrn-author-validate-questions-toggle.lrn-author-checked {
-    color: var(--lds-color--blue-D400);
-    background: var(--lds-color--grey-L400);
-}
-
-.lrn-author .lrn-author-ui .lrn-author-validate-questions-toggle.lrn-author-checked span:before {
-    content: "";
-}
-
-.lrn-author .lrn-author-ui .lrn-author-validate-questions-toggle.lrn-author-checked:hover {
-    background: #d9d9d9;
 }
 
 .lrn-author .lrn-author-ui .lrn-author-activity-edit .lrn-author-activity-source-spacing {
@@ -13603,8 +13577,8 @@ svg.react-flow__connectionline {
     display: none;
 }
 
-.lrn-author.lrn-author-root .lrn-author-api-react-container .lrn-author-item-edit-old .lrn-author-validate-questions-toggle,
-.lrn-author.lrn-author-root .lrn-author-api-react-container .lrn-author-item-edit-old .lrn-author-live-score {
+.lrn-author.lrn-author-root .lrn-author-api-react-container .lrn-author-item-edit-old [data-authorapi-selector=validate-questions-toggle],
+.lrn-author.lrn-author-root .lrn-author-api-react-container .lrn-author-item-edit-old [data-authorapi-selector=live-score] {
     display: block;
 }
 
