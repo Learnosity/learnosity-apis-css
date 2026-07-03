@@ -1753,9 +1753,8 @@ svg.react-flow__connectionline {
 .lrn-author.lrn-author-root .lrn-author-item-nav {
     display: flex;
     background: var(--lds-color--grey-L200);
-    padding-top: var(--lds-space--1-and-a-quarter-x);
-    padding-bottom: var(--lds-space--1-and-a-quarter-x);
     border-bottom: var(--lds-border-width--xs) solid var(--lds-color--grey-L400);
+    padding: 15px;
 }
 
 .lrn-author.lrn-author-root .lrn-author-item-nav .lrn-author-btn-old-legacy,
@@ -1775,7 +1774,6 @@ svg.react-flow__connectionline {
 
 .lrn-author.lrn-author-root .lrn-author-item-nav-left {
     margin-left: var(--lds-space--three-quarter-x);
-    margin-top: 12px;
 }
 
 .lrn-author.lrn-author-root .lrn-author-item-nav-right {
@@ -6103,10 +6101,6 @@ svg.react-flow__connectionline {
     background: #96b7cb;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-save-button-group {
-    margin: var(--lds-space--1-and-a-half-x) var(--lds-space--1-and-a-half-x) 0 0;
-}
-
 :is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-save-button-group.lrn-author-btn-save-dropdown-inactive .lrn-author-btn-save {
     padding-left: var(--lds-space--2-x);
     padding-right: var(--lds-space--2-x);
@@ -6190,7 +6184,7 @@ svg.react-flow__connectionline {
     border: 1px solid var(--lds-color-border--secondary-default);
     border-radius: 10px;
     padding: 4px;
-    gap: 4px;
+    gap: var(--lds-space--1-x);
     background-color: var(--lds-color--white);
     margin: 0 var(--lds-space--1-and-a-half-x) 0 0;
 }
@@ -6855,10 +6849,6 @@ svg.react-flow__connectionline {
 
 .lrn-author .lrn-author-ui .lrn-author-list-view-status+.lrn-author-list-view-heading {
     width: calc(100% - 1.5em);
-}
-
-.lrn-author .lrn-author-ui .lrn-author-list-view-tooltip .lrn-author-list-view-alternative-reference-tooltip {
-    margin-bottom: 0;
 }
 
 .lrn-author .lrn-author-ui .lrn-author-list-view-tooltip p {
@@ -7824,7 +7814,8 @@ svg.react-flow__connectionline {
     border: 0;
 }
 
-:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lds-badge-light {
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lds-badge-light,
+:is(.lds#lds,body) .lrn-author .lrn-author-ui .lrn-author-item-toolbar-controls .lds-badge-success {
     font-size: var(--lds-font-size--150);
 }
 
@@ -8539,9 +8530,11 @@ svg.react-flow__connectionline {
 .lrn-author .lrn-author-ui .lrn-author-activity-edit .lrn-author-item-flag-link {
     color: var(--lds-color--white);
     position: absolute;
-    top: 1px;
-    right: 1px;
-    width: 16px;
+    top: 0;
+    right: var(--lds-space--quarter-x);
+    width: var(--lds-space--3-x);
+    height: var(--lds-space--3-x);
+    text-align: right;
 }
 
 .lrn-author .lrn-author-ui .lrn-author-activity-edit .lrn-author-nav-tabs {

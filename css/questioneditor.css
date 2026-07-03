@@ -1363,7 +1363,6 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:disabled,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo]:disabled {
     color: #939393;
-    border-color: #d9d9d9;
     cursor: not-allowed;
 }
 
@@ -1379,6 +1378,14 @@
     border-bottom-right-radius: 0;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=undo]:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=undo]:focus {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    z-index: 1;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=redo],
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=redo] {
     margin-left: -1px;
@@ -1386,11 +1393,19 @@
     border-bottom-left-radius: 0;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=redo]:focus,
+.lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-undo-redo][data-lrn-qe-undo-redo=redo]:focus {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+    z-index: 1;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle,
 .lrn-qe .lrn-qe-ui.lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle {
     display: inline-flex;
     align-items: center;
-    gap: .1428571429em;
+    gap: .5714285714em;
     margin-left: .7142857143em;
     margin-bottom: 0;
     padding: .2857142857em;
@@ -1650,6 +1665,12 @@
     display: inline-block;
 }
 
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar-controls .lrn-qe-toolbar-button[data-lrn-qe-global-help] {
+    width: 48px;
+    height: 40px;
+    padding: 5px 10px;
+}
+
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-sm button[data-lrn-qe-distractor-rationale] {
     width: 150px;
     height: 32px;
@@ -1670,53 +1691,58 @@
     display: inline;
 }
 
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar),
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar),
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar),
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) {
     flex-wrap: wrap;
     min-height: 0;
     padding-top: 10px;
 }
 
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-sect-heading,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-sect-heading {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-sect-heading,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-sect-heading,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-sect-heading {
     margin-top: 0;
     padding-top: 5px;
 }
 
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-right,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-right {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-right,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-right,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-right {
     flex-basis: 100%;
     margin-left: -10px;
 }
 
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-controls,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-md) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-controls {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-xs:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-controls,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-controls,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md:not(.lrn-qe-bp-lg) .lrn-qe-toolbar:not(.lrn-qe-element-toolbar) .lrn-qe-toolbar-controls {
     padding-left: 0;
 }
 
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn .lrn-qe-btn-label,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn .lrn-qe-btn-label {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn .lrn-qe-btn-label,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn .lrn-qe-btn-label {
     display: block;
 }
 
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn i,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn i {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn i,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn i {
     display: none;
 }
 
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-xs .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup,
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup {
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-sm .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup,
+.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup {
     min-width: 15em;
     border-top: 1px solid #939393;
     margin-top: -1px;
 }
 
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn .lrn-qe-btn-label,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-lg .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn .lrn-qe-btn-label {
     display: block;
 }
 
-.lrn-qe .lrn-qe-ui.lrn-qe-bp-md .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn i,
 .lrn-qe .lrn-qe-ui.lrn-qe-bp-lg .lrn-qe-distractor-rationale-wrapper .lrn-qe-checkbox-btn i {
     display: none;
 }
