@@ -4446,7 +4446,8 @@ body .lrn-assess-spinner {
 .lrn.lrn-assess .lrn-right-region .right-wrapper.menu-open .lrn_svg_icon_stickynote+.btn-label,
 .lrn.lrn-assess .lrn-right-region .right-wrapper.menu-open .lrn_svg_icon_notepad+.btn-label,
 .lrn.lrn-assess .lrn-right-region .right-wrapper.menu-open .lrn_svg_icon_drawing+.btn-label,
-.lrn.lrn-assess .lrn-right-region .right-wrapper.menu-open .lrn_svg_icon_drawing_show_hide+.btn-label {
+.lrn.lrn-assess .lrn-right-region .right-wrapper.menu-open .lrn_svg_icon_drawing_show_hide+.btn-label,
+.lrn.lrn-assess .lrn-right-region .right-wrapper.menu-open .lrn_svg_icon_highlight_mode+.btn-label {
     top: .6em;
 }
 
