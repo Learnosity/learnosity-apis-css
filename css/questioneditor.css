@@ -1902,6 +1902,10 @@
     margin-bottom: 1.0714285714em;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-form-group-wrapper.lrn-qe-form-el-switch:has(~.lrn-qe-form-helper) {
+    margin-bottom: 0;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-form-group-wrapper.lrn-qe-form-el-switch .lrn-qe-form-label,
 .lrn-qe .lrn-qe-ui .lrn-qe-form-group-wrapper.lrn-qe-form-el-switch .lrn-tooltip-trigger {
     float: left;
@@ -2009,6 +2013,10 @@
     margin: 0 .7142857143em .2857142857em 0;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-form-label:has(~.lrn-qe-form-helper) .lrn-qe-form-label-name {
+    margin-bottom: 0;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-form-label .lrn-qe-label-disabled {
     opacity: .5;
     cursor: not-allowed;
@@ -2016,6 +2024,17 @@
 
 .lrn-qe .lrn-qe-ui [data-lrn-qe-section] label[data-lrn-qe-label$=".heading"] {
     position: relative;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-form-helper .lrn-qe-form-helper-text {
+    color: dimgray;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-form-helper-disabled {
+    color: inherit;
+    opacity: .5;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-form-control {
@@ -2203,8 +2222,8 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-switch-trigger {
     display: inline-block;
-    height: 1.4285714286em !important;
-    width: 1.4285714286em !important;
+    height: 1.4285714286em;
+    width: 1.4285714286em;
     padding: 0;
     overflow: hidden;
     border-radius: 2px;
@@ -2265,6 +2284,10 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-switch-trigger.lrn-qe-switch-trigger-large::after {
     content: attr(data-text-preview);
     text-indent: .3333333333em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-switch-helper-text {
+    padding-inline-start: calc(1.4285714286em + .3571428571em);
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-ckeditor-popover {
@@ -2948,6 +2971,10 @@
     -ms-user-select: none;
     user-select: none;
     padding: 0 .2857142857em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rollover-content-wrapper .lrn-qe-rollover-content-inner:has(.lrn_underlined_indicator) {
+    line-height: 3.2em;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-rollover-content-wrapper .lrn-qe-rollover-content-overlay {

@@ -3955,6 +3955,49 @@ button.lrn_btn.try-again.after-complete:before {
     width: 100%;
 }
 
+.lrn-assess .lrn-assess-warning-banner {
+    background-color: #fcfcd3;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.lrn-assess .lrn-assess-warning-banner-icon {
+    flex-shrink: 0;
+    line-height: 0;
+}
+
+.lrn-assess .lrn-assess-warning-banner-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.lrn-assess .lrn-unsaveable-links {
+    margin: 8px 0 16px;
+    padding-left: 24px;
+}
+
+.lrn-assess .lrn-unsaveable-links li {
+    color: #1877b1;
+}
+
+.lrn-assess .lrn-unsaveable-link {
+    color: #1877b1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.lrn-assess .lrn-unsaveable-link:visited {
+    color: #1877b1;
+}
+
+.lrn-assess .lrn-unsaveable-link:hover {
+    color: #0b5684;
+}
+
 body .lrn-assess-spinner {
     position: absolute;
     top: 50%;
