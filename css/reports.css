@@ -2036,7 +2036,7 @@
     vertical-align: middle;
     cursor: pointer;
     background-image: none;
-    border: 1px solid transparent;
+    border: 1px solid rgba(0, 0, 0, 0);
     white-space: nowrap;
     padding: 6px 12px;
     font-size: 14px;
@@ -2420,7 +2420,7 @@ fieldset[disabled] .learnosity-report .btn-danger.active {
 .learnosity-report .btn-link:active,
 .learnosity-report .btn-link[disabled],
 fieldset[disabled] .learnosity-report .btn-link {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     -webkit-box-shadow: none;
     -ms-box-shadow: none;
     -o-box-shadow: none;
@@ -2431,14 +2431,14 @@ fieldset[disabled] .learnosity-report .btn-link {
 .learnosity-report .btn-link:hover,
 .learnosity-report .btn-link:focus,
 .learnosity-report .btn-link:active {
-    border-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
 }
 
 .learnosity-report .btn-link:hover,
 .learnosity-report .btn-link:focus {
     color: #2a6496;
     text-decoration: underline;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .learnosity-report .btn-link[disabled]:hover,
@@ -2513,7 +2513,7 @@ fieldset[disabled] .learnosity-report .btn-link:focus {
 .learnosity-report button.close {
     padding: 0;
     cursor: pointer;
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
     border: 0;
     -webkit-appearance: none;
 }
@@ -2525,8 +2525,8 @@ fieldset[disabled] .learnosity-report .btn-link:focus {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px solid;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-left: 4px solid rgba(0, 0, 0, 0);
 }
 
 .learnosity-report .dropdown {
@@ -2607,7 +2607,7 @@ fieldset[disabled] .learnosity-report .btn-link:focus {
 .learnosity-report .dropdown-menu>.disabled>a:hover,
 .learnosity-report .dropdown-menu>.disabled>a:focus {
     text-decoration: none;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     cursor: not-allowed;
@@ -4486,7 +4486,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report a {
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
 }
 
 .learnosity-report a:active,
@@ -5204,9 +5204,9 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report .text-hide {
     font: 0/0 a;
-    color: transparent;
+    color: rgba(0, 0, 0, 0);
     text-shadow: none;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     border: 0;
 }
 
@@ -5361,7 +5361,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report.lrn_ie8,
 .learnosity-report.lrn_ie9 {
-    background: url(../../img/loader.gif?dfrgrg) no-repeat 0 12px transparent;
+    background: url(../../img/loader.gif?dfrgrg) no-repeat 0 12px rgba(0, 0, 0, 0);
 }
 
 .learnosity-report.lrn_ie8 .lrn_spinner,
@@ -5370,7 +5370,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .learnosity-report .lrn-loading {
-    background: url(../../img/loading.gif) no-repeat 0 0 transparent;
+    background: url(../../img/loading.gif) no-repeat 0 0 rgba(0, 0, 0, 0);
     background-size: 15px;
     width: 15px;
     height: 15px;
@@ -6103,7 +6103,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .learnosity-report table {
     max-width: 100%;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .learnosity-report th {
@@ -6560,7 +6560,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     position: absolute;
     width: 0;
     height: 0;
-    border-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
     border-style: solid;
 }
 
@@ -7552,8 +7552,8 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .lrn-ibtbu-head-cell_explodeleft.lrn-ibtbu-head-cell .lrn-ibtbu-label-text:after,
 .lrn-ibtbu-head-cell_explodeleft.lrn-ibtbu-head-cell.lrn-ibtbu-head-cell_total .lrn-ibtbu-label-text:before,
 .lrn-ibtbu-head-cell_explodeleft.lrn-ibtbu-head-cell.lrn-ibtbu-head-cell_total .lrn-ibtbu-label-text:after {
-    color: transparent;
-    background: transparent;
+    color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 
 .lrn-ibtbu-head-cell_explodechart.lrn-ibtbu-head-cell_legacy.lrn-ibtbu-head-cell_explodechart.lrn-ibtbu-head-cell:after {
@@ -7744,8 +7744,8 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .lrn-ibtbu-head-loading {
     background: #ffffff;
-    border-bottom: 1px solid transparent;
-    border-right: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7757,7 +7757,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     overflow: visible;
     width: 39px;
     white-space: nowrap;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
     height: auto;
     position: static;
 }
@@ -7904,8 +7904,8 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .lrn-ibtbu-head-end {
     background: #ffffff;
-    border-bottom: 1px solid transparent;
-    border-right: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7986,7 +7986,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     position: relative;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .lrn-ibtbu-main_legacy.lrn-ibtbu-main {
@@ -8310,7 +8310,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .lrn-ibtbu-col-empty {
     border-bottom: 1px solid #cccccc;
-    border-right: 1px solid transparent;
+    border-right: 1px solid rgba(0, 0, 0, 0);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8345,8 +8345,8 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .lrn-ibtbu-col-loading-cell {
-    border-bottom: 1px solid transparent;
-    border-right: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8674,8 +8674,8 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .lrn-ibtbu-tooltip-box-triangle {
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
     border-top: 10px solid #000000;
     height: 0;
     left: 0;
@@ -8699,7 +8699,6 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 * {
-    color-adjust: exact;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
 }
@@ -8974,7 +8973,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .lrn-ra-main-col-shadow {
     position: -webkit-sticky;
     position: sticky;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0, 0, 0, .5)), color-stop(12%, rgba(0, 0, 0, .5)), color-stop(52%, rgba(0, 0, 0, .27)), to(transparent));
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 10%, rgba(0, 0, 0, .5) 12%, rgba(0, 0, 0, .27) 52%, transparent 100%);
     width: 7px;
@@ -8995,7 +8994,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     line-height: 23px;
     text-align: center;
     margin: 2px;
-    border: solid 1px transparent;
+    border: solid 1px rgba(0, 0, 0, 0);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -9647,14 +9646,14 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .lrn-ra-details-histogram-left-shadow {
     position: absolute;
     left: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0, 0, 0, .5)), color-stop(12%, rgba(0, 0, 0, .5)), color-stop(52%, rgba(0, 0, 0, .27)), to(transparent));
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 10%, rgba(0, 0, 0, .5) 12%, rgba(0, 0, 0, .27) 52%, transparent 100%);
 }
 
 .lrn-ra-details-histogram-right-shadow {
     right: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-image: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(0, 0, 0, .5)), color-stop(12%, rgba(0, 0, 0, .5)), color-stop(52%, rgba(0, 0, 0, .27)), to(transparent));
     background-image: linear-gradient(to left, rgba(0, 0, 0, .5) 10%, rgba(0, 0, 0, .5) 12%, rgba(0, 0, 0, .27) 52%, transparent 100%);
 }
@@ -9694,7 +9693,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column {
-    border: 1px solid transparent;
+    border: 1px solid rgba(0, 0, 0, 0);
     -webkit-flex-basis: 100px;
     -ms-flex-preferred-size: 100px;
     flex-basis: 100px;
@@ -9703,7 +9702,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 }
 
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column .item-response-name {
-    border: 1px solid transparent;
+    border: 1px solid rgba(0, 0, 0, 0);
     display: block;
     margin: 1px 0;
     line-height: 17px;
@@ -9732,7 +9731,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column-active .item-response-name,
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column:active .item-response-name {
-    border-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
     background-color: #eeeeee;
     text-decoration: inherit;
 }
@@ -9749,7 +9748,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column-selected:focus .item-response-name,
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column-selected:hover .item-response-name {
     background-color: #666666 !important;
-    border-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
     color: #ffffff;
     text-decoration: inherit;
 }
@@ -9765,8 +9764,8 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column-disabled:active .item-response-name,
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column-disabled:focus .item-response-name,
 .lrn-ra-details-histogram-chart .lrn-module-charts-histogram-column-disabled:hover .item-response-name {
-    border-color: transparent;
-    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     text-decoration: inherit;
 }
 
