@@ -9161,6 +9161,11 @@ img.lrn-loading-image-hidden {
     overflow: hidden !important;
 }
 
+.lrn mjx-container mjx-assistive-mml {
+    width: 1px !important;
+    height: 1px !important;
+}
+
 .lrn-float-element {
     position: absolute;
     z-index: 10000;
@@ -12941,7 +12946,6 @@ img.lrn-loading-image-hidden {
     padding: .25em;
     line-height: 1.4em;
     vertical-align: top;
-    overflow-x: auto;
 }
 
 .lrn_widget.lrn_classification .lrn_response .lrn_response_input_wrapper table td {
@@ -13756,6 +13760,12 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper,
 .lrn_widget.lrn_qr.lrn_clozeformulaV2 .lrn_response_wrapper {
     margin-top: 2.2em;
+}
+
+.lrn_widget.lrn_qr.lrn_imageclozeformula .lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_math_editable.lrn_bordered_mathinput,
+.lrn_widget.lrn_qr.lrn_imageclozeformulaV2 .lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_math_editable.lrn_bordered_mathinput,
+.lrn_widget.lrn_qr.lrn_imageclozechemistry .lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_math_editable.lrn_bordered_mathinput {
+    border-color: rgba(0, 0, 0, 0);
 }
 
 .lrn_widget.lrn_qr.lrn_clozechemistry .MathJax span,
@@ -20581,6 +20591,10 @@ img.lrn-loading-image-hidden {
     opacity: 1 !important;
 }
 
+.lrn_widget.lrn_numberline .lrn_jxg_labeltext:hover {
+    opacity: .66 !important;
+}
+
 .lrn_widget.lrn_numberline .lrn_jxg_titletext {
     text-align: center;
     font-size: 1em !important;
@@ -20800,6 +20814,10 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_numberlineplot .lrn_jxg_labeltext {
     font-size: 1em;
     opacity: 1 !important;
+}
+
+.lrn_widget.lrn_numberlineplot .lrn_jxg_labeltext:hover {
+    opacity: .66 !important;
 }
 
 .lrn_widget.lrn_numberlineplot ellipse {
