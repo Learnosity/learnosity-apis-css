@@ -13768,6 +13768,12 @@ img.lrn-loading-image-hidden {
     margin-top: 2.2em;
 }
 
+.lrn_widget.lrn_qr.lrn_imageclozeformula .lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_math_editable.lrn_bordered_mathinput,
+.lrn_widget.lrn_qr.lrn_imageclozeformulaV2 .lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_math_editable.lrn_bordered_mathinput,
+.lrn_widget.lrn_qr.lrn_imageclozechemistry .lrn-clozeformula-input.lrn_not_attempted.lrn_disabled .lrn_math_editable.lrn_bordered_mathinput {
+    border-color: rgba(0, 0, 0, 0);
+}
+
 .lrn_widget.lrn_qr.lrn_clozechemistry .MathJax span,
 .lrn_widget.lrn_qr.lrn_clozechemistry .MathJax mjx-c {
     font-family: "MathJax_Math-Regular", Symbola, serif !important;
