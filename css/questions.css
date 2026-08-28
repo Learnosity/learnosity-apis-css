@@ -8757,6 +8757,33 @@
     stroke: #cccccc;
 }
 
+.lrn_chart_label_tooltip {
+    position: absolute;
+    background: #333333;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 13px;
+    display: none;
+    z-index: 1000;
+    max-width: calc(100vw - 20px);
+    white-space: normal;
+    word-wrap: break-word;
+    font-family: Arial, sans-serif;
+}
+
+.lrn_chart_label_tooltip_arrow {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-top: 6px solid #333333;
+}
+
 .lrn_form_group {
     margin-bottom: 1em;
 }
@@ -17165,17 +17192,14 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label {
     position: absolute;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label,
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label * {
     text-align: center;
-}
-
-.lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label_top,
-.lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label_bottom {
-    left: 0;
 }
 
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label_top {
@@ -17186,20 +17210,15 @@ img.lrn-loading-image-hidden {
     bottom: 0;
 }
 
-.lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label_right,
-.lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label_left {
-    bottom: 0;
-    left: 0;
-}
-
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label_right {
-    transform: rotate(90deg);
-    transform-origin: top right;
+    right: 0;
+    writing-mode: vertical-rl;
 }
 
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_label_left {
-    transform: rotate(-90deg);
-    transform-origin: top left;
+    left: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
 
 .lrn_widget.lrn_graphplotting .lrn_response_wrapper .lrn_graph_plotter .lrn_graph_wrapper .lrn_graph_axis_label p:last-child {
@@ -19593,6 +19612,13 @@ img.lrn-loading-image-hidden {
     position: static;
     top: auto;
     vertical-align: baseline;
+}
+
+.lrn_widget.lrn_chemistryessayV2 .lrn-wysihtml-widget-active .lrn-wysihtml-math-widget,
+.lrn_widget.lrn_formulaessayV2 .lrn-wysihtml-widget-active .lrn-wysihtml-math-widget,
+.lrn_widget.lrn_longtextV2 .lrn-wysihtml-widget-active .lrn-wysihtml-math-widget {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(82, 168, 236, .6);
 }
 
 .lrn_widget.lrn_chemistryessayV2 .lrn-wysihtml-toolbar:focus-within,
