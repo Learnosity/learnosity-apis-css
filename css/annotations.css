@@ -1230,10 +1230,6 @@
     background-size: 100% 2px;
 }
 
-:is(#id,body) .lrn-annotations--safari-only .lrn-annotations-c-popover__colorIndicatorWrapper>span {
-    background-size: 100% 1px;
-}
-
 :is(#id,body) .lrn-annotations-color-swatch.lrn-annotations-color--theme-1 {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='11.5' fill='none' stroke='currentColor' stroke-width='1'/%3E%3C/svg%3E");
     background-size: contain;
