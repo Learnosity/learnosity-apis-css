@@ -221,6 +221,26 @@
     z-index: 3;
 }
 
+:is(#lds,body) .volumeCollapsible-HGaI- {
+    align-items: center;
+    gap: var(--lds-space--half-x);
+    flex: 1;
+    min-width: 0;
+    display: flex;
+}
+
+:is(#lds,body) .volumeCollapsibleSlider-5SZjB {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+}
+
+:is(#lds,body) .volumeSlider-f9f9u {
+    z-index: 3;
+    flex: 1;
+    min-width: 0;
+}
+
 :is(#lds,body) .time-AbaZE {
     white-space: nowrap;
     padding-left: var(--lds-space--half-x);
@@ -228,7 +248,7 @@
 }
 
 :is(#lds,body) .timeInline-ZnZ0i {
-    padding: var(--lds-space--1-x) var(--lds-space--2-x) var(--lds-space--2-x) var(--lds-space--2-x);
+    padding: var(--lds-space--1-x) var(--lds-space--2-and-a-half-x) var(--lds-space--2-x) var(--lds-space--2-and-a-half-x);
     font-size: var(--lds-font-size--body-small);
     justify-content: space-between;
     display: flex;
@@ -512,6 +532,13 @@
     text-decoration-thickness: 3px;
 }
 
+:is(#lds,body) .inlineAudioPlayer-RnJff .inlineButton--U9x4:hover,
+:is(#lds,body) .inlineAudioPlayer-RnJff .inlineButton--U9x4:focus,
+:is(#lds,body) .inlineAudioPlayer-RnJff .inlineButton--U9x4:focus-visible,
+:is(#lds,body) .inlineAudioPlayer-RnJff .inlineButton--U9x4:active {
+    color: inherit;
+}
+
 :is(#lds,body) .inlineAudioPlayer-RnJff .icon-7bQBL {
     display: inline-flex;
 }
@@ -576,8 +603,18 @@
     border-bottom: 0;
 }
 
+:is(#lds,body) .popoverHeader-XDW9y {
+    flex-direction: column;
+    display: flex;
+}
+
 :is(#lds,body) .playPause-cof97 {
     padding: var(--lds-space--5-x) 0 var(--lds-space--1-and-a-half-x) 0;
+    order: 2;
+}
+
+:is(#lds,body) .playPause-cof97.playPauseWithTopRow-5iHbW {
+    padding-top: 0;
 }
 
 :is(#lds,body) .playPause-cof97 button {
@@ -593,19 +630,42 @@
 
 :is(#lds,body) .popupAudioPlayer-qCt4a {
     min-width: var(--lrn-audio-player-min-width);
-    padding-bottom: var(--lds-space--2-x);
     display: block;
 }
 
-:is(#lds,body) .popupAudioPlayer-qCt4a .dropdownContainer-EYmCo {
-    margin: var(--lds-space--half-x);
-    position: absolute;
-    top: 0;
-    right: 0;
+:is(#lds,body) .popupAudioPlayer-qCt4a .noTimerBottomSpacing-Olc6h {
+    margin-bottom: var(--lds-space--2-x);
 }
 
 :is(#lds,body) .popupAudioPlayer-qCt4a .dropdownToggle-plpuL:after {
     content: none;
+}
+
+:is(#lds,body) .popupAudioPlayer-qCt4a .dropdownToggle-plpuL svg {
+    display: block;
+}
+
+:is(#lds,body) .popupAudioPlayer-qCt4a .popoverTopRow-6mw4T {
+    padding: var(--lds-space--1-x) var(--lds-space--1-x) 0 var(--lds-space--1-x);
+    order: 1;
+    align-items: center;
+    display: flex;
+}
+
+:is(#lds,body) .popupAudioPlayer-qCt4a .popoverTopRowEnd-SQQzS {
+    flex-shrink: 0;
+    align-items: center;
+    margin-left: auto;
+    display: flex;
+}
+
+:is(#lds,body) .popupAudioPlayer-qCt4a .popoverTopRowEnd-SQQzS>* {
+    margin-left: var(--lds-space--three-quarter-x);
+}
+
+:is(#lds,body) .popupAudioPlayer-qCt4a .inlineProgressTrack-HQZXa {
+    padding-left: var(--lds-space--three-quarter-x);
+    padding-right: var(--lds-space--three-quarter-x);
 }
 
 /*$vite$:1*/
@@ -7327,797 +7387,6 @@
     *margin-left: 8.44063%;
 }
 
-.lrn-formula-keyboard span {
-    display: inline;
-}
-
-.lrn_widget.lrn_absolute_keyboard_parent {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.lrn_widget.lrn_absolute_keyboard_parent--adjusted {
-    width: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard {
-    touch-action: none;
-    -ms-touch-action: none;
-    position: relative;
-    margin: 0 auto 0 0;
-    border-style: solid;
-    border-color: #eaeaea;
-    border-top: none;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    background: #fbfbfb;
-    max-width: 800px;
-    min-width: 380px;
-    border-radius: 2px;
-    user-select: none;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-drag-area {
-    background: #333333;
-    width: 100%;
-    height: 1.7142857143em;
-    position: relative;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-hide-menu-bar {
-    height: auto;
-    border-top: 1px solid #eaeaea;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-drag-handler {
-    display: none;
-    position: absolute;
-    left: 50%;
-    height: 100%;
-    margin: .7142857143em 0 0 -0.7142857143em;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-drag-handler span {
-    margin-right: 1px;
-    vertical-align: top;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-formula-keyboard-close {
-    position: absolute;
-    height: 100%;
-    right: .1428571429em;
-    width: 1.7142857143em;
-    text-align: center;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-formula-keyboard-close button {
-    background: none;
-    border: none;
-    width: inherit;
-    height: inherit;
-    line-height: 1.7142857143em;
-    text-decoration: none;
-    color: #888888;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-formula-keyboard-close button:before {
-    font-family: "LearnosityIconsRegular";
-    content: var(--lrn-questions-icon-content--cross);
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-formula-keyboard-close button:hover {
-    color: #ffffff;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-formula-keyboard-close button:focus {
-    outline: 1px solid #ffffff;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-common,
-.lrn_widget .lrn-formula-keyboard .lrn-formula-keyboard-mask,
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-1-columns,
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-2-columns,
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-3-columns,
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-4-columns {
-    display: table-cell;
-    position: relative;
-    font-size: 17px;
-    vertical-align: top;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-holder {
-    display: table;
-    width: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard.lrn-ui-style-block-keyboard,
-.lrn_widget .lrn-formula-keyboard.lrn-ui-style-block-on-focus-keyboard {
-    width: 50%;
-}
-
-.lrn_widget .lrn-formula-keyboard.lrn-ui-style-block-keyboard.lrn-formula-keyboard--adjusted,
-.lrn_widget .lrn-formula-keyboard.lrn-ui-style-block-on-focus-keyboard.lrn-formula-keyboard--adjusted {
-    width: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-4-columns {
-    width: 50%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-4-columns .lrn_btn_grid,
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-4-columns .lrn-btn-placeholder {
-    width: 25%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-3-columns {
-    width: 37.5%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-3-columns .lrn_btn_grid,
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-3-columns .lrn-btn-placeholder {
-    width: 33.33%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-2-columns {
-    width: 25%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-2-columns .lrn_btn_grid,
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-2-columns .lrn-btn-placeholder {
-    width: 50%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-1-columns {
-    width: 12.5%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-1-columns .lrn_btn_grid,
-.lrn_widget .lrn-formula-keyboard .lrn-keyboard-wrapper-1-columns .lrn-btn-placeholder {
-    width: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-formula-keyboard-mask {
-    display: block;
-    height: 17.5em;
-    overflow-y: scroll;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_btn_grid {
-    padding-left: 0;
-    padding-right: 0;
-    width: 25%;
-    height: 60px;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_btn_grid[data-symbol-id="\\text{g}\\ \\text{mol}^{-1}"] .mathquill-embedded-latex {
-    font-size: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_btn_grid[data-symbol-id=\sum] .mathquill-embedded-latex {
-    font-size: 82%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-sym__label[data-symbol-id=\ncong],
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-sym__label[data-symbol-id=\nsim] {
-    font-size: 150%;
-}
-
-.lrn_widget .lrn-formula-keyboard--horizontal .lrn_btn_grid,
-.lrn_widget .lrn-formula-keyboard--horizontal .lrn-btn-placeholder {
-    width: 10%;
-}
-
-.lrn_widget .lrn-formula-keyboard--horizontal .lrn-btn-placeholder--hidden {
-    display: none;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_btn_grid:focus {
-    z-index: 1;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_btn_grid:focus:after,
-.lrn_widget .lrn-formula-keyboard .lrn_btn_grid:hover:after {
-    border: 1px solid #333333;
-    border-radius: 2px;
-    bottom: 5px;
-    content: "";
-    left: 5px;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_btn_grid:active {
-    box-shadow: none;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_btn_grid:active:after {
-    display: none;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-num:focus,
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-num:hover {
-    background-color: #fcfcd3;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-num:active {
-    background-color: #cacaa1;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-operator {
-    border-bottom-color: #cccccc;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-operator:focus,
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-operator:hover {
-    background-color: #d9d9d9;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-operator:active {
-    background-color: #a7a7a7;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-sym:focus,
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-sym:hover {
-    background-color: #e6f2fc;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-sym:active {
-    background-color: #b4c0ca;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-dir {
-    background-color: #f0f0f0;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-dir:focus,
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-dir:hover {
-    background-color: #f0f0f0;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-dir:active {
-    background-color: #bebebe;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-num {
-    font-size: 19px;
-    height: 60px;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-grid-operator span {
-    font-size: 19px;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-array .mq-math-mode .mq-matrix {
-    margin: 0;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_backspace:before {
-    font-family: "LearnosityIconsRegular";
-    content: var(--lrn-questions-icon-content--backspace);
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_arrow_right:before {
-    font-family: "LearnosityIconsRegular";
-    content: var(--lrn-questions-icon-content--arrow-right);
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn_arrow_left:before {
-    font-family: "LearnosityIconsRegular";
-    content: var(--lrn-questions-icon-content--arrow-left);
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-group-qwerty:before {
-    font-family: "LearnosityIconsRegular";
-    content: var(--lrn-questions-icon-content--keyboard);
-    font-size: 1em;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-group-qwerty span {
-    display: none;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-qwerty-btn {
-    background-color: #d9d9d9;
-    border-right-color: #cccccc;
-    border-bottom-color: #cccccc;
-    width: 9%;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-qwerty-btn:focus,
-.lrn_widget .lrn-formula-keyboard .lrn-qwerty-btn:hover,
-.lrn_widget .lrn-formula-keyboard .lrn-qwerty-btn.lrn_hover {
-    background-color: #d9d9d9;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-qwerty-btn:active,
-.lrn_widget .lrn-formula-keyboard .lrn-qwerty-btn.lrn_active {
-    background-color: #cccccc;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-spacebar {
-    width: 70%;
-}
-
-.lrn_widget .lrn-formula-keyboard .mq-math-mode {
-    cursor: pointer;
-}
-
-.lrn_widget .lrn-formula-keyboard.lrn-touch .lrn-desktop-only {
-    display: none;
-}
-
-.lrn_widget .lrn-formula-keyboard .lrn-btn-placeholder {
-    background: #fbfbfb;
-    text-indent: -9999px;
-    cursor: default;
-    border: none;
-    height: 60px;
-}
-
-.lrn_widget .lrn-formula-keyboard.lrn_caps_on .lrn_btn_caps {
-    background: #939393;
-    color: #333333;
-}
-
-.lrn_widget .lrn-formula-keyboard.lrn_caps_on .lrn-qwerty-btn {
-    text-transform: uppercase;
-}
-
-.lrn_widget .lrn-formula-keyboard * {
-    white-space: normal;
-    box-sizing: border-box;
-}
-
-.lrn_widget .lrn-formula-keyboard--adjusted {
-    min-width: initial;
-}
-
-.lrn_widget .lrn-ui-style-floating-keyboard {
-    position: absolute;
-    width: 100%;
-    z-index: 1050;
-    box-sizing: border-box;
-}
-
-.lrn_widget .lrn-ui-style-floating-keyboard .lrn-drag-area {
-    cursor: move;
-}
-
-.lrn_widget .lrn-ui-style-floating-keyboard .lrn-drag-area .lrn-formula-keyboard-close {
-    cursor: default;
-}
-
-.lrn_widget .lrn-ui-style-floating-keyboard .lrn-drag-handler {
-    display: block;
-}
-
-.lrn_widget .lrn-ui-style-floating-keyboard:focus-within {
-    border: 1px solid #3498db;
-}
-
-.lrn_widget .lrn-ui-style-floating-keyboard,
-.lrn_widget .lrn-ui-style-block-on-focus-keyboard {
-    display: none;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu {
-    background: #ffffff;
-    height: 4.2142857143em;
-    position: relative;
-    border-bottom: 1px solid #cccccc;
-    font-size: 14px;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu--horizontal.lrn-formula-keyboard-menu--no-hints {
-    height: 1.7142857143em;
-    min-height: 1.7142857143em;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu--horizontal .lrn-formula-keyboard-menu-left .lrn-formula-keyboard-menu-container {
-    display: none;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu .lrn_btn_grid,
-.lrn_widget .lrn-formula-keyboard-menu .lrn-drag-handler,
-.lrn_widget .lrn-formula-keyboard-menu .lrn-formula-keyboard-hint {
-    z-index: 1;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu .mq-cursor {
-    display: none;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu .lrn_btn .mq-matrixed,
-.lrn_widget .lrn-formula-keyboard-menu .lrn_btn_grid .mq-matrixed {
-    background-color: #eaeaea;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu .lrn_btn .mq-matrixed-container,
-.lrn_widget .lrn-formula-keyboard-menu .lrn_btn_grid .mq-matrixed-container {
-    filter: progid:DXImageTransform.Microsoft.Chroma(color='#eaeaea');
-}
-
-.lrn_widget .lrn-formula-keyboard-menu .lrn_btn,
-.lrn_widget .lrn-formula-keyboard-menu .lrn_btn_grid {
-    font-size: 1em;
-    height: 60px;
-    vertical-align: top;
-    min-width: 9%;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu .lrn_btn .mq-text-mode {
-    white-space: nowrap;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-left,
-.lrn_widget .lrn-formula-keyboard-menu-right {
-    display: flex;
-    height: 2.4285714286em;
-    position: relative;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-left .lrn-formula-keyboard-menu-container,
-.lrn_widget .lrn-formula-keyboard-menu-right .lrn-formula-keyboard-menu-container {
-    padding: 0 .3571428571em;
-    position: relative;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-left .lrn-formula-keyboard-menu-container:before,
-.lrn_widget .lrn-formula-keyboard-menu-right .lrn-formula-keyboard-menu-container:before {
-    content: "";
-    box-sizing: border-box;
-    display: block;
-    height: 1.4285714286em;
-    position: absolute;
-    top: .5em;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-left .lrn-formula-keyboard-menu-container button:focus,
-.lrn_widget .lrn-formula-keyboard-menu-right .lrn-formula-keyboard-menu-container button:focus {
-    border: 1px solid #3498db;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-left .lrn_dropdown,
-.lrn_widget .lrn-formula-keyboard-menu-right .lrn_dropdown {
-    background: #ffffff;
-    height: 2.1428571429em;
-    width: 10.7142857143em;
-    margin: .1428571429em 0 0;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-left button,
-.lrn_widget .lrn-formula-keyboard-menu-right button {
-    background: none;
-    border: none;
-    display: inline-block;
-    height: 2.4285714286em;
-    line-height: 1;
-    padding: 0;
-    text-align: center;
-    width: 1.7142857143em;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-left {
-    float: left;
-    max-width: 66%;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-left .lrn-formula-keyboard-menu-container:before {
-    border-right: 1px solid #cccccc;
-    right: -0.0714285714em;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-right {
-    float: right;
-    max-width: 34%;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-right .lrn-formula-keyboard-menu-container {
-    display: inline-block;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-right .lrn-formula-keyboard-menu-container:before {
-    border-left: 1px solid #cccccc;
-    left: -0.0714285714em;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-groups select {
-    max-width: 14.2857142857em;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-help {
-    position: relative;
-    display: inline-block;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-help button {
-    color: #333333;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-help button:before {
-    content: var(--lrn-questions-icon-content--info);
-    font-family: "LearnosityIconsRegular";
-    height: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-image-capture {
-    position: relative;
-    display: inline-block;
-    margin: 0 4px;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-image-capture button {
-    color: #333333;
-}
-
-.lrn_widget .lrn-formula-keyboard-menu-image-capture button:before {
-    content: var(--lrn-questions-icon-content--camera);
-    font-family: "LearnosityIconsRegular";
-    height: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard-hint {
-    font-weight: bold;
-    padding: 0 .5714285714em;
-    font-size: .8571428571em;
-    transition: opacity 100ms ease-in;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    height: 100%;
-    position: relative;
-    background: rgba(0, 0, 0, 0);
-    color: #333333;
-    overflow: hidden;
-}
-
-.lrn_widget .lrn-formula-keyboard-hint:before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.lrn_widget .lrn-formula-keyboard-hint.lrn-empty {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    opacity: 0;
-    visibility: hidden;
-}
-
-.lrn_widget .lrn-formula-keyboard-hint span {
-    display: block;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.lrn_widget .lrn-formula-keyboard-hint span.lrn-hint-shortcut {
-    color: #41474f;
-    font-weight: normal;
-    padding-left: .2857142857em;
-    min-width: 14px;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager {
-    position: relative;
-    float: right;
-    text-align: right;
-    width: 50%;
-    height: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_btn {
-    min-width: 0;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-right,
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-left {
-    display: none;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    padding: 0;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-right:before,
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-left:before {
-    font-size: 1.2142857143em;
-    font-family: "LearnosityIconsRegular";
-    padding: 0;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-right {
-    right: 0;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-right:before {
-    content: var(--lrn-questions-icon-content--arrow-right);
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-left {
-    left: 25px;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-left:before {
-    content: var(--lrn-questions-icon-content--arrow-left);
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-slider-wrapper {
-    position: static;
-    top: 0;
-    right: 0;
-    height: 100%;
-    overflow: hidden;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-slider-wrapper button .mq-non-leaf {
-    white-space: nowrap;
-    display: inline-block;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-slider-wrapper .lrn_scroll-slider {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-}
-
-.lrn_widget .lrn-formula-keyboard-pager .lrn_scroll-slider-wrapper .lrn_scroll-slider .mq-matrix table.mq-rows-2 td {
-    font-size: .18em;
-}
-
-.lrn_widget .lrn-formula-keyboard-main {
-    font-size: 17px;
-    width: auto;
-    height: 100%;
-    display: table-cell;
-    vertical-align: top;
-}
-
-.lrn_widget .lrn-qwerty {
-    float: left;
-    display: none;
-    width: 100%;
-}
-
-.lrn_widget .lrn-qwerty .lrn-btn-grid-dir {
-    width: 6%;
-}
-
-.lrn_widget .lrn-qwerty-row-2 {
-    padding-left: 3%;
-}
-
-.lrn_widget .lrn-qwerty-row-3 {
-    padding-left: 6%;
-}
-
-.lrn_widget .lrn-qwerty-row-4 .lrn-btn-grid-dir {
-    margin-left: 6%;
-}
-
-.lrn_widget .lrn-btn-grid-sym .mq-matrixed {
-    background-color: #e6f2fc;
-}
-
-.lrn_widget .lrn-btn-grid-sym .mq-matrixed-container {
-    filter: progid:DXImageTransform.Microsoft.Chroma(color='#e6f2fc');
-}
-
-.lrn_widget .lrn-btn-grid-sym:hover .mq-empty,
-.lrn_widget .lrn-btn-grid-sym:focus .mq-empty {
-    background: #eaeaea;
-}
-
-.lrn_widget .lrn_btn_grid:hover .mq-matrixed,
-.lrn_widget .lrn_btn_grid.lrn_hover .mq-matrixed,
-.lrn_widget .lrn_btn_grid:active .mq-matrixed,
-.lrn_widget .lrn_btn_grid.lrn_active .mq-matrixed,
-.lrn_widget .lrn_btn_grid:focus .mq-matrixed {
-    background-color: #d9d9d9;
-}
-
-.lrn_widget .lrn_btn_grid:hover .mq-matrixed-container,
-.lrn_widget .lrn_btn_grid.lrn_hover .mq-matrixed-container,
-.lrn_widget .lrn_btn_grid:active .mq-matrixed-container,
-.lrn_widget .lrn_btn_grid.lrn_active .mq-matrixed-container,
-.lrn_widget .lrn_btn_grid:focus .mq-matrixed-container {
-    filter: progid:DXImageTransform.Microsoft.Chroma(color='#d9d9d9');
-}
-
-.lrn_widget .lrn_btn_grid:hover,
-.lrn_widget .lrn_btn_grid.lrn_hover,
-.lrn_widget .lrn_btn_grid:active,
-.lrn_widget .lrn_btn_grid.lrn_active,
-.lrn_widget .lrn_btn_grid:focus {
-    color: #4d4d4d;
-}
-
-.lrn_widget .lrn_btn_grid:hover>*,
-.lrn_widget .lrn_btn_grid.lrn_hover>*,
-.lrn_widget .lrn_btn_grid:active>*,
-.lrn_widget .lrn_btn_grid.lrn_active>*,
-.lrn_widget .lrn_btn_grid:focus>* {
-    border-color: #4d4d4d;
-}
-
-.lrn-formula-symbols-help .lrn-formula-symbols-help-header {
-    padding: 10px;
-    border-bottom: 1px solid #d9d9d9;
-}
-
-.lrn-formula-symbols-help .lrn-close {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0);
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    cursor: pointer;
-    line-height: 1.7142857143em;
-    text-decoration: none;
-    color: #4d4d4d;
-}
-
-.lrn-formula-symbols-help .lrn-close:before {
-    font-family: "LearnosityIconsRegular";
-    content: var(--lrn-questions-icon-content--cross);
-}
-
-.lrn-formula-symbols-help .lrn-close:hover,
-.lrn-formula-symbols-help .lrn-close:focus {
-    color: #3498db;
-    outline: 1px solid #1877b1;
-}
-
-.lrn-formula-symbols-help {
-    position: absolute;
-    left: 50%;
-    margin-left: -200px;
-    margin-top: 10px;
-    border: 1px solid #cccccc;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .7);
-    transition: .2s ease-in opacity;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    opacity: 0;
-    background: #ffffff;
-    z-index: 1052;
-}
-
-.lrn-formula-symbols-help h3 {
-    margin: 0;
-}
-
-.lrn-formula-symbols-help .lrn-content {
-    max-width: 400px;
-    padding: 15px;
-    overflow-y: scroll;
-}
-
-.lrn-formula-symbols-help .lrn-shortcut {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    opacity: .7;
-}
-
-.lrn-formula-symbols-help .lrn-disclaimer {
-    margin-top: 2em;
-}
-
-.lrn-formula-symbols-help td {
-    padding-right: 15px;
-}
-
-.lrn-formula-symbols-help td:last-child {
-    padding-right: 0;
-}
-
 .lrn-masking .lrn-mask:hover {
     cursor: default;
 }
@@ -11560,6 +10829,10 @@ img.lrn-loading-image-hidden {
 .lrn_videoplayer .mejs__captions-selector-label,
 .lrn_videoplayer .mejs__chapters-selector-label {
     padding: .25rem 0 0;
+}
+
+.lrn_videoplayer video::cue {
+    line-height: 1.25;
 }
 
 .learnosity-feature[data-type=scrollablepassage] {
@@ -15262,7 +14535,6 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_drawing .lrn-label-clear,
 .lrn_widget.lrn_drawing .lrn-label-undo,
 .lrn_widget.lrn_drawing .lrn-label-redo {
-    display: inline;
     margin-left: 4px;
 }
 

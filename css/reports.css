@@ -9152,6 +9152,7 @@ fieldset[disabled] .learnosity-report .checkbox-inline {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    min-height: 27px;
 }
 
 .lrn-ra-head-cell-top-ref-name {
@@ -9959,4 +9960,23 @@ body.lrn_disabled_imagetool_feature .lrn_imagetool {
 
 .lrn-ra-with-pagination .lrn-ra-main-inner {
     min-height: auto;
+}
+
+.lrn-ra-head-cell-wrapper {
+    width: 80px;
+    min-width: 80px;
+    height: 136px;
+    position: relative;
+}
+
+.lrn-ra-head-cell-wrapper .lrn-ra-head-cell {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+}
+
+.lrn-ra-head-cell-wrapper .lrn-ra-head-cell-top-ref-sort {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
