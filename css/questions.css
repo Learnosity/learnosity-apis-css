@@ -11041,6 +11041,10 @@ img.lrn-loading-image-hidden {
     padding: .25rem 0 0;
 }
 
+.lrn_videoplayer video::cue {
+    line-height: 1.25;
+}
+
 .learnosity-feature[data-type=scrollablepassage] {
     height: auto;
 }
@@ -14662,7 +14666,6 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_drawing .lrn-label-clear,
 .lrn_widget.lrn_drawing .lrn-label-undo,
 .lrn_widget.lrn_drawing .lrn-label-redo {
-    display: inline;
     margin-left: 4px;
 }
 
