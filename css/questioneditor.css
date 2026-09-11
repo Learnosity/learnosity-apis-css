@@ -82,6 +82,7 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-datatable-button-group .lrn-qe-btn.lrn-qe-datatable-nav-btn:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-remove.lrn-qe-btn-default:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-default:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:focus,
 .cke_dialog_container_qe .cke_dialog_ui_button_cancel:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control:focus,
@@ -3035,6 +3036,69 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-hide-remove-array-button .lrn-qe-form-el-removable .lrn-qe-form-el-wrapper {
     padding-right: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin svg path,
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin svg use {
+    fill: #939393;
+    transition: fill .2s;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:hover {
+    background: transparent;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:hover svg path,
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:hover svg use {
+    fill: #0b5684;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:focus {
+    background: transparent;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin[aria-pressed=true] svg path,
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin[aria-pressed=true] svg use {
+    fill: #0b5684;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin .lrn-qe-i-pin {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-form-el-pinnable.lrn-qe-form-el-removable .lrn-qe-form-el-wrapper {
+    padding-right: 6.8571428571em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-form-el-pinnable.lrn-qe-form-el-removable .lrn-qe-form-el-action[data-action=pin] {
+    right: 3.4285714286em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-form-el-pinnable:not(.lrn-qe-form-el-removable) .lrn-qe-form-el-wrapper {
+    padding-right: 3.4285714286em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-form-el-pinnable:not(.lrn-qe-form-el-removable) .lrn-qe-form-el-action[data-action=pin] {
+    max-width: 2.8571428571em;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-form-el-reorderable {

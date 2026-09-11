@@ -1580,12 +1580,12 @@
 }
 
 .lrn .form-control:focus {
-    border-color: #52a8ec;
+    border-color: var(--lds-color--blue-M900);
     box-shadow: none;
 }
 
 .lrn .form-control .cke_textarea_inline:focus {
-    outline: 1px solid #52a8ec;
+    outline: 1px solid var(--lds-color--blue-M900);
 }
 
 .lrn .btn {
@@ -4620,11 +4620,23 @@
 }
 
 .lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_not_attempted select,
+.lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_not_attempted .lrn-cloze-select,
+.lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_not_attempted .lrn-cloze-select-grid,
 .lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_correct select,
+.lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_correct .lrn-cloze-select,
+.lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_correct .lrn-cloze-select-grid,
 .lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_incorrect select,
+.lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_incorrect .lrn-cloze-select,
+.lrn_widget.lrn_imageclozedropdown .lrn_combobox.lrn_incorrect .lrn-cloze-select-grid,
 .lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_not_attempted select,
+.lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_not_attempted .lrn-cloze-select,
+.lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_not_attempted .lrn-cloze-select-grid,
 .lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_correct select,
-.lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_incorrect select {
+.lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_correct .lrn-cloze-select,
+.lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_correct .lrn-cloze-select-grid,
+.lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_incorrect select,
+.lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_incorrect .lrn-cloze-select,
+.lrn_widget.lrn_clozedropdown .lrn_combobox.lrn_incorrect .lrn-cloze-select-grid {
     display: none;
 }
 
@@ -8800,7 +8812,7 @@
 }
 
 :root .lrn-switch input:focus+.lrn-switch-trigger {
-    border-color: #52a8ec;
+    border-color: var(--lds-color--blue-M900);
 }
 
 :root .lrn-switch input:checked+.lrn-switch-trigger {
@@ -9109,6 +9121,12 @@ img.lrn-loading-image-hidden {
     margin: var(--lds-space--half-x);
 }
 
+@media (min-width: 480px) {
+    .lrn-base-question-stimulus-layout--has-rollover .lrn-rollover-button {
+        margin-bottom: calc(var(--lds-space--half-x) + .6428571486em);
+    }
+}
+
 .lrn-base-question-stimulus-layout--has-rollover .lrn-rollover-button svg {
     height: auto;
     margin-left: 0;
@@ -9350,7 +9368,7 @@ img.lrn-loading-image-hidden {
 
 .lrn.lrn_widget .wysiwyg-tmp-selected-cell {
     position: relative;
-    outline: 1px solid #52a8ec;
+    outline: 1px solid var(--lds-color--blue-M900);
 }
 
 .lrn.lrn_widget .wysiwyg-tmp-selected-cell .wysihtml-table-edit-btn {
@@ -13577,19 +13595,19 @@ img.lrn-loading-image-hidden {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.lrn_widget .lrn_response.lrn_cloze .lrn_combobox .lrn-cloze-select {
+.lrn_widget .lrn_response.lrn_cloze .lrn_combobox:not(.lrn_correct):not(.lrn_incorrect):not(.lrn_not_attempted) .lrn-cloze-select {
     display: inline-block;
     line-height: 1.4em;
     vertical-align: middle;
 }
 
-.lrn_widget .lrn_response.lrn_cloze .lrn_combobox .lrn-cloze-select-grid {
+.lrn_widget .lrn_response.lrn_cloze .lrn_combobox:not(.lrn_correct):not(.lrn_incorrect):not(.lrn_not_attempted) .lrn-cloze-select-grid {
     display: inline-grid;
     grid-template-areas: "stack";
     vertical-align: middle;
 }
 
-.lrn_widget .lrn_response.lrn_cloze .lrn_combobox .lrn-cloze-select-grid .lds-react-select__container {
+.lrn_widget .lrn_response.lrn_cloze .lrn_combobox:not(.lrn_correct):not(.lrn_incorrect):not(.lrn_not_attempted) .lrn-cloze-select-grid .lds-react-select__container {
     grid-area: stack;
     width: 100%;
 }
@@ -13603,6 +13621,24 @@ img.lrn-loading-image-hidden {
     padding-left: 2px;
     padding-right: 25px;
     height: 0;
+}
+
+.lrn_widget .lrn_response.lrn_cloze .lrn_combobox:not(.lrn_correct):not(.lrn_incorrect):not(.lrn_not_attempted) select.lrn-cloze-select {
+    color: #4d4d4d;
+    border: 1px solid #939393;
+    background-color: #ffffff;
+    padding: 2px;
+    margin: 0;
+    width: auto;
+    height: 2em;
+    border-radius: 2px;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+}
+
+.lrn_widget .lrn_response.lrn_cloze .lrn_combobox:not(.lrn_correct):not(.lrn_incorrect):not(.lrn_not_attempted) select.lrn-cloze-select:hover,
+.lrn_widget .lrn_response.lrn_cloze .lrn_combobox:not(.lrn_correct):not(.lrn_incorrect):not(.lrn_not_attempted) select.lrn-cloze-select:focus {
+    border-color: #3498db;
 }
 
 .lrn_widget .lrn_response.lrn_cloze .lrn_combobox .lds-react-select__control {
@@ -13718,7 +13754,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_clozeinlinetext .lrn_response .lrn_inlinetext_wrapper.lrn_focus {
-    border: 1px solid #52a8ec;
+    border: 1px solid var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_clozeinlinetext .lrn_response .lrn_inlinetext_wrapper.lrn_inlinetext_block {
@@ -14861,7 +14897,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_score .lrn_response .lrn_numericinput input:focus {
-    border: 1px solid #52a8ec;
+    border: 1px solid var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_score .lrn_response .lrn_numericinput div {
@@ -15483,7 +15519,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_fileupload .lrn-notifications-bar.lrn-notification-info:before {
     padding-right: .6em;
     content: var(--lrn-questions-icon-content--bubble);
-    color: #52a8ec;
+    color: var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_fileupload .lrn-notifications-bar.lrn-notification-success {
@@ -15832,13 +15868,13 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_qr.lrn_formula .lrn_math_editable.lrn_math_bordered .hasCursor,
 .lrn_widget.lrn_qr.lrn_formula .lrn_math_editable .mathquill-editable.lrn_math_bordered .hasCursor {
-    outline-color: #52a8ec;
+    outline-color: var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_qr.lrn_formula .lrn_math_editable.lrn_math_bordered.hasCursor,
 .lrn_widget.lrn_qr.lrn_formula .lrn_math_editable .mathquill-editable.lrn_math_bordered.hasCursor {
     box-shadow: none;
-    border-color: #52a8ec;
+    border-color: var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_qr.lrn_formula .lrn_math_editable.lrn_math_bordered.hasCursor.lrn_correct,
@@ -16600,7 +16636,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget .lrn-formulaessay-button-new button:before {
-    background-color: #52a8ec;
+    background-color: var(--lds-color--blue-M900);
     border-color: rgba(0, 0, 0, 0);
     color: #ffffff;
     content: var(--lrn-questions-icon-content--return);
@@ -16633,7 +16669,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget .lrn-formulaessay-line.selected .lrn-formulaessay-line-inner-wrapper {
-    border-color: #52a8ec;
+    border-color: var(--lds-color--blue-M900);
 }
 
 .lrn_widget .lrn-formulaessay-line.selected .lrn-formulaessay-line-mode-label {
@@ -16706,7 +16742,7 @@ img.lrn-loading-image-hidden {
     right: 0;
     top: -1.8571428571em;
     display: none;
-    background: #52a8ec;
+    background: var(--lds-color--blue-M900);
     font-size: .5714285714em;
     line-height: 1.8571428571em;
     text-transform: uppercase;
@@ -16766,7 +16802,7 @@ img.lrn-loading-image-hidden {
 
 .lrn-gridded .lrn-gridded-input-wrapper .lrn-gridded-input:not(:last-of-type):focus:not(:disabled),
 .lrn-gridded .lrn-gridded-input-wrapper .lrn-gridded-input:not(:last-of-type):active:not(:disabled) {
-    border: 1px solid #52a8ec;
+    border: 1px solid var(--lds-color--blue-M900);
     transition: border .25s ease;
 }
 
@@ -16830,7 +16866,7 @@ img.lrn-loading-image-hidden {
 
 .lrn-gridded .lrn-gridded-label:focus,
 .lrn-gridded .lrn-gridded-label:active {
-    box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #52a8ec;
+    box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px var(--lds-color--blue-M900);
     outline: none;
 }
 
@@ -17109,7 +17145,7 @@ img.lrn-loading-image-hidden {
     position: absolute;
     z-index: 10;
     background-color: #ffffff;
-    border: 1px solid #52a8ec;
+    border: 1px solid var(--lds-color--blue-M900);
     outline-style: none;
 }
 
@@ -17743,7 +17779,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response.lrn_overlaying .lrn_btn_dropzone_overlay.lrn_close:focus {
-    box-shadow: inset 0 0 0 1px #52a8ec;
+    box-shadow: inset 0 0 0 1px var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response.lrn_overlaying .lrn_btn_dropzone_overlay.lrn_close:before {
@@ -18024,7 +18060,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget .lrn-imageupload-annotation textarea:focus {
-    border-color: #52a8ec;
+    border-color: var(--lds-color--blue-M900);
 }
 
 .lrn_widget .lrn-imageupload-annotation:before {
@@ -18175,7 +18211,7 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget .lrn-imageupload-annotation-at-right-edge .lrn-imageupload-annotation-content-editable .lrn-imageupload-annotation-arrow:before {
     border-right-color: initial;
-    border-left-color: #52a8ec;
+    border-left-color: var(--lds-color--blue-M900);
 }
 
 .lrn_widget .lrn-imageupload-annotation-at-right-edge .lrn-imageupload-annotation-draggables-with-hover-states:hover .lrn-imageupload-annotation-arrow:after {
@@ -18240,7 +18276,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget .lrn-imageupload-annotation-content-editable .lrn-imageupload-annotation-arrow:before {
-    border-right-color: #52a8ec;
+    border-right-color: var(--lds-color--blue-M900);
 }
 
 .lrn_widget .lrn-imageupload-annotation-draggables-with-hover-states:hover {
@@ -19418,7 +19454,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_chemistryessayV2 .lrn_texteditor_editable img:hover,
 .lrn_widget.lrn_formulaessayV2 .lrn_texteditor_editable img:hover,
 .lrn_widget.lrn_longtextV2 .lrn_texteditor_editable img:hover {
-    outline: 2px solid #52a8ec;
+    outline: 2px solid var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_chemistryessayV2 .lrn_texteditor_editable .CodeMirror,
@@ -19586,7 +19622,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_formulaessayV2 .lrn-wysihtml-widget-active .lrn-wysihtml-math-widget,
 .lrn_widget.lrn_longtextV2 .lrn-wysihtml-widget-active .lrn-wysihtml-math-widget {
     outline: none;
-    box-shadow: 0 0 5px 2px rgba(82, 168, 236, .6);
+    box-shadow: 0 0 5px 2px rgba(var(--lds-color--blue-M900), .6);
 }
 
 .lrn_widget.lrn_chemistryessayV2 .lrn-wysihtml-toolbar:focus-within,
@@ -20537,6 +20573,10 @@ img.lrn-loading-image-hidden {
     outline: none;
 }
 
+.lrn_widget.lrn_multistepmath .lrn_response_input_wrapper:not(.lrn_incorrect):not(.lrn_correct) {
+    border-color: #939393;
+}
+
 .lrn_widget.lrn_multistepmath .lrn_response_wrapper {
     width: fit-content;
     min-width: min(100%, 940px);
@@ -20573,7 +20613,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_multistepmath .lrn-multistepmath-line.selected .lrn-multistepmath-line-inner-wrapper {
-    border-color: #52a8ec;
+    border-color: var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-button-new {
@@ -20583,12 +20623,12 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_multistepmath .lrn-multistepmath-line .lrn-multistepmath-line-inner-wrapper {
     border-color: rgba(0, 0, 0, 0);
     border-style: solid;
-    border-top-width: 1px;
+    border-top-width: 2px;
     border-right-width: 0;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-left-width: 0;
     position: relative;
-    min-height: 3.1428571429em;
+    min-height: 3.2142857143em;
     padding-right: 3em;
 }
 
@@ -20626,7 +20666,7 @@ img.lrn-loading-image-hidden {
     bottom: 0;
     margin: auto 0;
     padding: 0;
-    height: 3.1428571429em;
+    height: 3em;
 }
 
 .lrn_widget.lrn_multistepmath .lrn-multistepmath-button-new {
@@ -20694,7 +20734,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_numberline .lrn_btn_arrow.lrn_active,
 .lrn_widget.lrn_numberline .lrn_btn_arrow:active {
     background-color: #f7f7f7;
-    border-color: #52a8ec;
+    border-color: var(--lds-color--blue-M900);
     color: #000000 !important;
 }
 
@@ -21742,11 +21782,11 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_tokenhighlight .lrn_response .lrn_token:focus {
     outline: 0;
-    border: 1px solid #52a8ec;
+    border: 1px solid var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_tokenhighlight .lrn_response .lrn_tokenhighlight_highlight:focus {
-    border: 1px solid #52a8ec;
+    border: 1px solid var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_tokenhighlight .lrn_response.lrn-masking .lrn_token {
@@ -21787,7 +21827,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget.lrn_tokenhighlight .lrn_response .lrn_tokenhighlight_outline .lrn_token {
-    outline: 1px dotted #52a8ec;
+    outline: 1px dotted var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_tokenhighlight .lrn_response .lrn-mask-strike-through {
@@ -21855,7 +21895,7 @@ img.lrn-loading-image-hidden {
 .lrn_widget.lrn_tokenhighlight .lrn_response .lrn_tokenhighlight_text.lrn_tokenhighlight_custom .lrn_token.lrn_correct:focus,
 .lrn_widget.lrn_tokenhighlight .lrn_response .lrn_tokenhighlight_text.lrn_tokenhighlight_custom .lrn_token.lrn_incorrect:focus,
 .lrn_widget.lrn_tokenhighlight .lrn_response .lrn_tokenhighlight_text.lrn_tokenhighlight_custom .lrn_token.lrn_valid:focus {
-    outline: 1px solid #52a8ec;
+    outline: 1px solid var(--lds-color--blue-M900);
 }
 
 .lrn_widget.lrn_tokenhighlight .lrn_response .lrn_tokenhighlight_text.lrn_tokenhighlight_paragraph .lrn_token.lrn_correct:after,
@@ -23758,7 +23798,7 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn_widget .lrn_texteditor_editable:focus {
-    border: 1px solid #52a8ec;
+    border: 1px solid var(--lds-color--blue-M900);
 }
 
 .lrn_widget .lrn_texteditor_editable.lrn_response_input_wrapper {
