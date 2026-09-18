@@ -82,7 +82,7 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-datatable-button-group .lrn-qe-btn.lrn-qe-datatable-nav-btn:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-remove.lrn-qe-btn-default:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-default:focus,
-.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:focus,
+.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin.lrn-qe-btn-default:focus,
 .cke_dialog_container_qe .cke_dialog_ui_button_cancel:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar:not(.lrn-qe-bp-xs):not(.lrn-qe-bp-sm) .lrn-qe-distractor-rationale-wrapper .lrn-qe-popup-toggle .lrn-qe-btn.lrn-qe-checkbox-btn:focus,
 .lrn-qe .lrn-qe-ui .lrn-qe-toolbar .lrn-qe-toolbar-controls .lrn-qe-toolbar-toggle .lrn-qe-toolbar-control:focus,
@@ -3064,10 +3064,6 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:hover svg path,
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:hover svg use {
     fill: #0b5684;
-}
-
-.lrn-qe .lrn-qe-ui .lrn-qe-btn-pin:focus {
-    background: transparent;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-btn-pin[aria-pressed=true] svg path,
