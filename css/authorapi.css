@@ -1605,29 +1605,35 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab-link {
+    align-items: baseline;
+    display: flex;
     padding: .4285714286em .7857142857em;
     cursor: pointer;
 }
 
 .lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab-label-input {
     border: 1px solid #ffffff;
+    field-sizing: content;
+    flex-shrink: 1;
+    min-width: 20ch;
+    overflow: hidden;
     text-align: center;
 }
 
-.lrn-author.lrn-author .lrn-author-nav-tabs-old input:read-only.lrn-author-tab-label-input {
+.lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab-label-input:read-only {
     cursor: pointer;
 }
 
-.lrn-author.lrn-author .lrn-author-nav-tabs-old input:not([readonly]) {
+.lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab-label-input:not([readonly]) {
     cursor: text;
 }
 
-.lrn-author.lrn-author .lrn-author-nav-tabs-old input:not([readonly]):hover,
-.lrn-author.lrn-author .lrn-author-nav-tabs-old input:not([readonly]):focus {
+.lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab-label-input:not([readonly]):hover,
+.lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab-label-input:not([readonly]):focus {
     border-color: #eaeaea;
 }
 
-.lrn-author.lrn-author .lrn-author-nav-tabs-old input:not([readonly])~label .lrn-author-i-edit {
+.lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab-label-input:not([readonly])~label .lrn-author-i-edit {
     cursor: pointer;
     display: inline-block;
     margin-left: .2857142857em;
@@ -1635,6 +1641,11 @@ svg.react-flow__connectionline {
 
 .lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-i-edit {
     display: none;
+}
+
+.lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab,
+.lrn-author.lrn-author .lrn-author-nav-tabs-old .lrn-author-tab-link {
+    max-width: 100%;
 }
 
 .lrn-author.lrn-author .lrn-author-sidebar-visible+.lrn-author-region .lrn-author-tab-content .lrn-author-ui .lrn-author-ui-add-extras .lrn-author-shared-passages-dropdown {
