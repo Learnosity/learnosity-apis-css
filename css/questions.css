@@ -882,6 +882,12 @@
     --lrn-questions-icon-height--incomplete: auto;
     --lrn-questions-color--incomplete: var(--lds-color--green-D500);
     --lrn-questions-icon-content--valid: var(--lrn-questions-icon-content--tick);
+    --lrn-rollover-highlight-stroke: var(--lds-color--blue-M900);
+    --lrn-rollover-highlight-fill: transparent;
+    --lrn-rollover-highlight-padding-inline: var(--lds-space--quarter-x);
+    --lrn-rollover-highlight-padding-block: var(--lds-space--quarter-x);
+    --lrn-rollover-highlight-margin-inline: var(--lds-space--quarter-x);
+    --lrn-rollover-highlight-border-radius: var(--lds-border-radius--xs);
 }
 
 .lrn_widget .lrn_icon:before,
@@ -9115,6 +9121,7 @@ img.lrn-loading-image-hidden {
 
 .lrn-base-question-stimulus-layout--has-rollover .lrn-base-question-stimulus-content--has-rollover {
     flex-grow: 1;
+    min-width: 0;
 }
 
 .lrn-base-question-stimulus-layout--has-rollover .lrn-rollover-button {
@@ -9132,6 +9139,37 @@ img.lrn-loading-image-hidden {
     margin-left: 0;
     max-height: none;
     min-height: 0;
+}
+
+.lrn-rollover-wrapper--active {
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding-inline: var(--lrn-rollover-highlight-padding-inline);
+    margin-inline: var(--lrn-rollover-highlight-margin-inline);
+}
+
+.lrn-rollover-wrapper--inline {
+    display: inline;
+}
+
+.lrn-rollover-wrapper--block {
+    display: block;
+    padding-block: var(--lrn-rollover-highlight-padding-block);
+}
+
+.lrn-rollover-highlight-svg {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.lrn-rollover-highlight-svg path {
+    fill: var(--lrn-rollover-highlight-fill, transparent);
+    stroke: var(--lrn-rollover-highlight-stroke, var(--lds-color--blue-M900));
+    stroke-width: 1;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
 }
 
 .lrn.lrn_widget .wysihtml-dropdown {
@@ -20577,14 +20615,14 @@ img.lrn-loading-image-hidden {
     border-color: #939393;
 }
 
-.lrn_widget.lrn_multistepmath .lrn_response_wrapper {
+.lrn_widget.lrn_multistepmath .lrn_response_input_wrapper {
     width: fit-content;
     min-width: min(100%, 940px);
     max-width: 100%;
 }
 
 @media (max-width: 522px) {
-    .lrn_widget.lrn_multistepmath .lrn_response_wrapper {
+    .lrn_widget.lrn_multistepmath .lrn_response_input_wrapper {
         width: 100%;
     }
 }
@@ -21207,6 +21245,43 @@ img.lrn-loading-image-hidden {
     width: 100%;
 }
 
+.lrn_widget.lrn_plaintext .lrn_toolbar {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.lrn_widget.lrn_plaintext .lrn_toolbar_right {
+    padding-top: .1428571429em;
+}
+
+.lrn_widget.lrn_plaintext .lrn_response_input_wrapper {
+    border-color: #9d9d9d;
+}
+
+.lrn_widget.lrn_plaintext .lrn_word_count,
+.lrn_widget.lrn_plaintext .lrn_character_count {
+    margin-right: 0;
+}
+
+.lrn_widget.lrn_plaintext .lrn_btn {
+    background-color: inherit;
+    border-radius: 2px;
+    font-weight: 500;
+    line-height: 2.4285714286em;
+    margin: .2142857143em;
+    padding: 0 .7142857143em;
+}
+
+.lrn_widget.lrn_plaintext .lrn_btn:focus {
+    outline: #1877b1 solid 2px;
+    box-shadow: none;
+}
+
+.lrn_widget.lrn_plaintext .lrn_btn:hover {
+    color: #3498db;
+    box-shadow: 0 0 1px 1px #aaaaaa;
+}
+
 .lrn_widget.lrn_plaintext .lrn_plaintextarea {
     height: 100%;
     width: 100%;
@@ -21219,6 +21294,14 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_plaintext .lrn_texteditor_editable {
     max-height: 350px !important;
+    border: none;
+    border-radius: 0;
+}
+
+.lrn_widget.lrn_plaintext .lrn_texteditor_editable:focus {
+    border: none;
+    outline: 3px solid #1877b1;
+    position: relative;
 }
 
 .lrn_widget.lrn_shorttext {
@@ -21445,18 +21528,18 @@ img.lrn-loading-image-hidden {
 
 .lrn_stimulus {
     position: relative;
-    line-height: 1.4em;
+    line-height: var(--lds-font-line-height--normal);
 }
 
 .lrn_stimulus .lrn_stimulus_content {
-    line-height: 1.4em;
+    line-height: var(--lds-font-line-height--normal);
     margin: 0;
     padding: 0;
     word-break: break-word;
 }
 
 .lrn_stimulus .lrn_stimulus_content>* {
-    margin: 0 0 1em 0;
+    margin-block: 0 1em;
 }
 
 .lrn_stimulus .lrn_stimulus_content>:last-child:not(img) {
