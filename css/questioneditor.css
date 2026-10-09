@@ -2362,6 +2362,11 @@
     outline: none;
 }
 
+.lrn-qe .lrn-qe-ui .lrn-qe-form-control-ckeditor .cke_textarea_inline p:only-child,
+.lrn-qe .lrn-qe-ui .lrn-qe-form-control-ckeditor .cke_editable_inline p:only-child {
+    margin: 0;
+}
+
 .lrn-qe .lrn-qe-ui .lrn-qe-form-control-ckeditor .THssmlClassBreak {
     position: absolute;
     background-image: url("../../img/wriq-dashboard-svg-performance-side.svg");
@@ -6856,6 +6861,92 @@
     margin-top: -2px;
     background: #ffffff;
     z-index: 20;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: .3571428571em;
+    margin-bottom: 1.4285714286em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls .lrn-qe-rubric-summary-slot:not(:has(*)),
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls .lrn-qe-rubric-required-slot:not(:has(*)),
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls .lrn-qe-rubric-button-slot:not(:has(*)),
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls .lrn-qe-rubric-delete-slot:not(:has(*)) {
+    display: none;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls .lrn-qe-rubric-summary-slot:has(*),
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls .lrn-qe-rubric-required-slot:has(*) {
+    flex: 0 0 100%;
+    margin-bottom: .7857142857em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls .lrn-qe-rubric-delete-slot:has(.lrn-qe-rubric-delete-confirm) {
+    flex: 0 0 100%;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls .lrn-qe-rubric-delete-trigger {
+    --_lds-bs-btn-hover-bg: #eaeaea;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls:not(:has(* *)) {
+    display: none;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-feedbackaide-toggles:not(:has(*)) {
+    display: none;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-feedbackaide-toggles,
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-controls {
+    flex: 1 1 auto;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-summary-label .lrn-qe-rubric-summary-heading {
+    margin-top: 0;
+    margin-bottom: .25em;
+    font-size: 1.1428571429em;
+    font-weight: bold;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-summary-label .lrn-qe-rubric-summary-detail {
+    margin-bottom: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-summary-label-disabled,
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-required-label-disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-max-score-label {
+    margin-top: .2857142857em;
+    margin-bottom: 1.1428571429em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-max-score-label .lrn-qe-form-helper-text {
+    margin: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-delete-confirm {
+    margin-top: .7142857143em;
+    margin-bottom: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-delete-confirm .lrn-qe-rubric-delete-confirm-title {
+    margin-bottom: .25em;
+    font-size: 1.1428571429em;
+    font-weight: bold;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-rubric-delete-confirm .lrn-qe-rubric-delete-confirm-actions {
+    display: flex;
+    gap: .3571428571em;
+    margin-top: .7142857143em;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-draggable .gu-mirror {

@@ -1326,7 +1326,7 @@
     --lds-button-color-border--ghost-secondary-pressed: var(--lds-color--yellow-M100);
     --lds-button-outline-radius: var(--lds-border-radius--large);
     border-radius: 6px;
-    z-index: 102;
+    z-index: 101;
 }
 
 :is(#id,body) .lrn-annotations-c-modal--stickynote .lds-icon {
@@ -1340,7 +1340,7 @@
 }
 
 :is(#id,body) .lrn-annotations-c-modal--stickynote--active {
-    z-index: 101;
+    z-index: 102;
 }
 
 :is(#id,body) .lrn-annotations-c-modal--stickynote .lrn-annotations-stickynote {

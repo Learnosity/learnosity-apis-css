@@ -1968,7 +1968,12 @@ body .lrn-assess-spinner {
 .lrn.lrn-assess button.lrn_btn.lrn_btn_notepad.pos-middle.lrn_active,
 .lrn.lrn-assess button.lrn_btn.lrn_btn_highlight_mode.pos-middle.lrn_active,
 .lrn.lrn-assess button.lrn_btn.test-fullscreen-btn.pos-middle.lrn_active,
-.lrn.lrn-assess button.lrn_btn.test-review-screen.pos-middle.lrn_active {
+.lrn.lrn-assess button.lrn_btn.test-review-screen.pos-middle.lrn_active,
+.lrn.lrn-assess button.lrn_btn.test-answer-masking.pos-middle.lrn_active,
+.lrn.lrn-assess button.lrn_btn.lrn-calc-toggle.pos-middle.lrn_active,
+.lrn.lrn-assess button.lrn_btn.lrn_linereader-toggle.pos-middle.lrn_active,
+.lrn.lrn-assess button.lrn_btn.lrn_imagetool-toggle.icon-protractor.pos-middle.lrn_active,
+.lrn.lrn-assess button.lrn_btn.lrn_imagetool-toggle.icon-ruler.pos-middle.lrn_active {
     box-shadow: inset 4px 0 0 #1877b1;
 }
 
@@ -1979,7 +1984,12 @@ body .lrn-assess-spinner {
 .lrn.lrn-assess button.lrn_btn.lrn_btn_notepad.pos-middle.lrn_active:focus,
 .lrn.lrn-assess button.lrn_btn.lrn_btn_highlight_mode.pos-middle.lrn_active:focus,
 .lrn.lrn-assess button.lrn_btn.test-fullscreen-btn.pos-middle.lrn_active:focus,
-.lrn.lrn-assess button.lrn_btn.test-review-screen.pos-middle.lrn_active:focus {
+.lrn.lrn-assess button.lrn_btn.test-review-screen.pos-middle.lrn_active:focus,
+.lrn.lrn-assess button.lrn_btn.test-answer-masking.pos-middle.lrn_active:focus,
+.lrn.lrn-assess button.lrn_btn.lrn-calc-toggle.pos-middle.lrn_active:focus,
+.lrn.lrn-assess button.lrn_btn.lrn_linereader-toggle.pos-middle.lrn_active:focus,
+.lrn.lrn-assess button.lrn_btn.lrn_imagetool-toggle.icon-protractor.pos-middle.lrn_active:focus,
+.lrn.lrn-assess button.lrn_btn.lrn_imagetool-toggle.icon-ruler.pos-middle.lrn_active:focus {
     box-shadow: inset 4px 2px 0 #1877b1, inset 0 -2px 0 #1877b1, inset -2px 0 0 #1877b1;
 }
 
