@@ -20580,14 +20580,14 @@ img.lrn-loading-image-hidden {
     outline: none;
 }
 
-.lrn_widget.lrn_multistepmath .lrn_response_wrapper {
+.lrn_widget.lrn_multistepmath .lrn_response_input_wrapper {
     width: fit-content;
     min-width: min(100%, 940px);
     max-width: 100%;
 }
 
 @media (max-width: 522px) {
-    .lrn_widget.lrn_multistepmath .lrn_response_wrapper {
+    .lrn_widget.lrn_multistepmath .lrn_response_input_wrapper {
         width: 100%;
     }
 }
