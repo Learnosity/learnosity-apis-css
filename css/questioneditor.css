@@ -2194,6 +2194,7 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-switch .lrn-qe-input:focus+.lrn-qe-switch-trigger {
     border-color: #1877b1;
+    outline: 1px solid #1877b1;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-switch .lrn-qe-input:not(:checked)+.lrn-qe-switch-trigger::before {
@@ -2365,6 +2366,15 @@
 .lrn-qe .lrn-qe-ui .lrn-qe-form-control-ckeditor .cke_textarea_inline p:only-child,
 .lrn-qe .lrn-qe-ui .lrn-qe-form-control-ckeditor .cke_editable_inline p:only-child {
     margin: 0;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-form-control-ckeditor .cke_textarea_inline.lrn-cke-placeholder::before,
+.lrn-qe .lrn-qe-ui .lrn-qe-form-control-ckeditor .cke_editable_inline.lrn-cke-placeholder::before {
+    content: attr(data-lrn-placeholder);
+    position: absolute;
+    color: #939393;
+    font-style: italic;
+    pointer-events: none;
 }
 
 .lrn-qe .lrn-qe-ui .lrn-qe-form-control-ckeditor .THssmlClassBreak {
@@ -6897,7 +6907,21 @@
     display: none;
 }
 
-.lrn-qe .lrn-qe-ui .lrn-qe-feedbackaide-toggles:not(:has(*)) {
+.lrn-qe .lrn-qe-ui .lrn-qe-feedbackaide-toggles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-feedbackaide-toggles .lrn-qe-evaluation-options-slot:not(:has(*)) {
+    display: none;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-feedbackaide-toggles .lrn-qe-evaluation-options-slot:has(*) {
+    margin-top: .7142857143em;
+}
+
+.lrn-qe .lrn-qe-ui .lrn-qe-feedbackaide-toggles:not(:has(* *)) {
     display: none;
 }
 
@@ -6945,6 +6969,7 @@
 
 .lrn-qe .lrn-qe-ui .lrn-qe-rubric-delete-confirm .lrn-qe-rubric-delete-confirm-actions {
     display: flex;
+    align-items: flex-start;
     gap: .3571428571em;
     margin-top: .7142857143em;
 }

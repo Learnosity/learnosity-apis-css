@@ -23868,11 +23868,29 @@ img.lrn-loading-image-hidden {
     position: relative;
 }
 
+.lrn_widget .lrn_charactermap .lrn_charactermap_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .lrn_widget .lrn_charactermap .lrn_charactermap_title {
     display: block;
     font-weight: bold;
     padding-left: 1em;
     line-height: 3em;
+}
+
+.lrn_widget .lrn_charactermap .lrn_charactermap_close {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 1;
+    padding: .25em .5em;
+    color: inherit;
 }
 
 .lrn_widget .lrn_charactermap .lrn_characterbutton {
