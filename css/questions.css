@@ -10171,6 +10171,28 @@ img.lrn-loading-image-hidden {
     box-shadow: inset 0 0 0 2px dimgray, inset 0 0 0 3px #ffffff;
 }
 
+.lrn_widget .lrn_btn_drag.lrn_has_image:active,
+.lrn_widget .lrn_btn_drag.lrn_has_image.lrn_active,
+.lrn_widget .lrn_btn_sort.lrn_has_image:active,
+.lrn_widget .lrn_btn_sort.lrn_has_image.lrn_active {
+    background-color: #ffffff;
+    color: inherit;
+    box-shadow: inset 0 0 0 2px dimgray;
+}
+
+.lrn_widget .lrn_btn_drag.lrn_has_image:focus:active,
+.lrn_widget .lrn_btn_drag.lrn_has_image.lrn_focus.lrn_active,
+.lrn_widget .lrn_btn_drag.lrn_has_image.lrn_focus:active,
+.lrn_widget .lrn_btn_drag.lrn_has_image:focus.lrn_active,
+.lrn_widget .lrn_btn_sort.lrn_has_image:focus:active,
+.lrn_widget .lrn_btn_sort.lrn_has_image.lrn_focus.lrn_active,
+.lrn_widget .lrn_btn_sort.lrn_has_image.lrn_focus:active,
+.lrn_widget .lrn_btn_sort.lrn_has_image:focus.lrn_active {
+    box-shadow: inset 0 0 0 2px dimgray;
+    outline: 2px solid #1877b1;
+    outline-offset: -5px;
+}
+
 .lrn_widget .lrn_btn_drag[disabled],
 .lrn_widget .lrn_btn_drag.lrn_disabled,
 .lrn_widget .lrn_btn_sort[disabled],
@@ -21243,6 +21265,17 @@ img.lrn-loading-image-hidden {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_inline.lrn_has_image:active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_inline.lrn_has_image.lrn_active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_inline_block.lrn_has_image:active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_inline_block.lrn_has_image.lrn_active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_list.lrn_has_image:active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_list.lrn_has_image.lrn_active {
+    background-color: #ffffff;
+    color: inherit;
+    box-shadow: inset 0 0 0 2px dimgray;
+}
+
 .lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_list li {
     margin-left: .4em;
     display: inline-block;
@@ -21250,6 +21283,22 @@ img.lrn-loading-image-hidden {
 
 .lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_button {
     margin-bottom: 2px;
+}
+
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_button.lrn_has_image:active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_button.lrn_has_image.lrn_active {
+    background-color: #ffffff;
+    color: inherit;
+    box-shadow: inset 0 0 0 2px dimgray;
+}
+
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_button.lrn_has_image:focus:active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_button.lrn_has_image.lrn_focus.lrn_active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_button.lrn_has_image.lrn_focus:active,
+.lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_button.lrn_has_image:focus.lrn_active {
+    box-shadow: inset 0 0 0 2px dimgray;
+    outline: 2px solid #1877b1;
+    outline-offset: -5px;
 }
 
 .lrn_widget.lrn_orderlist .lrn_btn_sort:focus,
