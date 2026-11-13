@@ -3035,7 +3035,14 @@ svg.react-flow__connectionline {
 }
 
 .lrn-author.lrn-author-root.lrn-author .lrn-author-tab-link .lrn-author-tab-header {
-    display: none;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 .lrn-author.lrn-author-root.lrn-author .lrn-author-tab-link .lrn-author-search-small {
@@ -3137,9 +3144,20 @@ svg.react-flow__connectionline {
 
     .lrn-author.lrn-author-root.lrn-author .lrn-author-tab-link .lrn-author-tab-header {
         display: inline-flex;
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        padding: 0;
+        position: static;
+        width: auto;
     }
 
     .lrn-author.lrn-author-root.lrn-author .lrn-author-tab-link .lrn-author-search-small {
+        display: none;
+    }
+
+    .lrn-author.lrn-author-root.lrn-author .lrn-author-tab-tooltip {
         display: none;
     }
 
@@ -5805,11 +5823,11 @@ svg.react-flow__connectionline {
     padding-left: 30px;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-btn-default-legacy[data-authorapi-selector=back]:not([aria-disabled=true]) {
+.lrn-author .lrn-author-ui .lrn-author-btn-default-legacy[data-authorapi-selector=back]:not(:disabled) {
     transition: padding-left .2s;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-btn-default-legacy[data-authorapi-selector=back]:not([aria-disabled=true]):hover {
+.lrn-author .lrn-author-ui .lrn-author-btn-default-legacy[data-authorapi-selector=back]:not(:disabled):hover {
     padding-left: 27px;
     color: var(--lds-color--blue-D400);
 }
@@ -6352,7 +6370,7 @@ svg.react-flow__connectionline {
     text-align: center;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-pagination-btn[aria-disabled=true] {
+.lrn-author .lrn-author-ui .lrn-author-pagination-btn:disabled {
     color: var(--lds-color--grey-M500);
     cursor: default;
     user-select: none;
@@ -6364,11 +6382,11 @@ svg.react-flow__connectionline {
     padding-right: 30px;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-pagination-btn[data-authorapi-selector=pagination-next]:not([aria-disabled=true]) {
+.lrn-author .lrn-author-ui .lrn-author-pagination-btn[data-authorapi-selector=pagination-next]:not(:disabled) {
     transition: padding-right .2s;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-pagination-btn[data-authorapi-selector=pagination-next]:not([aria-disabled=true]):hover {
+.lrn-author .lrn-author-ui .lrn-author-pagination-btn[data-authorapi-selector=pagination-next]:not(:disabled):hover {
     padding-right: 27px;
     color: var(--lds-color--blue-D400);
 }
@@ -6379,11 +6397,11 @@ svg.react-flow__connectionline {
     padding-left: 30px;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-pagination-btn[data-authorapi-selector=pagination-previous]:not([aria-disabled=true]) {
+.lrn-author .lrn-author-ui .lrn-author-pagination-btn[data-authorapi-selector=pagination-previous]:not(:disabled) {
     transition: padding-left .2s;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-pagination-btn[data-authorapi-selector=pagination-previous]:not([aria-disabled=true]):hover {
+.lrn-author .lrn-author-ui .lrn-author-pagination-btn[data-authorapi-selector=pagination-previous]:not(:disabled):hover {
     padding-left: 27px;
     color: var(--lds-color--blue-D400);
 }
@@ -9781,17 +9799,17 @@ svg.react-flow__connectionline {
     text-decoration: underline;
 }
 
-.lrn-author.lrn-author-root .lrn-author-nav-tabs [role=tab] {
+.lrn-author.lrn-author-root .lrn-author-nav-tabs .lrn-author-tab {
     min-width: 110px;
 }
 
 @container (0px <= width < 615px) {
-    .lrn-author.lrn-author-root .lrn-author-nav-tabs [role=tab] {
+    .lrn-author.lrn-author-root .lrn-author-nav-tabs .lrn-author-tab {
         min-width: 80px;
     }
 }
 
-.lrn-author.lrn-author-root .lrn-author-nav-tabs [role=tab] {
+.lrn-author.lrn-author-root .lrn-author-nav-tabs .lrn-author-tab {
     cursor: pointer;
     display: inline-block;
 }
@@ -9934,12 +9952,12 @@ svg.react-flow__connectionline {
     margin-top: 20px;
 }
 
-.lrn-author.lrn-author-root .lrn-author-disable-tabs [role=tab] {
+.lrn-author.lrn-author-root .lrn-author-disable-tabs .lrn-author-tab {
     cursor: not-allowed;
     opacity: .4;
 }
 
-.lrn-author.lrn-author-root .lrn-author-disable-tabs [role=tab] .lrn-author-tab-link {
+.lrn-author.lrn-author-root .lrn-author-disable-tabs .lrn-author-tab .lrn-author-tab-link {
     pointer-events: none;
 }
 

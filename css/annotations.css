@@ -1193,7 +1193,8 @@
     width: 24px;
 }
 
-:is(#id,body) .lrn-annotations-color--theme-1 {
+:is(#id,body) .lrn-annotations-color--theme-1,
+:is(#id,body) .lrn-annotations-color--theme-1>mjx-container {
     background-color: var(--lds-color--yellow-L800);
     background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
     background-image: linear-gradient(currentColor, currentColor);
@@ -1202,7 +1203,8 @@
     background-position: bottom;
 }
 
-:is(#id,body) .lrn-annotations-color--theme-2 {
+:is(#id,body) .lrn-annotations-color--theme-2,
+:is(#id,body) .lrn-annotations-color--theme-2>mjx-container {
     background-color: #ffb4d9;
     background-image: repeating-linear-gradient(to right, currentColor 0, currentColor 8px, transparent 8px, transparent 16px);
     background-size: 100% 1px;
@@ -1210,7 +1212,8 @@
     background-position: bottom;
 }
 
-:is(#id,body) .lrn-annotations-color--theme-3 {
+:is(#id,body) .lrn-annotations-color--theme-3,
+:is(#id,body) .lrn-annotations-color--theme-3>mjx-container {
     background-color: #90ee90;
     background-image: repeating-linear-gradient(to right, currentColor 0, currentColor 4px, transparent 4px, transparent 8px);
     background-size: 100% 1px;
@@ -1218,7 +1221,8 @@
     background-position: bottom;
 }
 
-:is(#id,body) .lrn-annotations-color--theme-4 {
+:is(#id,body) .lrn-annotations-color--theme-4,
+:is(#id,body) .lrn-annotations-color--theme-4>mjx-container {
     background-color: aqua;
     background-image: repeating-linear-gradient(to right, currentColor 0, currentColor 2px, transparent 2px, transparent 4px);
     background-size: 100% 1px;
@@ -1229,7 +1233,11 @@
 :is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-1,
 :is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-2,
 :is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-3,
-:is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-4 {
+:is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-4,
+:is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-1>mjx-container,
+:is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-2>mjx-container,
+:is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-3>mjx-container,
+:is(#id,body) .lrn-annotations--safari-only .lrn-annotations-color--theme-4>mjx-container {
     background-size: 100% 2px;
 }
 
@@ -1275,27 +1283,40 @@
 }
 
 :is(#id,body) .lrn-annotations-texthighlight-marking--active.lrn-annotations-color--theme-1,
-:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-1 {
+:is(#id,body) .lrn-annotations-texthighlight-marking--active.lrn-annotations-color--theme-1>mjx-container,
+:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-1,
+:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-1>mjx-container {
     background-color: #ede331;
 }
 
 :is(#id,body) .lrn-annotations-texthighlight-marking--active.lrn-annotations-color--theme-2,
-:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-2 {
+:is(#id,body) .lrn-annotations-texthighlight-marking--active.lrn-annotations-color--theme-2>mjx-container,
+:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-2,
+:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-2>mjx-container {
     background-color: #e6aabd;
 }
 
 :is(#id,body) .lrn-annotations-texthighlight-marking--active.lrn-annotations-color--theme-3,
-:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-3 {
+:is(#id,body) .lrn-annotations-texthighlight-marking--active.lrn-annotations-color--theme-3>mjx-container,
+:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-3,
+:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-3>mjx-container {
     background-color: #9dd089;
 }
 
 :is(#id,body) .lrn-annotations-texthighlight-marking--active.lrn-annotations-color--theme-4,
-:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-4 {
+:is(#id,body) .lrn-annotations-texthighlight-marking--active.lrn-annotations-color--theme-4>mjx-container,
+:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-4,
+:is(#id,body) .lrn-annotations-texthighlight-marking--hover.lrn-annotations-color--theme-4>mjx-container {
     background-color: #7ae7ea;
 }
 
 :is(#id,body) .lrn-annotations-texthighlight-marking--hidden {
     pointer-events: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+}
+
+:is(#id,body) .lrn-annotations-texthighlight-marking--hidden>mjx-container {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
 }
