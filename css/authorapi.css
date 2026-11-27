@@ -6643,10 +6643,6 @@ svg.react-flow__connectionline {
     position: relative;
 }
 
-.lrn-author .lrn-author-ui .lrn-author-list-view-item-inactive {
-    filter: blur(3px);
-}
-
 .lrn-author .lrn-author-ui .lrn-author-list-view-col {
     padding: 1.4285714286em .7142857143em 1em .7142857143em;
 }

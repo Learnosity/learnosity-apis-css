@@ -925,6 +925,7 @@
 .lrn_widget .lrn_response.lrn_cloze .lrn_combobox .lrn-cloze-select-answer-icon:after,
 .lrn_player .lrn_btn.lrn_symbol>span>span:before,
 .lrn_qr.lrn_audio .lrn_btn.lrn_symbol>span>span:before,
+.lrn-math-text-alert .lrn-math-text-alert-icon:before,
 .lrn_widget.lrn_chemistry .lrn_response_wrapper .lrn_response_input_wrapper .lrn_response_input.lrn_incorrect:before,
 .lrn_widget.lrn_chemistry .lrn_response_wrapper .lrn_response_input_wrapper .lrn_response_input.lrn_correct:before,
 .lrn_widget.lrn_formulaV2 .lrn_response_wrapper .lrn_response_input_wrapper .lrn_response_input.lrn_incorrect:before,
@@ -8913,6 +8914,43 @@
 
 img.lrn-loading-image-hidden {
     display: none;
+}
+
+.lrn-math-text-alert {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 4px;
+    padding: .7em .9em;
+    margin-top: .6em;
+    font-size: .9285714286em;
+    background-color: var(--lds-color--red-L300);
+    color: #333333;
+}
+
+.lrn-math-text-alert .lrn-math-text-alert-icon {
+    flex: 0 0 auto;
+    padding-right: .6em;
+    color: var(--lds-color--red-M900);
+}
+
+.lrn-math-text-alert .lrn-math-text-alert-icon:before {
+    display: var(--lrn-questions-icon-display--incorrect);
+    content: var(--lrn-questions-icon-content--incorrect);
+    color: var(--lrn-questions-color--incorrect);
+    background: var(--lrn-questions-icon-background--incorrect);
+    width: var(--lrn-questions-icon-width--incorrect);
+    height: var(--lrn-questions-icon-height--incorrect);
+}
+
+.lrn-math-text-alert .lrn-math-text-alert-content {
+    flex: 1 1 auto;
+    line-height: 1.4em;
+}
+
+.lrn-math-text-alert-wrapper.lrn-math-text-alert-docked {
+    display: block;
+    clear: both;
 }
 
 .lrn .lrn-polygons {
