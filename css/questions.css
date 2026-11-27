@@ -11775,7 +11775,9 @@ img.lrn-loading-image-hidden {
 }
 
 .lrn-math-image-capture-tab.lrn-math-image-capture-tab--mobile {
-    height: 280px;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
 }
 
 .lrn-math-image-capture-tab.lrn-math-image-capture-tab--mobile .lrn-math-image-capture-unable-convert {
